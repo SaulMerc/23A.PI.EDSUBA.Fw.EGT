@@ -75,3 +75,97 @@ textarea:focus {
     border-color: var(--primary);
     outline: none;
 }
+
+.button__Osc {
+    background-color: var(--base);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: var(--fsTxt);
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px black;
+}
+
+.button__Osc:active {
+    background-color: var(--complement);
+    box-shadow: 0px 2px 0px var(--complement);
+    position: relative;
+    top: 1px;
+}
+
+.button__Cla {
+    background-color: var(--extra);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: var(--fsTxt);
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px var(--base);
+}
+
+.button__Cla:active {
+    background-color: var(--complement);
+    box-shadow: 0px 2px 0px var(--complement);
+    position: relative;
+    top: 1px;
+}
+
+.button__Opc {
+    background-color: var(--primary);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: var(--fsTxt);
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px var(--extra);
+}
+
+.button__Opc:active {
+    background-color: var(--secundary);
+    box-shadow: 0px 2px 0px var(--secundary);
+    position: relative;
+    color: black;
+    top: 1px;
+}
+
+/* Option  */
+
+select {
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    width: 20%;
+    height: 40px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #f8f8f8;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+  }
+  
+  select:focus {
+    border-color: var(--complement);
+    outline: none;
+  }
+
+  select option:checked {
+    background-color: var(--base);
+    color: #fff;
+  }
