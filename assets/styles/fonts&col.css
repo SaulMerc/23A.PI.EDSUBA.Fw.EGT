@@ -1,0 +1,27 @@
+@font-face {
+    font-family: titulos;
+    src: url(../fonts/OfficinaSansMediumITC-Regular.ttf);
+}
+@font-face {
+    font-family: cursiva;
+    src: url(../fonts/OfficinaSansBookITC-Italic.ttf);
+}
+@font-face {
+    font-family: subtitulo;
+    src: url(../fonts/OfficinaSansBookITC-Regular.ttf);
+}
+@font-face {
+    font-family: Texto;
+    src: url(../fonts/Louis\ George\ Cafe.ttf);
+}
+:root{
+    --primary: #93bfb7;
+    --secundary: #e4f2e7;
+    --complement: #387373;
+    --base: #2d3e40;
+    --extra: #97a6a0;
+
+    --fsTitles: 16pt;
+    --fsSt: 14pt;
+    --fsTxt: 12pt;
+}
