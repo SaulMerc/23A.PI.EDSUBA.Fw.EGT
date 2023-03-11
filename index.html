@@ -11,7 +11,31 @@
 
 <body>
     <!-- Elementos del encabezado-->
-    <header class="head"></header>
+    <header class="head">
+        <div>
+            <h1>EGT
+                <h2>
+                    < />
+                </h2>
+            </h1>
+            <h2>
+                El framework que necesitas
+            </h2>
+        </div>
+        <div>
+            <ul>
+                <li><a href="">Presentación</a></li>
+                <li><a href="">Contenedores</a></li>
+                <li><a href="">Imágenes y Enlaces</a></li>
+                <li><a href="">Párrafos, Listas y Alertas</a></li>
+                <li><a href="">Botones</a></li>
+                <li><a href="">Íconos</a></li>
+                <li><a href="">Carrusel y Labels</a></li>
+                <li><a href="#forms">Formularios</a></li>
+
+            </ul>
+        </div>
+    </header>
     <main>
 
         <div class="card"><!--Presentación del framework-->
@@ -32,39 +56,22 @@
         </div>
         <div class="card"><!--Carrusel de imágenes y labels-->
 
-            <div class="label">
-                <label for="" class="label__normal cPrim">Ejemplo de label</label><br>
-                <label for="" class="label__normal cSec">Ejemplo de label</label><br>
-                <label for="" class="label__normal cBase">Ejemplo de label</label><br><br>
-                <label for="" class="label__italic cPrim">Ejemplo label italic</label><br>
-                <label for="" class="label__italic cSec">Ejemplo label italic</label><br>
-                <label for="" class="label__italic cBase">Ejemplo label italic</label><br><br>
-                <label for="" class="label__obl cPrim">Ejemplo label para campo obl<span class="obl">
-                        *</span></label><br>
-                <label for="" class="label__obl cSec">Ejemplo label para campo obl<span class="obl">
-                        *</span></label><br>
-                <label for="" class="label__obl cBase">Ejemplo label para campo obl<span class="obl">
-                        *</span></label><br><br>
-            </div>
         </div>
         <div class="card"> <!--Contenedores principales-->
-            <div class="card__form"><!-- Elementos de formularios-->
+            <div class="card__form" id="forms"><!-- Elementos de formularios-->
+                <h2>Elementos de un formulario</h2>
                 <!--Estilo para los formularios realizado por los Saul y Ulises-->
                 <div class="inputs">
                     <label for="">Ejemplo de texto</label><br>
                     <input type="text" class="input__text"><br>
-                    <label for="">Ejemplo de un campo obligatorio<span class="obl"> *</span></label><br>
+                    <label for="">Ejemplo de un campo obligatorio<span class="obl">*</span></label><br>
                     <input type="text" class="input__text"><br>
                     <label for="">Ejemplo de correo</label><br>
                     <input type="email" class="input__email"><br>
                     <label for="">Ejemplo de número</label><br>
                     <input type="number" class="input__number"><br>
-                    <label for="">Ejemplo de botón</label><br>
-                    <input type="button" class="input__button" value="Ejemplo boton"><br>
                     <label for="">Ejemplo de date</label><br>
                     <input type="date" class="input__date"><br>
-                    <label for="">Ejemplo de datetime</label><br>
-                    <input type="datetime" class="input__datetime"><br>
                 </div>
                 <div class="textarea">
                     <label for="">Ejemplo de textarea</label><br>
@@ -88,8 +95,8 @@
                 </div>
                 <div class="button">
                     <button type="button" class="button__Osc">Boton normal</button><br>
-                    <button type="button" class="button__Cla">Boton enviar</button><br>
-                    <button type="button" class="button__Opc">Boton reiniciar</button><br>
+                    <button type="button" class="button__Cla">Boton claro</button><br>
+                    <button type="button" class="button__Opc">Boton opcional</button><br>
                 </div>
 
                 <div class="checkbx">
@@ -111,7 +118,21 @@
                 <form action="" class="card__form">
                 </form>
             </div class="card">
-        </div>
+                <div class="card__form">
+                    <h1>Ejemplo de formulario</h1>
+                    <label for="">Nombre completo</label><br>
+                    <input type="text" class="input__text"><br>
+                    <label for="">Domicilio<span class="obl">*</span></label><br>
+                    <input type="text" class="input__text"><br>
+                    <label for="">Ingrese su correo electrónico</label><br>
+                    <input type="email" class="input__email"><br>
+                    <label for="">Número telefónico</label><br>
+                    <input type="number" class="input__number"><br>
+                    <label for="">Fecha de Nacimiento</label><br>
+                    <input type="date" class="input__date"><br>
+                    <button type="button" class="button__Cla">Boton claro</button><br>
+                </div>
+            </div>
     </main>
     <!--Elementos del fin de la página-->
     <footer class="foot"></footer>
