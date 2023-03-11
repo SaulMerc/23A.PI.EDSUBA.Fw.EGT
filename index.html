@@ -6,12 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/styles/forms.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Primera parte del framework</title>
 </head>
 
+<!-- Iconos -->
+<!-- <span class="material-symbols-outlined">nombreIcono</span> -->
+
 <body>
     <!-- Elementos del encabezado-->
-    <header class="head">
+    <span class="material-symbols-outlined cPrim">browse_activity</span>
+    <header class="container">
         <div>
             <h1>EGT
                 <h2>
@@ -36,33 +42,87 @@
             </ul>
         </div>
     </header>
-    <main>
+    <main class="container">
 
-        <div class="card"><!--Presentación del framework-->
+        <div class="container"><!--Presentación del framework-->
 
         </div>
-        <div class="card"><!--Contenedores principales-->
+        <div class="container"><!--Contenedores principales-->
             <!--Contenedores y títulos-->
+            <div class="cardTiny">
+                <h2 class="txt__Neg">Tarjetas</h2>
+                <p class="txt__Ita">Presentamos varias opciones para poder tener contenedores </p>
+                <div class="cardTiny"></div>
+            </div>
+            <div class="cardTiny">
+                <h2 class="txt__Neg">Títulos</h2>
+                <p class="txt__Normal">Los títulos puedes manejarlos diferentes tamaños y variantes en el estilo de la letra</p>
+
+                <div class="cardTiny">
+                    <h1 class="txt__Normal">Ejemplo titulo con h1</h1>
+                    <h2 class="txt__Normal" >Ejemplo titulo con h2</h2>
+                    <h3 class="txt__Normal">Ejemplo titulo con h3</h3>
+                    <h4 class="txt__Normal">Ejemplo titulo con h4</h4>
+                    <h5 class="txt__Normal">Ejemplo titulo con h5</h5>
+                    <h6 class="txt__Normal">Ejemplo titulo con h6</h6>
+                </div>
+                <div class="cardTiny">
+                        
+                </div>
+                <p class="txt__Normal">Además, puedes agregarles estilos</p>
+                <div class="cardTiny">
+                    <h1 class="txt__Normal">Ejemplo titulo normal</h1>
+                    <h1 class="txt__Neg">Ejemplo titulo negritas</h1>
+                    <h1 class="txt__Ita">Ejemplo titulo italic</h1>
+                </div>
+            </div>
 
         </div>
-        <div class="card"><!--Imágenes y enlaces-->
+        <div class="container"><!--Imágenes y enlaces-->
+            <div class="cardTiny">
+                <div class="cardTiny">
+                    <div class="txt__Neg">Imágenes</div>
+                </div>
+                <div class="cardTiny">
+                    <div class="txt__Neg">Enlaces</div>
+                </div>
+            </div>
+        </div>
+        <div class="container"><!--Párrafos, listas y alertas-->
+            <div class="cardTiny">
+                <div class="cardTiny">
+                    <div class="txt__Neg">Párrafos</div>
+                </div>
+                <div class="cardTiny">
+                    <div class="txt__Neg">Listas</div>
+                </div>
+                <div class="cardTiny">
+                    <div class="txt__Neg">Alertas</div>
+                </div>
+            </div>
+        </div>
+        <div class="container"><!--Botones, switches y subida al cielo-->
+            <div class="cardTiny">
+                <div class="cardTiny">
+                    <div class="txt__Neg">Botones</div>
+                </div>
+                <div class="cardTiny">
+                    <div class="txt__Neg">Switches</div>
+                </div>
+                <div class="cardTiny">
+                    <div class="txt__Neg">Alertas</div>
+                </div>
+            </div>
+        </div>
+        <div class="container"><!--Carrusel de imágenes y labels-->
 
         </div>
-        <div class="card"><!--Párrafos, listas y alertas-->
-
-        </div>
-        <div class="card"><!--Botones, switches y subida al cielo-->
-
-        </div>
-        <div class="card"><!--Carrusel de imágenes y labels-->
-
-        </div>
-        <div class="card"> <!--Contenedores principales-->
-            <div class="card__form" id="forms"><!-- Elementos de formularios-->
-                <h2>Elementos de un formulario</h2>
+        <div class="container"> <!--Contenedores principales-->
+            <div class="cardTiny" id="forms"><!-- Elementos de formularios-->
+                <h2 class="txt__Normal">Elementos de un formulario</h2>
                 <!--Estilo para los formularios realizado por los Saul y Ulises-->
-                <div class="inputs">
-                    <label for="">Ejemplo de texto</label><br>
+                <div class="cardTiny">
+                    <label for="" class="txt__Normal">Ejemplo de texto</label><br>
                     <input type="text" class="input__text"><br>
                     <label for="">Ejemplo de un campo obligatorio<span class="obl">*</span></label><br>
                     <input type="text" class="input__text"><br>
@@ -73,11 +133,11 @@
                     <label for="">Ejemplo de date</label><br>
                     <input type="date" class="input__date"><br>
                 </div>
-                <div class="textarea">
+                <div class="cardTiny">
                     <label for="">Ejemplo de textarea</label><br>
                     <textarea></textarea>
                 </div>
-                <div class="combox">
+                <div class="cardTiny">
                     <label for="" class="cBase">Ejemplo de combox</label>
                     <select id="" class="combox__op">
                         <option value="" class="combox__empty">Elige una opcion</option>
@@ -93,13 +153,13 @@
                         </optgroup>
                     </select>
                 </div>
-                <div class="button">
+                <div class="cardTiny">
                     <button type="button" class="button__Osc">Boton normal</button><br>
                     <button type="button" class="button__Cla">Boton claro</button><br>
                     <button type="button" class="button__Opc">Boton opcional</button><br>
                 </div>
 
-                <div class="checkbx">
+                <div class="cardTiny">
                     <label for="">Ejemplo de checkbox multiselección</label><br>
                     <input type="checkbox" class="checkbx__prim">Seguido</input>
                     <input type="checkbox" class="checkbx__second">Puede ser</input>
@@ -107,35 +167,37 @@
                     <input type="checkbox" class="checkbx__ex">O no..</input>
                 </div>
 
-                <div class="checkbx">
+                <div class="cardTiny">
                     <br>
                     <label for="">Ejemplo de checkbox uniseleción</label><br>
-                    <input type="checkbox" class="checkbx__prim">Seguido</input>
-                    <input type="checkbox" class="checkbx__second">Puede ser</input>
-                    <input type="checkbox" class="checkbx__comp">Mañana</input>
-                    <input type="checkbox" class="checkbx__ex">O no..</input>
+                    <input type="checkbox" name="option" onclick="checkOnlyOne(this)" class="checkbx__prim">Seguido</input>
+                    <input type="checkbox" name="option" onclick="checkOnlyOne(this)" class="checkbx__second">Puede ser</input>
+                    <input type="checkbox" name="option" onclick="checkOnlyOne(this)" class="checkbx__comp">Mañana</input>
+                    <input type="checkbox" name="option" onclick="checkOnlyOne(this)" class="checkbx__ex">O no..</input>
                 </div>
-                <form action="" class="card__form">
+                <form action="" class="cardTiny__form">
                 </form>
-            </div class="card">
-                <div class="card__form">
-                    <h1>Ejemplo de formulario</h1>
-                    <label for="">Nombre completo</label><br>
-                    <input type="text" class="input__text"><br>
-                    <label for="">Domicilio<span class="obl">*</span></label><br>
-                    <input type="text" class="input__text"><br>
-                    <label for="">Ingrese su correo electrónico</label><br>
-                    <input type="email" class="input__email"><br>
-                    <label for="">Número telefónico</label><br>
-                    <input type="number" class="input__number"><br>
-                    <label for="">Fecha de Nacimiento</label><br>
-                    <input type="date" class="input__date"><br>
-                    <button type="button" class="button__Cla">Boton claro</button><br>
-                </div>
             </div>
+            <div class="cardTiny">
+                <h1>Ejemplo de formulario</h1>
+                <label for="">Nombre completo</label><br>
+                <input type="text" class="input__text"><br>
+                <label for="">Domicilio<span class="obl">*</span></label><br>
+                <input type="text" class="input__text"><br>
+                <label for="">Ingrese su correo electrónico</label><br>
+                <input type="email" class="input__email"><br>
+                <label for="">Número telefónico</label><br>
+                <input type="number" class="input__number"><br>
+                <label for="">Fecha de Nacimiento</label><br>
+                <input type="date" class="input__date"><br>
+                <button type="button" class="button__Cla">Boton claro</button><br>
+            </div>
+        </div>
     </main>
     <!--Elementos del fin de la página-->
-    <footer class="foot"></footer>
+    <footer class="container"></footer>
+    <button id="dark-mode-toggle">Moon</button>
+    <script src="assets/scripts/script.js"></script>
 </body>
 
 </html>

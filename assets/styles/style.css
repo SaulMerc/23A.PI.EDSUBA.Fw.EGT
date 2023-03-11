@@ -1,1 +1,103 @@
 @import url(forms.css);
+@import url(fonts&col.css);
+
+/* Colores */
+/*color Primario */
+.cPrim {
+    color: var(--primary);
+}
+
+/*Secundario */
+.cSec {
+    color: var(--secundary);
+}
+
+/*color Base*/
+.cBase {
+    color: var(--base);
+}
+
+.cComp {
+    color: var(--complement);
+}
+
+.cExt {
+    color: var(--extra);
+}
+
+.cBlack {
+    color: var(--black);
+}
+
+.cWhite {
+    color: var(--white);
+}
+
+body{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+body.dark-mode{
+    background-color: #222;
+    color: #fff;
+}
+
+/* Textos genéricos */
+/* Texto normal */
+.txt__Normal {
+    font-family: titulos;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+
+/* Texto en negrita*/
+.txt__Neg {
+    font-family: negrita;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Texto en cursiva */
+.txt__Ita {
+    font-family: cursiva;
+    margin-bottom: 15px;
+}
+
+.container {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 0 13px;
+}
+
+.cardTiny{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 10px;
+
+}
+
+.cardMed{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 10px;
+
+
+}
+
+.cardLarge{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* #icon{
+    color: darkblue;
+} */

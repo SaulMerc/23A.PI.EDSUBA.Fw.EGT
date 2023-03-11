@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: 0;
-    font-family: texto;
 }
 
 form {
@@ -18,25 +17,7 @@ label {
     color: black;
 }
 
-/* label con color Primario */
-.cPrim {
-    color: var(--primary);
-    font-size: var(--fsSt);
-}
-
-/* label con color Secundario */
-.cSec {
-    color: var(--secundary);
-    font-size: var(--fsSt);
-}
-
-/* label con color Base*/
-.cBase {
-    color: var(--base);
-    font-size: var(--fsSt);
-}
-
-.label__normal {
+/* .label__normal {
     font-family: subtitulo;
 }
 
@@ -46,7 +27,7 @@ label {
 
 .label__obl {
     font-family: subtitulo;
-}
+} */
 
 /* Inputs */
 input {
