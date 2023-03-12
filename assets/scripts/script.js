@@ -1,14 +1,7 @@
-(function () {
-
-
-
-})();
-
-const darkModeToggle = document.querySelector('#dark-mode-toggle');
-const body = document.querySelector('body');
+const darkModeToggle = document.querySelector('#dark__ModeToggle');
 
 darkModeToggle.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
+    document.body.classList.toggle('dark__Mode');
 });
 
 function checkOnlyOne(checkbox) {

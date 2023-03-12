@@ -38,11 +38,19 @@ body{
     color: var(--black);
 }
 
-body.dark-mode{
-    background-color: #222;
-    color: #fff;
+body.dark__Mode{
+    color: var(--white);
+    background: var(--black);
 }
 
+body.dark__Mode  .card {
+    background: #222222;
+    color: var(--white);
+    box-shadow: 0px 0px 10px rgba(194, 194, 194, 0.082);
+}
+body.dark__Mode  label{
+    color: var(--white);
+}
 /* Textos genéricos */
 /* Texto normal */
 .txt__Normal {
@@ -70,7 +78,7 @@ body.dark-mode{
     padding: 0 13px;
 }
 
-.cardTiny{
+.card{
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
