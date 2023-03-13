@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/styles/forms.css">
     <link rel="stylesheet" href="assets/styles/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Primera parte del framework</title>
 </head>
 
@@ -16,30 +17,33 @@
 
 <body>
     <!-- Elementos del encabezado-->
-    <span class="material-symbols-outlined cPrim">browse_activity</span>
-    <header class="container">
-        <div>
-            <h1>EGT
+    <header class="container primary__header">
+        <div class="navbar">
+            <div>
+                <h1>EGT
+                    <h2>
+                        < />
+                    </h2>
+                </h1>
                 <h2>
-                    < />
+                    El framework que necesitas
                 </h2>
-            </h1>
-            <h2>
-                El framework que necesitas
-            </h2>
-        </div>
-        <div>
-            <ul>
-                <li><a href="">Presentación</a></li>
-                <li><a href="">Contenedores</a></li>
-                <li><a href="">Imágenes y Enlaces</a></li>
-                <li><a href="">Párrafos, Listas y Alertas</a></li>
-                <li><a href="">Botones</a></li>
-                <li><a href="">Íconos</a></li>
-                <li><a href="">Carrusel y Labels</a></li>
-                <li><a href="#forms">Formularios</a></li>
+            </div>
+            <div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">Presentación</a></li>
+                        <li><a href="#">Contenedores</a></li>
+                        <li><a href="#">Imágenes y Enlaces</a></li>
+                        <li><a href="#">Párrafos, Listas y Alertas</a></li>
+                        <li><a href="#">Botones</a></li>
+                        <li><a href="#">Íconos</a></li>
+                        <li><a href="#">Carrusel y Labels</a></li>
+                        <li><a href="#forms">Formularios</a></li>
 
-            </ul>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main class="container">
@@ -52,22 +56,43 @@
             <div class="card">
                 <h2 class="txt__Neg">Tarjetas</h2>
                 <p class="txt__Ita">Presentamos varias opciones para poder tener contenedores </p>
-                <div class="card"></div>
+                <h4 class="txt__Neg">Tarjetas</h4>
+                <div class="displ__flx">
+                    <div class="card__Large grid__shop bcExt cSec">
+                        <h1 class="txt__Neg grid__title">Venta de Producto ###</h1>
+                        <h3 class="txt__Ita grid__author">Autor: Cervantes rewrewwrwerewsdfsdfdsfdsfdsfdsf</h3>
+                        <p class="txt__Normal grid__price">Precio: $$ asdasdasdasdasdas</p>
+                    </div>
+                    <div class="card__Med grid__shop bcCom cPrim">
+                        <h1 class="txt__Neg grid__title">Venta de Producto ###</h1>
+                        <h3 class="txt__Ita grid__author">Autor: Cervantes rewrewwrwerewsdfsdfdsfdsfdsfdsf</h3>
+                        <p class="txt__Normal grid__price">Precio: $$ asdasdasdasdasdas</p>
+                    </div>
+                    <div class="card__Small grid__shop bcSec cBase">
+                        <h1 class="txt__Neg grid__title">Venta de Producto ###</h1>
+                        <h3 class="txt__Ita grid__author">Autor: Cervantes rewrewwrwerewsdfsdfdsfdsfdsfdsf</h3>
+                        <p class="txt__Normal grid__price">Precio: $$ asdasdasdasdasdas</p>
+                    </div>
+                    <div class="card__Tiny bcPrim cWhite">
+                        <p class="txt__Normal">Esta última tarjeta sirve para insertar notas o datos cortos</p>
+                    </div>
+                </div>
             </div>
             <div class="card">
                 <h2 class="txt__Neg">Títulos</h2>
-                <p class="txt__Normal">Los títulos puedes manejarlos diferentes tamaños y variantes en el estilo de la letra</p>
+                <p class="txt__Normal">Los títulos puedes manejarlos diferentes tamaños y variantes en el estilo de la
+                    letra</p>
 
                 <div class="card">
                     <h1 class="txt__Normal">Ejemplo titulo con h1</h1>
-                    <h2 class="txt__Normal" >Ejemplo titulo con h2</h2>
+                    <h2 class="txt__Normal">Ejemplo titulo con h2</h2>
                     <h3 class="txt__Normal">Ejemplo titulo con h3</h3>
                     <h4 class="txt__Normal">Ejemplo titulo con h4</h4>
                     <h5 class="txt__Normal">Ejemplo titulo con h5</h5>
                     <h6 class="txt__Normal">Ejemplo titulo con h6</h6>
                 </div>
                 <div class="card">
-                        
+
                 </div>
                 <p class="txt__Normal">Además, puedes agregarles estilos</p>
                 <div class="card">
@@ -123,15 +148,16 @@
                 <!--Estilo para los formularios realizado por los Saul y Ulises-->
                 <div class="card">
                     <label for="" class="txt__Normal">Ejemplo de texto</label><br>
-                    <input type="text" class="input__text"><br>
-                    <label for="">Ejemplo de un campo obligatorio<span class="obl">*</span></label><br>
-                    <input type="text" class="input__text"><br>
-                    <label for="">Ejemplo de correo</label><br>
-                    <input type="email" class="input__email"><br>
-                    <label for="">Ejemplo de número</label><br>
-                    <input type="number" class="input__number"><br>
-                    <label for="">Ejemplo de date</label><br>
-                    <input type="date" class="input__date"><br>
+                    <input type="text" class="input__text" required><br>
+                    <label for="" class="txt__Normal">Ejemplo de un campo obligatorio<span
+                            class="obl cRed">*</span></label><br>
+                    <input type="text" class="input__text" required><br>
+                    <label for="" class="txt__Normal">Ejemplo de correo</label><br>
+                    <input type="email" class="input__email" required><br>
+                    <label for="" class="txt__Normal">Ejemplo de número</label><br>
+                    <input type="number" class="input__number" required><br>
+                    <label for="" class="txt__Normal">Ejemplo de date</label><br>
+                    <input type="date" class="input__date txt__Normal" required><br>
                 </div>
                 <div class="card">
                     <label for="">Ejemplo de textarea</label><br>
@@ -169,35 +195,38 @@
 
                 <div class="card">
                     <br>
-                    <label for="">Ejemplo de checkbox uniseleción</label><br>
+                    <label for="">Ejemplo de radio</label><br>
                     <input type="radio" name="option" onclick="checkOnlyOne(this)" class="checkbx__prim">Seguido</input>
-                    <input type="radio" name="option" onclick="checkOnlyOne(this)" class="checkbx__second">Puede ser</input>
+                    <input type="radio" name="option" onclick="checkOnlyOne(this)" class="checkbx__second">Puede
+                    ser</input>
                     <input type="radio" name="option" onclick="checkOnlyOne(this)" class="checkbx__comp">Mañana</input>
                     <input type="radio" name="option" onclick="checkOnlyOne(this)" class="checkbx__ex">O no..</input>
                 </div>
-                <form action="" class="card__form">
-                </form>
+
             </div>
             <div class="card">
-                <h1>Ejemplo de formulario</h1>
-                <label for="">Nombre completo</label><br>
-                <input type="text" class="input__text"><br>
-                <label for="">Domicilio<span class="obl">*</span></label><br>
-                <input type="text" class="input__text"><br>
-                <label for="">Ingrese su correo electrónico</label><br>
-                <input type="email" class="input__email"><br>
-                <label for="">Número telefónico</label><br>
-                <input type="number" class="input__number"><br>
-                <label for="">Fecha de Nacimiento</label><br>
-                <input type="date" class="input__date"><br>
-                <button type="button" class="button__Cla">Boton claro</button><br>
+                <form action="" id="form" class="card__form">
+                    <h1>Ejemplo de formulario</h1>
+                    <label for="" class="txt__Normal">Nombre completo</label><br>
+                    <input type="text" id="nombre" name="nombre" class="txt__Normal"><br>
+                    <label for="" class="txt__Normal">Domicilio<span class="obl cRed">*</span></label><br>
+                    <input type="text" id="Domicilio" name="Domicilio" class="txt__Normal"><br>
+                    <label for="" class="txt__Normal">Ingrese su correo electrónico</label><br>
+                    <input type="email" id="email" name="email" class="txt__Ita"><br>
+                    <label for="" class="txt__Normal">Número telefónico</label><br>
+                    <input type="number" id="telefono" name="telefono class=" txt__Normal"><br>
+                    <label for="" class="txt__Normal">Fecha de Nacimiento</label><br>
+                    <input type="date" class="txt__Normal"><br>
+                    <button type="submit" class="button__Cla txt__Neg">Enviar</button><br>
+                </form>
             </div>
         </div>
     </main>
     <!--Elementos del fin de la página-->
     <footer class="container"></footer>
-    <button id="dark__ModeToggle">Moon</button>
+    <button id="dark__ModeToggle"><span class="material-symbols-outlined">mode_night</span></button>
     <script src="assets/scripts/script.js"></script>
+    <script src="assets/scripts/jquery-3.6.3.js"></script>
 </body>
 
 </html>
