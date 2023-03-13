@@ -13,21 +13,53 @@ form {
 }
 
 /*Labels*/
-label {
-    color: black;
-}
+.label__normal{
+    display: inline-block;
+    padding: 1px 1px;
+    border-bottom: 2px solid var(--primary);
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border-radius: 4px;
 
-/* .label__normal {
-    font-family: subtitulo;
+    color: var(--labelsOscuro);
 }
 
 .label__italic {
+    display: inline-block;
+    padding: 1px 1px;
+    border-bottom: 2px solid var(--primary);
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border-radius: 4px;
+
+    color: var(--labelsOscuro);
+
     font-family: cursiva;
 }
 
 .label__obl {
+    display: inline-block;
+    padding: 1px 1px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border-radius: 4px;
+
+    color: var(--complement);
     font-family: subtitulo;
-} */
+   
+} 
+
+.label__claro{
+    display: inline-block;
+    padding: 1px 2px;
+    border-bottom: 2px solid var(--primary);
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border-radius: 4px;
+
+    color: var(--extra);
+}
+
 
 /* Inputs */
 input {
