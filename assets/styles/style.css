@@ -216,30 +216,39 @@ body.dark__Mode form {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
+    grid-template-areas: "head head head"
+                        "autor image image"
+                        "autor image image"
+                        "precio venta cart";
 }
-.grid__image{
-    grid-row: 1;
-    grid-column: span 3;
+.img__cards{
+    display: flex;
+    background-image: url("../images/Captura de pantalla_20230204_120059.png");
+    border: solid 4px  white;
+    border-radius: 4px;
+    width: 300px;
+    height: 200px;
+    grid-area: image;
 }
 .grid__title{
-    grid-row: 2;
-    grid-column: span 3;
+    grid-area: head;
 }
 .grid__author{
-    grid-row: 3;
-    grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 200px;
+    
+    grid-area: autor;
 }
 .grid__price{
-    grid-row: 4;
-    grid-column: 1;
+    grid-area: precio;
 }
 .grid__sale{
-    grid-row: 4;
-    grid-column: 2;
+    grid-area: venta;
 }
 .grid__cart{
-    grid-row: 4;
-    grid-column: 3;
+    grid-area: cart;
 }
 /* #icon{
     color: darkblue;
