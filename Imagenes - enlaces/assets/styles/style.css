@@ -1,0 +1,89 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+    --grisClaro: #dfe9f3;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+    /* 1rem = 10px */
+    font-size: 62.5%;
+  }
+
+body {
+  font-size: 1.6rem;
+  font-family: "Krub", sans-serif;
+}
+
+.titulos{
+font-size: 3rem;
+display: grid;
+justify-content: center;
+  justify-items: center;
+}
+
+div.imagenes{
+  display: grid;
+justify-content: center;
+  justify-items: center;
+  border-radius: 10px;
+}
+
+@media (min-width:768px){
+  .dos-columnas{
+      display: grid;
+      grid-template-columns: repeat(2, 48%);
+      column-gap: 2rem;
+  }
+}
+
+/* enlaces */
+
+
+p {
+  line-height: 1.4;
+}
+
+.mark__blue {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+.mark__blue:hover {
+  border-bottom: 1px solid;
+background-color: blue;
+}
+
+.mark__red {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+.mark__red:hover {
+  border-bottom: 1px solid;
+background-color: red;
+}
+
+.mark__green {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+.mark-green:hover {
+  border-bottom: 1px solid;
+background-color: green;
+}
+
+
+
+
+
