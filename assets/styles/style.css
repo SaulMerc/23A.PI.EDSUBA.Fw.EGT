@@ -250,6 +250,127 @@ body.dark__Mode form {
 .grid__cart{
     grid-area: cart;
 }
+/*Listas*/
+.list{
+    list-style: url("../images/list_img.svg") inside;
+}
+.list_Item{
+   font-size: var(--fsTxt);
+   position: relative;  
+}
+.list_Item::before{
+    content: "";
+    position: absolute;
+    left: -25%;
+    width: 10px;
+    height: 250%;
+    background-size: 250%;
+    background-position: center;
+}
+
+/*Alertas y modal*/
+.modal{
+    top: 0;
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255,0.4);
+    align-items: center;
+    justify-content: center;
+} 
+button#modalBtn{
+    background-color: var(--base);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: var(--fsTxt);
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px black;
+}
+.modal_Content{
+    background-color: var(--primary);
+    color: #fff;
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 1em 1em #0b0c0e4d;
+    border-radius: 1em;
+}
+.modal_Content::before{
+    background-color: #f656567a;
+    border-radius: 50%;
+    content: '';
+    filter: blur(60px);
+    opacity: .15;
+    position: absolute;
+    top: -8px;
+    right: -15em;
+    width: 25em;
+    height: 25em;
+    z-index: 0;
+    transition: background-color .3s;
+}
+.icon_Close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #222;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 20px;
+
+}
+.icon_Close:hover{
+    color: #c7cac7;
+}
+.modal_Body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+}
+.icon_Warning{
+    font-size: 50px;
+    color: var(--complement);
+}
+button#modal_okBtn{
+    background-color: var(--extra);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: var(--fsTxt);
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px var(--base);
+    padding: 8px 15px;
+    background-color: transparent;
+    border: 1px solid var(--complement);
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+button#modal_okBtn:hover{
+    background: #8f95a333;
+
+}
+.active{
+    display: flex;
+}
+
 /* #icon{
     color: darkblue;
 } */
