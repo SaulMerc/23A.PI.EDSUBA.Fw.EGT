@@ -4,6 +4,7 @@
     max-width: 120rem;
     margin-inline: auto;
     padding-inline: 1.5rem;
+    height: 100%;
 }
 
 .card {
@@ -20,7 +21,11 @@
     padding: 20px;
     margin-bottom: 10px;
     width: 40%;
-    height: 50vh;
+    min-width: 680px;
+    max-width: 700px;
+    height: 50%;
+    min-height: 47vh;
+    font-size: 95%;
     word-break: break-all;
 }
 
@@ -30,7 +35,10 @@
     padding: 20px;
     margin-bottom: 10px;
     width: 30%;
-    height: 45vh;
+    min-width: 520px;
+    max-width: 600px;
+    height: 45%;
+    min-height: 42vh;
     font-size: 80%;
     word-break: break-all;
 }
@@ -41,8 +49,11 @@
     padding: 20px;
     margin-bottom: 10px;
     width: 20%;
-    height: 30vh;
-    font-size: 70%;
+    min-width: 360px;
+    max-width: 400px;
+    height: 30%;
+    min-height: 30vh;
+    font-size: 60%;
     word-break: break-all;
 }
 
@@ -52,7 +63,11 @@
     padding: 20px;
     margin-bottom: 10px;
     width: 15%;
-    height: 20vh;
+    min-width: 200px;
+    max-width: 250px;
+    height: 20%;
+    min-height: 20vh;
+    max-height: 30vh;
     word-break: break-all;
 }
 
