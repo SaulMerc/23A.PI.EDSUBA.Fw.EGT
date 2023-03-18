@@ -1,17 +1,17 @@
 @font-face {
-    font-family: titulos;
+    font-family: title;
     src: url(../fonts/OfficinaSansMediumITC-Regular.ttf);
 }
 @font-face {
-    font-family: cursiva;
+    font-family: ita;
     src: url(../fonts/OfficinaSansBookITC-Italic.ttf);
 }
 @font-face {
-    font-family: negrita;
+    font-family: bol;
     src: url(../fonts/OfficinaSansBookITC-Regular.ttf);
 }
 @font-face {
-    font-family: Texto;
+    font-family: txt;
     src: url(../fonts/Louis\ George\ Cafe.ttf);
 }
 :root{
@@ -27,4 +27,81 @@
     --fsTitles: 16pt;
     --fsSt: 14pt;
     --fsTxt: 12pt;
+}
+
+/* Textos genéricos */
+/* Texto titulos */
+.txt__Title{
+    font-family: title;
+    margin-bottom: 5px;
+}
+/* Texto normal */
+.txt__Normal {
+    font-family: txt;
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
+
+/* Texto en negrita*/
+.txt__Neg {
+    font-family: bol;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Texto en cursiva */
+.txt__Ita {
+    font-family: ita;
+    margin-bottom: 5px;
+}
+/* Colores y fondos */
+/*color Primario */
+.cPrim {
+    color: var(--primary);
+}
+
+/*Secundario */
+.cSec {
+    color: var(--secundary);
+}
+
+/*color Base*/
+.cBase {
+    color: var(--base);
+}
+/* color complementario */
+.cComp {
+    color: var(--complement);
+}
+/* color extra */
+.cExt {
+    color: var(--extra);
+}
+/* Color negro */
+.cBlack {
+    color: var(--black);
+}
+/* Color blanco */
+.cWhite {
+    color: var(--white);
+}
+/* Color rojo */
+.cRed {
+    color: red;
+}
+/* Fondo color primario */
+.bcPrim{
+    background: var(--primary);
+}
+/* Fondo color secundario */
+.bcSec{
+    background: var(--secundary);
+}
+/* Fondo color complementario */
+.bcCom{
+    background: var(--complement);
+}
+/* Fondo color extra */
+.bcExt{
+    background: var(--extra);
 }
