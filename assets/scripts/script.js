@@ -70,8 +70,7 @@ window.addEventListener('click', event => {
     }
 })
 
-(function () {
-});
+
 
 ///////////////////////////////////////////////CARRUSELLLLLL/////////////////////////
 const siguienteImg = document.querySelector(".btn__siguienteimg");
