@@ -110,7 +110,14 @@
     align-items: flex-start;
     padding: 0;
 }
-
+.displ__flxmod{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+}
+/* Grid para  */
 .grid__shop {
     display: grid;
     grid-template-columns: repeat(5, 1fr);

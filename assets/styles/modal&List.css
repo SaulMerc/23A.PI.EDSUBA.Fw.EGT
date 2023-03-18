@@ -17,6 +17,7 @@
 }
 
 /*Alertas y modal*/
+
 .modal{
     top: 0;
     display: none;
@@ -85,3 +86,4 @@
     border: none;
     font-size: 40px;
 }
+

@@ -72,7 +72,7 @@ window.addEventListener('click', event => {
 
 
 
-///////////////////////////////////////////////CARRUSELLLLLL/////////////////////////
+///////////////////////////////////////////////CARRUSELLLLLL////////////////////////////
 const siguienteImg = document.querySelector(".btn__siguienteimg");
 const anteriorImg = document.querySelector(".btn__anteriorimg");
 const elementosCarrusel = document.querySelectorAll(".container__elementocarrusel");
