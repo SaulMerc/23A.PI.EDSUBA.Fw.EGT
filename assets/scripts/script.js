@@ -50,3 +50,52 @@ miFormulario.addEventListener('submit', function (event) {
 
 (function () {
 });
+
+///////////////////////////////////////////////CARRUSELLLLLL/////////////////////////
+const siguienteImg = document.querySelector(".btn__siguienteimg");
+const anteriorImg = document.querySelector(".btn__anteriorimg");
+const elementosCarrusel = document.querySelectorAll(".container__elementocarrusel");
+
+
+elementosCarrusel.forEach((imagen, indx) => {
+  imagen.style.transform = `translateX(${indx * 100}%)`;
+});
+
+
+let imgActual = 0;
+
+
+let imgMax = elementosCarrusel.length - 1;
+/**
+ * Accion para cambiar de imagen a la siguiente
+ * y ponerle la animacion de transicion
+ */
+siguienteImg.addEventListener("click", function () {
+  if (imgActual === imgMax) {
+    imgActual = 0;
+  } else {
+    imgActual++;
+  }
+
+  
+  elementosCarrusel.forEach((imagen, indx) => {
+    imagen.style.transform = `translateX(${100 * (indx - imgActual)}%)`;
+  });
+});
+/**
+ * Funcion para poner la imagen anterior y ponerle la animacion
+ */
+anteriorImg.addEventListener("click", function () {
+    console.log("Hiciste click en el botón de anterior");
+  if (imgActual === 0) {
+    imgActual = imgMax;
+  } else {
+    imgActual--;
+  }
+  
+
+  
+  elementosCarrusel.forEach((imagen, indx) => {
+    imagen.style.transform = `translateX(${100 * (indx - imgActual)}%)`;
+  });
+});

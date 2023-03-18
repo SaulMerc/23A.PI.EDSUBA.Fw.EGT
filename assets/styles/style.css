@@ -253,3 +253,67 @@ body.dark__Mode form {
 /* #icon{
     color: darkblue;
 } */
+
+/*Carrusel*/
+.carrusel {
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;  
+    border-radius: 15px;
+    
+  }
+  
+  .container__elementocarrusel {
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+    position: absolute;
+    transition: all 0.5s;
+  }
+  
+  .container__elementocarrusel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .btn__carrusel {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 10px;
+    cursor: pointer;
+    background-color: #E4F2E7;
+    font-size: 18px;
+  }
+  
+  .btn:active {
+    transform: scale(1.1);
+  }
+  
+  .btn__anteriorimg {
+    display: flex;
+    top: 45%;
+    left: 2%;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+  }
+  
+  .btn__siguienteimg {
+    display: flex;
+    top: 45%;
+    right: 2%;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+  }
+  
+  .btn__anteriorimg:hover, .btn__siguienteimg:hover{
+    box-shadow: #387373 0 0 10px;
+  }
