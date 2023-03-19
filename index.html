@@ -132,9 +132,119 @@
             <div class="card">
                 <div class="card">
                     <div class="txt__Neg">Imágenes</div>
+                    <div class="dos-columnas">
+
+                        <div class="card">
+                            <p class="txt__Title">Imagen responsiva</p>
+                            <p class="txt__Neg">width 50%</p>
+                            <img src="assets/images/egtb.png" alt="imagen" class="img-responsive img-width-50">
+                            <p class="txt__Neg">width 75%</p>
+                            <img src="assets/images/egtb.png" alt="imagen" class="img-responsive img-width-75">
+                        </div>
+
+
+                        <div class="card">
+                            <p class="txt__Title">Agregar imagen.</p>
+                            <h2 class="txt__Neg">Imagen responsiva</h2>
+                            <p class="txt__Normal">Para que una imagen sea responsiva se le debe asignar la clase
+                                “img-responsive”, con esta
+                                clase la imagen
+                                se adaptara según la resolución actual.
+                                <br>Ejemplo:<br>
+
+                                <code
+                                    class="txt__Normal">&ltimg src="Ruta imagen" alt="imagen" class="img-responsive"&gt</code>
+
+
+                            </p>
+
+                            <p class="txt__Normal">Si quieres establecer un tamaño para la imagen responsiva se le debe
+                                agregar la clase
+                                img-width-x donde
+                                la x es un valor del 1 al 100.
+                                <br>Ejemplo:<br>
+                                <code
+                                    class="txt__Normal">&ltimg src="Ruta imagen" alt="imagen" class="img-responsive img-width-50"&gt</code>
+                            </p>
+                        </div>
+
+                    </div>
                 </div>
                 <div class="card">
                     <div class="txt__Neg">Enlaces</div>
+                    <div class="dos-columnas">
+
+                        <div class="card enlaces">
+
+                            <p class="txt__Title">Enlace marcado</p>
+
+                            <div class="link">
+
+                                <p><a class="mark__green" href="#">enlace marcado</a><a class="mark__purple"
+                                        href="#">enlace
+                                        marcado</a></p>
+                                <p><a class="mark__orange" href="#">enlace marcado</a><a class="mark__blue"
+                                        href="#">enlace
+                                        marcado</a></p>
+                                <p><a class="mark__yellow" href="#">enlace marcado</a><a class="mark__pink"
+                                        href="#">enlace marcado</a>
+                                </p>
+                            </div>
+
+                            <p class="txt__Title">Enlace boton.</p>
+                            <div class="link txt__Normal">
+                                <p><a class="link__button__green" href="#">enlace boton</a><a
+                                        class="link__button__orange" href="#">enlace boton</a><a
+                                        class="link__button__blue" href="#">enlace boton</a></p>
+                                <p><a class="link__button__pink" href="#">enlace boton</a><a
+                                        class="link__button__violet" href="#">enlace boton</a><a
+                                        class="link__button__yellow" href="#">enlace boton</a></p>
+                            </div>
+
+
+                            <p class="">Enlace imagen</p>
+                            <a href="https://www.google.com/?hl=es">
+                                <img src="assets/images/IMG_ajedrez.jpg" alt="Descripción de la imagen"
+                                    class="image__link img-responsive img-width-60">
+                            </a>
+
+                        </div>
+                        <div class="card">
+                            <p class="txt__Title">Agregar enlace.</p>
+                            <h2 class="txt__Title">Enlace marcado</h2>
+                            <p class="txt__Normal">Para agregar un enlace con estilo marcado, se necesita utilizar la
+                                clase mark__green en
+                                una etiqueta &lta&gt.
+                                <br>Ejemplo:<br>
+
+                                <code>&ltp>&lta class="mark__green" href="#"&gttexto </a>&lt/p&gt</code><br>
+                                Las clases disponibles son:
+                                mark__green, mark__orange, mark__blue, mark__pink,
+                                mark__purple, mark__yellow, mark__red y mark__gray,
+                                cada una con un color específico.
+                            </p>
+                            <h2 class="txt__Title">Enlace boton</h2>
+                            <p class="txt__Normal">Para agregar un enlace con estilo de botón, se necesita utilizar la
+                                clase
+                                link__button__green en una etiqueta &lta&gt.
+                                <br>Ejemplo:<br>
+                                <code>&ltp&lta class="link__button__green" href="#">texto &lt/a&gt&lt/p&gt</code><br>
+                                Las clases disponibles son:
+                                link__button__green, link__button__orange, link__button__blue, link__button__pink,
+                                link__button__violet, link__button__yellow, link__button__red y link__button__gray,
+                                cada uno con un color específico.
+                            </p>
+                            <h2 class="txt__Title">Enlace imagen</h2>
+                            <p class="txt__Normal">Para agregar un enlace en una imagen, se necesita utilizar la clase
+                                image__link en una
+                                etiqueta &ltimg&gt que esta adentro de una etiqueta &lta&gt.
+                                <br>Ejemplo:<br>
+                                <code> &lta href="#"&gt
+                                    &ltimg src = "ruta imagen" alt = "descripción de la imagen" class = "image__link" &gt &lt/a&gt
+                            </code>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -221,6 +331,21 @@
 
         <div class="container"><!-- Barras de navegación -->
             <div class="txt__Neg">Barras de navegación</div>
+            <p>Ejemplos de barras de navegación con animación y ocultables</p>
+                <div>
+                    <nav id="custom">
+                        <a href="">Home</a>
+                        <a href="">About</a>
+                        <a href="">Blog</a>
+                        <a href="">Herramientas</a>
+                        <a href="">Contacto</a>
+                        <div class="animation start-home"></div>
+                    </nav>
+                </div>
+
+                <br>
+            <hr><br>
+
             <div>
                 <nav id="menuX">
                     <ul>
@@ -324,6 +449,41 @@
                     <label for="" class="label__normal">Ejemplo de date</label><br>
                     <input type="date" class="input__date txt__Normal" required><br>
                 </div>
+
+                <div class="card">
+                    <form class="form">
+                        <div class="checkout-method">
+                            <button type="button" class="btnForm">
+                                <i><span class="material-symbols-outlined">credit_card</span></i>
+                            </button>                            
+                            <button type="button" class="btnForm btn-inactive">
+                                <i><span class="material-symbols-outlined">payments</span></i>
+                            </button>
+                        </div>
+                    <div class="checkout-information">
+                        <div class="input-group">
+                            <label for="name">Nombre en tarjeta</label>
+                            <input type="text" id="name" placeholder="Ingresa el nombre" />
+                        </div>
+                        <div class="input-group">
+                            <label for="number">Número de tarjeta</label>
+                            <input type="text" id="number" placeholder="..." />
+                        </div>
+                        <div class="horizontal-grid">
+                            <div class="input-group">
+                                <label for="date">Fecha de expiración</label>
+                                <input type="text" id="date" placeholder="3/23" />
+                            </div>
+                            <div class="input-group">
+                                <label for="cvv">CVV</label>
+                                <input type="number" id="cvv" placeholder="CVV" />
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btnForm btn-checkout">Checkout</button>
+                    </form>
+                </div>
+
                 <div class="card">
                     <label for="">Ejemplo de textarea</label><br>
                     <textarea></textarea>
@@ -366,6 +526,14 @@
                     ser</input>
                     <input type="radio" name="option" onclick="checkOnlyOne(this)" class="checkbx__comp">Mañana</input>
                     <input type="radio" name="option" onclick="checkOnlyOne(this)" class="checkbx__ex">O no..</input>
+                </div>
+
+                <div class="card txt__Normal">
+                    <br>
+                    <label for="">Ejemplo de radio customizado</label><br>
+                    <input id="cust" type="radio" name="contact" value="radio1" checked>
+                    <input id="cust" type="radio" name="contact" value="radio2">
+                    <input id="cust" type="radio" name="contact" value="radio3">
                 </div>
 
             </div>

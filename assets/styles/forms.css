@@ -8,12 +8,11 @@
 
 form {
     font-family: texto;
-    
     text-align: left;
 }
 
 /*Labels*/
-.label__normal{
+.label__normal {
     display: inline-block;
     padding: 1px 1px;
     border-bottom: 2px solid var(--primary);
@@ -47,10 +46,10 @@ form {
 
     color: var(--complement);
     font-family: ita;
-   
-} 
 
-.label__claro{
+}
+
+.label__claro {
     display: inline-block;
     padding: 1px 2px;
     border-bottom: 2px solid var(--primary);
@@ -69,6 +68,29 @@ input {
     border-radius: 3px;
     padding: 3px;
     font-size: var(--fsTxt);
+}
+
+input#cust{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 2.5vw;
+    height: 2.5vw;
+    box-shadow: 0px 0px 5px #AAC5C6;
+    border: 0.2vw solid rgba(2, 228, 231, 0.8);
+    background-color: #344056;
+    transition: 0.2s all linear;
+    margin-right: 10px;
+    position: relative;
+    top: 4px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+input#cust:checked{
+    border: 0.7vw solid #344056;
+    background-color: rgba(2, 228, 231, 0.8);
 }
 
 /* textareas */
@@ -106,14 +128,96 @@ select {
     background-color: #f8f8f8;
     background-repeat: no-repeat;
     background-position: right 10px center;
-  }
-  
-  select:focus {
+}
+
+select:focus {
     border-color: var(--complement);
     outline: none;
-  }
+}
 
-  select option:checked {
+select option:checked {
     background-color: var(--base);
     color: #fff;
-  }
+}
+
+/* Formulario de tarjeta */
+.form{
+    max-width: 350px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px;
+}
+
+.checkout-method{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.btnForm{
+    background-color: #242424;
+    color: #fff;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.btnForm:is(:hover, :focus){
+    background-color: #353535;
+    color: #fff;
+}
+
+.btnForm i{
+    font-size: 24px;
+}
+
+.btn-inactive{
+    background-color: #f2f2f2;
+    color: #242424;
+}
+
+.checkout-information, .input-group{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group{
+    gap: 5px;
+}
+
+.input-group label{
+    font-size: 14px;
+    color: #242424;
+    font-weight: bold;
+}
+
+.input-group input{
+    width: 100%;
+    padding: 5px 15px;
+    border-radius:  8px;
+    background-color: #f2f2f2;
+}
+
+.input-group input:focus{
+    outline: 2px solid #242424;
+    background-color: transparent;
+}
+
+.horizontal-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+}
+
+.btn-checkout{
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 15px 0;
+}

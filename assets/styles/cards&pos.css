@@ -252,13 +252,39 @@
                         "main main main"
                         "footer footer footer";
 }
-.grid__bodyH3{
+.grid__BodyH3{
     grid-area: head;
 }
 .grid__BodyM3{
     grid-area: main;
 }
 .grid__BodyF3{
+    grid-area: footer;
+    text-align: center;
+}
+/* Extra */
+.grid__bodyB4{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "head txt txt"
+                        "main main main"
+                        "main main main"
+                        "footer footer footer";
+}
+.grid__BodyH4{
+    grid-area: head;
+    align-content: center;
+    text-align: center;
+}
+.grid__BodyTxt{
+    grid-area: txt;
+    text-align: left;
+}
+.grid__BodyM4{
+    grid-area: main;
+}
+.grid__BodyF4{
     grid-area: footer;
     text-align: center;
 }
