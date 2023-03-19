@@ -6,9 +6,8 @@
 }
 
 /* Menú */
-.menu {
-    background-color: #333;
-    color: #fff;
+.menu{
+    border: 2px solid var(--primary);
 }
 
 .menu ul {

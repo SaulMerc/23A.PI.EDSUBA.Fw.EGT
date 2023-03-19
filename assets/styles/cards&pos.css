@@ -77,6 +77,12 @@
     border-radius: 4px;
 }
 
+.img__card:hover{
+    cursor: pointer;
+    transition: 0.3s ease all;
+    box-shadow: 5px 5px 5px rgba(136, 135, 135, 0.603);
+}
+
 /*Carrusel*/
 .carrusel {
     width: 100%;

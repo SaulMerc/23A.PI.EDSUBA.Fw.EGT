@@ -141,3 +141,17 @@ anteriorImg.addEventListener("click", function () {
     imagen.style.transform = `translateX(${100 * (indx - imgActual)}%)`;
   });
 });
+
+
+// agregar fixed para la barra de navegacion
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("menufix");
+
+function myFunction() {
+  if (window.pageYOffset > 160) {
+    header.classList.add("menufixed");
+  } else {
+    header.classList.remove("menufixed");
+  }
+}

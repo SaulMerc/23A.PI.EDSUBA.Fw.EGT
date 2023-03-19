@@ -10,6 +10,11 @@ body.dark__Mode {
     background: var(--black);
 }
 
+body.dark__Mode .container {
+    background: #222222;
+    color: var(--white);
+}
+
 body.dark__Mode .card {
     background: #222222;
     color: var(--white);
