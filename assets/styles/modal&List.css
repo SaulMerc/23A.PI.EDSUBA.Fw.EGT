@@ -190,13 +190,12 @@
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(255, 255, 255,0.4);
     align-items: center;
     justify-content: center;
 } 
 
 .modal_Content{
-    background-color: var(--primary);
+    background-color: var(--labelsOscuro);
     color: #fff;
     width: 350px;
     height: 250px;
@@ -232,7 +231,7 @@
     position: absolute;
     right: 20px;
     top: 20px;
-    color: #222;
+    color: #f5f5f5;
     cursor: pointer;
     transition: .3s;
     font-size: 20px;
@@ -253,3 +252,6 @@
     font-size: 40px;
 }
 
+.active{
+    display: flex;
+}

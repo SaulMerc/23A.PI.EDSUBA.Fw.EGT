@@ -70,21 +70,25 @@ miFormulario.addEventListener('submit', function (event) {
 });
 
 //Funcion de alertas y modal
+//Variables
+const modalBtn = document.getElementById('modalBtn'); //Boton que sirva de referencia
+const closeBtn = document.querySelector('.icon_Close'); //Boton personalizado de cerrado la "x"
+const okBtn = document.getElementById('modal_okBtn');//Boton de entendido / deacuerdo
+const modal = document.querySelector('.modal'); //Referencia al modal, para poderlo aparecer y desaparecer.
 
-const modalBtn = document.getElementById('modalBtn');
-const closeBtn = document.querySelector('.icon_Close');
-const okBtn = document.getElementById('modal_okBtn');
-const modal = document.querySelector('.modal');
-
+//Activar modal
 modalBtn.addEventListener('click',()=>{
     modal.classList.add('active');
 })
+//Desactivar modal con boton x
 closeBtn.addEventListener('click',()=>{
     modal.classList.remove('active');
 })
+//Desactivar modal con boton entendido
 okBtn.addEventListener('click',()=>{
     modal.classList.remove('active');
 })
+//Desactivar modal al dal clic fuera del modal, en alguna parte de la pantalla.
 window.addEventListener('click', event => {
     if(event.target == modal){
         modal.classList.remove('active');
