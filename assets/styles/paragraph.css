@@ -1,0 +1,10 @@
+.paragraph_Container{
+    max-width: 60vw;  
+    width: 100%;  
+    padding: 40px 20px;  
+    margin: 0 auto; 
+    color: var(--); 
+}  
+.paragraph{     
+    font-size: var(--fsTxt);
+}
