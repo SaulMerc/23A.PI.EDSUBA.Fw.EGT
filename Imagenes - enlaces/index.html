@@ -18,7 +18,7 @@
     <div class="dos-columnas">
 
         <div class="contenedores">
-
+            <p class = "subtitulo">Imagen responsiva</p>
             <p class=subtitulo>width 50%</p>
             <img src="assets/images/dog.png" alt="imagen" class="img-responsive img-width-50">
             <p class=subtitulo>width 75%</p>
@@ -28,6 +28,7 @@
 
         <div class="contenido">
             <p class="subtitulo">Agregar imagen.</p>
+            <h2>Imagen responsiva</h2>
             <p>Para que una imagen sea responsiva se le debe asignar la clase “img-responsive”, con esta clase la imagen
                 se adaptara según la resolución actual.
                 <br>Ejemplo:<br>
@@ -50,9 +51,10 @@
 
         <div class="contenedores enlaces">
 
-            <p>Enlace marcado</p>
+            <p class=subtitulo>Enlace marcado</p>
 
             <div>
+            
                 <p><a class="mark__green" href="#">enlace marcado</a><a class="mark__purple" href="#">enlace
                         marcado</a></p>
                 <p><a class="mark__orange" href="#">enlace marcado</a><a class="mark__blue" href="#">enlace
@@ -61,7 +63,7 @@
                 </p>
             </div>
 
-            <p>Enlace boton.</p>
+            <p class=subtitulo>Enlace boton.</p>
             <div>
                 <p><a class="link__button__green" href="#">enlace boton</a><a class="link__button__orange"
                         href="#">enlace boton</a><a class="link__button__blue" href="#">enlace boton</a></p>
@@ -70,25 +72,39 @@
             </div>
 
 
-            <p>Enlace imagen</p>
+            <p class=subtitulo>Enlace imagen</p>
             <a href="https://www.google.com/?hl=es">
                 <img src="assets/images/dog.png" alt="Descripción de la imagen"
-                    class="image__link img-responsive img-width-50">
+                    class="image__link img-responsive img-width-70">
             </a>
 
         </div>
         <div class="contenido">
             <p class="subtitulo">Agregar enlace.</p>
-            <p>Para que una imagen sea responsiva se le debe asignar la clase “img-responsive”, con esta clase la imagen
-                se adaptara según la resolución actual.
+            <h2>Enlace marcado</h2>
+            <p>Para agregar un enlace con estilo marcado, se necesita utilizar la clase mark__green en una etiqueta &lta&gt. 
                 <br>Ejemplo:<br>
-                <code>&ltimg src="Ruta imagen" alt="imagen" class="img-responsive"&gt</code>
+                <!-- <code>&ltimg src="Ruta imagen" alt="imagen" class="img-responsive img-width-50"&gt</code><br> -->
+                <code>&ltp>&lta class="mark__green" href="#"&gttexto </a>&lt/p&gt</code><br>
+                Las clases disponibles son:
+                 mark__green, mark__orange, mark__blue, mark__pink,
+                 mark__purple, mark__yellow, mark__red y mark__gray,
+                 cada una con un color específico.               
             </p>
-
-            <p>Si quieres establecer un tamaño para la imagen responsiva se le debe agregar la clase img-width-x donde
-                la x es un valor del 1 al 100.
+            <h2>Enlace boton</h2>
+            <p>Para agregar un enlace con estilo de botón, se necesita utilizar la clase link__button__green en una etiqueta &lta&gt.
+                <br>Ejemplo:<br> 
+               <code>&ltp&lta class="link__button__green" href="#">texto &lt/a&gt&lt/p&gt</code><br>
+                Las clases disponibles son:
+                link__button__green, link__button__orange, link__button__blue, link__button__pink, link__button__violet, link__button__yellow, link__button__red y link__button__gray,
+                cada uno con un color específico.
+                </p>
+            <h2>Enlace imagen</h2>
+            <p>Para agregar un enlace en una imagen, se necesita utilizar la clase image__link en una etiqueta &ltimg&gt que esta adentro de una etiqueta &lta&gt. 
                 <br>Ejemplo:<br>
-                <code>&ltimg src="Ruta imagen" alt="imagen" class="img-responsive img-width-50"&gt</code>
+               <code> &lta href="#"&gt
+                    &ltimg src = "ruta imagen" alt = "descripción de la imagen" class = "image__link" &gt &lt/a&gt
+            </code>
             </p>
         </div>
     </div>
