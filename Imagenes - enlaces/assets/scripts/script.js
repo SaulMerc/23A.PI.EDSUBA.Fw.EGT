@@ -29,3 +29,22 @@ function setResponsiveImages() {
 
 // Ejecuta la función al cargar la página
 setResponsiveImages();
+
+
+var clic = 1;
+var txt=document.getElementById("caja");
+var dos=document.getElementById("dos-columnas");
+function divLogin() {
+  if (clic == 1) {
+    // txt.style.height = "100%";
+    document.getElementById("caja").style.height = "100%";
+    txt.classList.remove("contenido_imagen");
+    clic = clic + 1;
+  } else {
+    // txt.style.height = "0%";
+    document.getElementById("caja").style.height = "0%";
+    txt.classList.add("contenido_imagen");
+
+    clic = 1;
+  }
+}

@@ -11,21 +11,74 @@
 </head>
 
 <body>
-    
 
 
-    <p class="titulos">Imagenes responsivas</p>
+
+    <p class="titulo">Imagenes responsivas</p>
     <div class="dos-columnas">
-      
-        <div class = "imagenes">
-        
-            <p>width 50%</p>
-            <img src="assets/images/dog.png" alt="imagen" class="img-responsive img-width-50">   
+
+        <div class="contenedores">
+
+            <p class=subtitulo>width 50%</p>
+            <img src="assets/images/dog.png" alt="imagen" class="img-responsive img-width-50">
+            <p class=subtitulo>width 75%</p>
+            <img src="assets/images/dog.png" alt="imagen" class="img-responsive img-width-75">
         </div>
 
 
-        <div >
-            <p>Agregar imagen.</p>
+        <div class="contenido">
+            <p class="subtitulo">Agregar imagen.</p>
+            <p>Para que una imagen sea responsiva se le debe asignar la clase “img-responsive”, con esta clase la imagen
+                se adaptara según la resolución actual.
+                <br>Ejemplo:<br>
+
+                <code>&ltimg src="Ruta imagen" alt="imagen" class="img-responsive"&gt</code>
+
+
+            </p>
+
+            <p>Si quieres establecer un tamaño para la imagen responsiva se le debe agregar la clase img-width-x donde
+                la x es un valor del 1 al 100.
+                <br>Ejemplo:<br>
+                <code>&ltimg src="Ruta imagen" alt="imagen" class="img-responsive img-width-50"&gt</code>
+            </p>
+        </div>
+
+    </div>
+    <p class="titulo">Enlaces</p>
+    <div class="dos-columnas">
+
+        <div class="contenedores enlaces">
+
+            <p>Enlace marcado</p>
+
+            <div>
+                <p><a class="mark__green" href="#">enlace marcado</a><a class="mark__purple" href="#">enlace
+                        marcado</a></p>
+                <p><a class="mark__orange" href="#">enlace marcado</a><a class="mark__blue" href="#">enlace
+                        marcado</a></p>
+                <p><a class="mark__yellow" href="#">enlace marcado</a><a class="mark__pink" href="#">enlace marcado</a>
+                </p>
+            </div>
+
+            <p>Enlace boton.</p>
+            <div>
+                <p><a class="link__button__green" href="#">enlace boton</a><a class="link__button__orange"
+                        href="#">enlace boton</a><a class="link__button__blue" href="#">enlace boton</a></p>
+                <p><a class="link__button__pink" href="#">enlace boton</a><a class="link__button__violet"
+                        href="#">enlace boton</a><a class="link__button__yellow" href="#">enlace boton</a></p>
+            </div>
+
+
+            <p>Enlace imagen</p>
+            <a href="https://www.google.com/?hl=es">
+                <img src="assets/images/dog.png" alt="Descripción de la imagen"
+                    class="image__link img-responsive img-width-50">
+            </a>
+
+        </div>
+        <div class="contenido">
+            <p class="subtitulo">Agregar enlace.</p>
             <p>Para que una imagen sea responsiva se le debe asignar la clase “img-responsive”, con esta clase la imagen
                 se adaptara según la resolución actual.
                 <br>Ejemplo:<br>
@@ -38,13 +91,7 @@
                 <code>&ltimg src="Ruta imagen" alt="imagen" class="img-responsive img-width-50"&gt</code>
             </p>
         </div>
-
     </div>
-
-    <p class="titulos">Enlaces</p>
-    <p><a href="#">Simple</a></p>
-    <p><a class = "mark-blue cBlanco" href="#">Marcado</a></p>
-
     <script src="assets/scripts/script.js"></script>
 </body>
 
