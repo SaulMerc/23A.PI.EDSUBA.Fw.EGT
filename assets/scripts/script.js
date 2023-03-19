@@ -1,3 +1,24 @@
+const menuButtonX = document.getElementById('menuX-button');
+const menuX = document.getElementById('menuX');
+
+menuButtonX.addEventListener('click', () => {
+  menuX.classList.toggle('show');
+});
+
+const menuButtonY = document.getElementById('menuY-button');
+const menuY = document.getElementById('menuY');
+
+menuButtonY.addEventListener('click', () => {
+  menuY.classList.toggle('show');
+});
+
+const menuButtonH = document.getElementById('menuH-button');
+const menuH = document.getElementById('menuH');
+
+menuButtonH.addEventListener('click', () => {
+  menuH.classList.toggle('show');
+});
+
 const darkModeToggle = document.querySelector('#dark__ModeToggle');
 
 darkModeToggle.addEventListener('click', () => {
