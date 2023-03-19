@@ -1,5 +1,12 @@
 @import url(fonts&col.css);
 
+.pos{
+    text-align: center;
+}
+.pos_un{
+    text-align: center;
+    text-decoration:underline;
+}
 .container {
     max-width: 120rem;
     margin-inline: auto;
@@ -123,7 +130,7 @@
     align-items: flex-start;
     padding: 0;
 }
-/* Grid para  */
+/* Grid para tajetas */
 .grid__shop {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -179,4 +186,78 @@
     display: flexbox;
     text-align: center;
     align-items: center;
+}
+/* Grids paara contenido de páginas */
+/*Estilo grid con aside */
+.grid__bodyB{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "head head head head"
+                        "aside main main main"
+                        "footer footer footer footer";
+}
+.grid__BodyH{
+    grid-area: head;
+}
+.grid__BodyM{
+    grid-area: main;
+}
+.grid__BodyA{
+    grid-area: aside;
+}
+.grid__BodyF{
+    grid-area: footer;
+    text-align: center;
+}
+/* Estilo grido con sidebars  y asides*/
+.grid__bodyB2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "head head head head head"
+                        "main main main aside aside"
+                        "main main main aside aside"
+                        "sideb1 sideb2 sideb2 aside aside"
+                        "footer footer footer footer footer";
+}
+.grid__bodyH2{
+    grid-area: head;
+}
+.grid__BodyM2{
+    grid-area: main;
+}
+.grid__BodyA2{
+    grid-area: aside;
+}
+.grid__BodyF2{
+    grid-area: footer;
+    text-align: center;
+}
+.grid__BodyS1{
+    grid-area: sideb1;
+}
+.grid__BodyS2{
+    grid-area: sideb2;
+}
+
+/* Estilo grid simple son asides */
+.grid__bodyB3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "head head head"
+                        "main main main"
+                        "main main main"
+                        "footer footer footer";
+}
+.grid__bodyH3{
+    grid-area: head;
+}
+.grid__BodyM3{
+    grid-area: main;
+}
+.grid__BodyF3{
+    grid-area: footer;
+    text-align: center;
 }

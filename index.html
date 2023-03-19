@@ -10,6 +10,7 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="assets/styles/forms.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <title>Primera parte del framework</title>
 </head>
 
@@ -19,48 +20,43 @@
 <body>
     <!-- Elementos del encabezado-->
     <header class="container txt__Normal">
-        <div class="container displ__flxmod">
-            <h1 class="txt__Neg ">EGT
-                <h2>
-                    <code> < / > </code>
-                </h2>
-            </h1>
-            <h2 class="txt__Ita">
-                El framework que necesitas
-            </h2>
+        <div class="container pos">
+            <h1 class="txt__Neg"><i class="txt_typed"></i></h1>
+            <h2 class="txt__Ita pos_un">El framework que necesitas
+</h2>
         </div>
-                <nav class="menuP" id="menufix">
+        <nav class="menuP" id="menufix">
+            <ul>
+                <li><a href="#"><span class="material-symbols-outlined">home</span></a></li>
+                <li><a href="#"><span class="material-symbols-outlined">construction</span></a>
                     <ul>
-                        <li><a href="#"><span class="material-symbols-outlined">home</span></a></li>
-                        <li><a href="#"><span class="material-symbols-outlined">construction</span></a>
-                            <ul>
-                                <li><a href="#">Tarjetas</a></li>
-                                <li><a href="#">Títulos</a></li>
-                                <li><a href="#">Imágenes</a></li>
-                                <li><a href="#">Enlaces</a></li>
-                                <li><a href="#">Párrafos</a></li>
-                                <li><a href="#">Listas</a></li>
-                                <li><a href="#">Alertas</a></li>
-                                <li><a href="#">Barras nav</a></li>
-                                <li><a href="#">Botones</a></li>
-                                <li><a href="#">Switches</a></li>
-                                <li><a href="#">Alertas</a></li>
-                                <li><a href="#">Carrusel</a></li>
-                                <li><a href="#">Formularios</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#"><span class="material-symbols-outlined">contacts</span></a>
-                            <ul>
-                                <li><a href="#">Sobre nosotros</a></li>
-                                <li><a href="#"><span class="material-symbols-outlined">taunt</span></a></li>
-                                <li><a href="#"><span class="material-symbols-outlined">man_3</span></a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#"><span class="material-symbols-outlined">download</span></a></li>
-                        <li><a href="#"><span class="material-symbols-outlined">logout</span></a></li>
+                        <li><a href="#">Tarjetas</a></li>
+                        <li><a href="#">Títulos</a></li>
+                        <li><a href="#">Imágenes</a></li>
+                        <li><a href="#">Enlaces</a></li>
+                        <li><a href="#">Párrafos</a></li>
+                        <li><a href="#">Listas</a></li>
+                        <li><a href="#">Alertas</a></li>
+                        <li><a href="#">Barras nav</a></li>
+                        <li><a href="#">Botones</a></li>
+                        <li><a href="#">Switches</a></li>
+                        <li><a href="#">Alertas</a></li>
+                        <li><a href="#">Carrusel</a></li>
+                        <li><a href="#">Formularios</a></li>
                     </ul>
-                </nav>
-            
+                </li>
+                <li><a href="#"><span class="material-symbols-outlined">contacts</span></a>
+                    <ul>
+                        <li><a href="#">Sobre nosotros</a></li>
+                        <li><a href="#"><span class="material-symbols-outlined">taunt</span></a></li>
+                        <li><a href="#"><span class="material-symbols-outlined">man_3</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span class="material-symbols-outlined">download</span></a></li>
+                <li><a href="#"><span class="material-symbols-outlined">logout</span></a></li>
+            </ul>
+        </nav>
+
     </header>
     <main class="container">
 
@@ -78,10 +74,10 @@
                     <h3 class="txt__Ita grid__author">Autor: Cervantes </h3>
                     <h4 class="txt__Normal grid__desc">Descripción genérica</h4>
                     <p class="txt__Normal grid__price">Precio: $$ </p>
-                    <button type="button" class="icon__none grid__sale"><span class="material-symbols-outlined">
+                    <button type="button" class="icon__none grid__sale button__CardsCla"><span class="material-symbols-outlined">
                             payments
                         </span></button>
-                    <button type="button" class="grid__cart icon__none"><span
+                    <button type="button" class="grid__cart icon__none button__CardsCla"><span
                             class="material-symbols-outlined">shopping_cart</span></button>
                 </div>
                 <div class="card__Med grid__shop bcCom cPrim">
@@ -90,10 +86,10 @@
                     <h3 class="txt__Ita grid__author">Autor: Cervantes </h3>
                     <p class="txt__Normal grid__price">Precio: $$ </p>
                     <h4 class="txt__Normal grid__desc">Descripción genérica</h4>
-                    <button type="button" class="icon__none grid__sale"><span class="material-symbols-outlined">
+                    <button type="button" class="icon__none grid__sale button__CardsSec"><span class="material-symbols-outlined">
                             payments
                         </span></button>
-                    <button type="button" class="grid__cart icon__none"><span
+                    <button type="button" class="grid__cart icon__none button__CardsSec"><span
                             class="material-symbols-outlined">shopping_cart</span></button>
                 </div>
                 <div class="card__Small grid__shop bcSec cBase">
@@ -102,10 +98,10 @@
                     <h3 class="txt__Ita grid__author">Autor: Cervantes </h3>
                     <p class="txt__Normal grid__price">Precio: $$ </p>
                     <h4 class="txt__Normal grid__desc">Descripción genérica</h4>
-                    <button type="button" class="icon__none grid__sale"><span class="material-symbols-outlined">
+                    <button type="button" class="icon__none grid__sale button__CardsOsc"><span class="material-symbols-outlined">
                             payments
                         </span></button>
-                    <button type="button" class="grid__cart icon__none"><span
+                    <button type="button" class="grid__cart icon__none button__CardsOsc"><span
                             class="material-symbols-outlined">shopping_cart</span></button>
                 </div>
                 <div class="card__Tiny bcPrim cWhite">
@@ -153,8 +149,9 @@
                     <div class="txt__Neg">Párrafos</div>
                     <div class="card paragraph_Container">
                         <p class="paragraph">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            <br> Nesciunt fugit ex aperiam, distinctio iusto quis. Distinctio architecto nam eligendi incidunt,
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <br> Nesciunt fugit ex aperiam, distinctio iusto quis. Distinctio architecto nam eligendi
+                            incidunt,
                             <br> quod ea! Necessitatibus libero, minus facilis aperiam adipisci unde et?
                         </p>
                     </div>
@@ -170,7 +167,8 @@
                             <li class="list_Item">Quinto</li>
                         </ul>
 
-                        <br><hr><br>
+                        <br>
+                        <hr><br>
 
                         <ol class="lista2">
                             <li class="list_Item">Primero</li>
@@ -180,7 +178,8 @@
                             <li class="list_Item">Quinto</li>
                         </ol>
 
-                        <br><hr><br>
+                        <br>
+                        <hr><br>
 
                         <ol class="lista3">
                             <li class="list_Item">Primero</li>
@@ -190,7 +189,8 @@
                             <li class="list_Item">Quinto</li>
                         </ol>
 
-                        <br><hr><br>
+                        <br>
+                        <hr><br>
 
                         <ol class="lista4">
                             <li class="list_Item">Primero</li>
@@ -223,7 +223,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="container"><!-- Barras de navegación -->
             <div class="txt__Neg">Barras de navegación</div>
             <div>
@@ -238,35 +238,39 @@
                 </nav>
             </div>
 
-            <br><hr><br>
-        
+            <br>
+            <hr><br>
+
             <div>
                 <h2>Ejemplo de texto para ocultar con la barra de navegación</h2>
                 <nav id="menuH">
                     <ul>
                         <li><a><span id="menuH-button" class="material-symbols-outlined button">menu</span></a></li>
-                        <li><a ><span class="material-symbols-outlined button">home</span></a></li>
-                        <li><a ><span class="material-symbols-outlined button">apps</span></a></li>
-                        <li><a ><span class="material-symbols-outlined button">login</span></a></li>
-                        <li><a ><span class="material-symbols-outlined button">logout</span></a></li>
+                        <li><a><span class="material-symbols-outlined button">home</span></a></li>
+                        <li><a><span class="material-symbols-outlined button">apps</span></a></li>
+                        <li><a><span class="material-symbols-outlined button">login</span></a></li>
+                        <li><a><span class="material-symbols-outlined button">logout</span></a></li>
                     </ul>
                 </nav>
             </div>
 
-            <br><hr><br>
-        
+            <br>
+            <hr><br>
+
             <div>
                 <nav id="menuY">
                     <ul>
-                        <li><a>Texto de pruba<span id="menuY-button" class="material-symbols-outlined button">menu</span></a></li>
-                        <li><a >Texto de pruba<span class="material-symbols-outlined button">home</span></a></li>
-                        <li><a >Texto de pruba<span class="material-symbols-outlined button">apps</span></a></li>
-                        <li><a >Texto de pruba<span class="material-symbols-outlined button">login</span></a></li>
-                        <li><a >Texto de pruba<span class="material-symbols-outlined button">logout</span></a></li>
+                        <li><a>Texto de pruba<span id="menuY-button"
+                                    class="material-symbols-outlined button">menu</span></a></li>
+                        <li><a>Texto de pruba<span class="material-symbols-outlined button">home</span></a></li>
+                        <li><a>Texto de pruba<span class="material-symbols-outlined button">apps</span></a></li>
+                        <li><a>Texto de pruba<span class="material-symbols-outlined button">login</span></a></li>
+                        <li><a>Texto de pruba<span class="material-symbols-outlined button">logout</span></a></li>
                     </ul>
                 </nav>
             </div>
-            <br><hr><br>
+            <br>
+            <hr><br>
 
         </div>
 
@@ -392,6 +396,7 @@
     <footer class="container"></footer>
     <button type="button" id="dark__ModeToggle"><span class="material-symbols-outlined">mode_night</span></button>
     <script src="assets/scripts/script.js"></script>
+    <script src="assets/scripts/animations.js"></script>
 </body>
 
 </html>
