@@ -117,7 +117,7 @@
 
 /* Display y Grids */
 .displ__flx {
-    display: flex;
+    display: inline-flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: flex-start;
@@ -139,6 +139,7 @@
         "image image image autor autor"
         "desc desc desc desc desc"
         "price price price sale cart";
+    margin: 5px;
 }
 
 .grid__desc {
