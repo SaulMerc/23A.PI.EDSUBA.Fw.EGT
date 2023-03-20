@@ -7,5 +7,3 @@ let typedBackspace = new Typed(".txt_typed",{
     backDelay: 10000,
     loop: true
 });
-
-ScrollReveal({reset: true});
