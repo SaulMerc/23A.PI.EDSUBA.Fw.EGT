@@ -13,6 +13,9 @@
 .slide__right {
     animation: slide-in-right 1s ease-in-out both;
 }
+hr{
+
+}
 
 @keyframes slide-in-left {
     0% {
@@ -36,6 +39,7 @@
         transform: translateX(0);
         opacity: 1;
     }
+    
 }
 
 @keyframes fade-in-bottom {

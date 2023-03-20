@@ -10,6 +10,7 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="assets/scripts/jquery-3.6.4.js"></script>
     <title>Framework EGT</title>
 </head>
 
@@ -59,7 +60,8 @@
     <main class="container">
         <div class="container"><!--Contenedores principales-->
             <!--Contenedores y títulos-->
-            <h2 class="txt__Title" id="Tarjetas">Tarjetas</h2>
+
+            <h2 class="txt__Title under size_2" id="Tarjetas">Tarjetas</h2>
             <p class="txt__Ita">Presentamos varias opciones para poder tener tarjetas </p>
             <div class="displ__flx">
                 <div class="card__Large grid__shop bcExt cSec">
@@ -105,39 +107,50 @@
                     <p class="txt__Normal">Esta última tarjeta sirve para insertar notas o datos cortos</p>
                 </div>
             </div>
-            <div class="card size">
-                <h1 class="txt__Title">Código de las cards</h1>
+            <div class="card size_3 bcPrim txt__Center">
+                <h1 class="txt__Title">LLamado de las cards</h1>
                 <p class="txt__Normal">El llamado a estas cards es el siguiente</p>
                 <code class="txt__Normal">&ltdiv class="card__Large"&gtEjemplo de titulo normal&lth1&gt</code><br>
                 <code class="txt__Normal">&ltdiv class="card__Med"&gtEjemplo de titulo negritas&lth1&gt</code><br>
                 <code class="txt__Normal">&ltdiv class="card__Small"&gtEjemplo de titulo italic&lth1&gt</code><br>
                 <code class="txt__Normal">&ltdiv class="card__Tiny"&gtEjemplo de titulo italic&lth1&gt</code>
             </div>
-            <div class="card">
-                <h2 class="txt__Neg" id="Titulos">Títulos</h2>
+            <div class="card ">
+                <h2 class="txt__Neg size_2 under" id="Titulos">Títulos</h2>
                 <p class="txt__Normal">Los títulos puedes manejarlos diferentes tamaños y variantes con nuestro estilo
                     estilo de
                     letra</p>
-                <div class="card">
-                    <h1 class="txt__Normal">Ejemplo titulo con h1</h1>
-                    <h2 class="txt__Normal">Ejemplo titulo con h2</h2>
-                    <h3 class="txt__Normal">Ejemplo titulo con h3</h3>
-                    <h4 class="txt__Normal">Ejemplo titulo con h4</h4>
-                    <h5 class="txt__Normal">Ejemplo titulo con h5</h5>
-                    <h6 class="txt__Normal">Ejemplo titulo con h6</h6>
+                <div class="container two__cols">
+                    <div class="card bcSec">
+                        <h1 class="txt__Normal">Ejemplo titulo con h1</h1>
+                        <h2 class="txt__Normal">Ejemplo titulo con h2</h2>
+                        <h3 class="txt__Normal">Ejemplo titulo con h3</h3>
+                        <h4 class="txt__Normal">Ejemplo titulo con h4</h4>
+                        <h5 class="txt__Normal">Ejemplo titulo con h5</h5>
+                        <h6 class="txt__Normal">Ejemplo titulo con h6</h6>
+                    </div>
+                    <div class="size_3 card bcPrim">
+                        <h2 class="txt__Title">Para realizar el llamado a estos es:</h2>
+                        <code class="txt__Normal">&lth1 class="txt__Normal"&gtEjemplo&lth1&gt</code><br>
+                        <code class="txt__Normal">&lth2 class="txt__Normal"&gtEjemplo&lth2&gt</code><br>
+                        <code class="txt__Normal">&lth3 class="txt__Normal"&gtEjemplo&lth3&gt</code><br>
+                        <code class="txt__Normal">&lth4 class="txt__Normal"&gtEjemplo&lth4&gt</code><br>
+                        <code class="txt__Normal">&lth5 class="txt__Normal"&gtEjemplo&lth5&gt</code><br>
+                        <code class="txt__Normal">&lth6 class="txt__Normal"&gtEjemplo&lth6&gt</code>
+                    </div>
                 </div>
                 <p class="txt__Normal">Además, puedes agregarles estilos</p>
-                <div class="card two__cols">
-                    <div>
-                        <h1 class="txt__Normal h">Ejemplo titulo normal</h1>
+                <div class="container two__cols ">
+                    <div class="card bcSec">
+                        <h1 class="txt__Normal under">Ejemplo titulo normal</h1>
                         <h1 class="txt__Neg">Ejemplo titulo negritas</h1>
                         <h1 class="txt__Ita">Ejemplo titulo italic</h1>
-                        <h1 class="txt__Title">Ejemplo titulo italic</h1>
+                        <h1 class="txt__Title">Ejemplo titulo</h1>
                     </div>
-                    <div class="size">
+                    <div class="size_3 card bcPrim">
                         <h2 class="txt__Title">Para realizar el llamado a estos cuatro estilos es:</h2>
                         <code
-                            class="txt__Normal">&lth1 class="txt__Normal h"&gtEjemplo de titulo normal&lth1&gt</code><br>
+                            class="txt__Normal">&lth1 class="txt__Normal under"&gtEjemplo de titulo normal&lth1&gt</code><br>
                         <code class="txt__Normal">&lth1 class="txt__Neg"&gtEjemplo de titulo negritas&lth1&gt</code><br>
                         <code class="txt__Normal">&lth1 class="txt__Ita"&gtEjemplo de titulo italic&lth1&gt</code><br>
                         <code class="txt__Normal">&lth1 class="txt__Title"&gtEjemplo de titulo italic&lth1&gt</code>
@@ -148,179 +161,256 @@
         </div>
         <div class="container"><!--Imágenes y enlaces-->
             <div class="card">
-                <div class="card">
-                    <div class="txt__Neg" id="Imagenes">Imágenes</div>
-                    <div class="two__cols">
 
-                        <div class="card">
-                            <p class="txt__Title">Imagen responsiva</p>
-                            <p class="txt__Neg">width 50%</p>
-                            <img src="assets/images/egtb.png" alt="imagen" class="img-responsive img-width-50">
-                            <p class="txt__Neg">width 75%</p>
-                            <img src="assets/images/egtb.png" alt="imagen" class="img-responsive img-width-75">
+                <div class="txt__Neg size_2 under" id="Imagenes">Imágenes</div>
+                <div class="two__cols">
+
+                    <div class="card bcSec">
+                        <p class="txt__Title">Imagen responsiva</p>
+                        <p class="txt__Neg">width 50%</p>
+                        <img src="assets/images/egtb.png" alt="imagen" class="img-responsive img-width-50">
+                        <p class="txt__Neg">width 75%</p>
+                        <img src="assets/images/egtb.png" alt="imagen" class="img-responsive img-width-75">
+                    </div>
+
+
+                    <div class="card size_3 bcPrim">
+                        <p class="txt__Ita">Agregar imagen.</p>
+                        <h2 class="txt__Neg">Imagen responsiva</h2>
+                        <p class="txt__Normal">Para que una imagen sea responsiva se le debe asignar la clase
+                            “img-responsive”, con esta
+                            clase la imagen
+                            se adaptara según la resolución actual.
+                            <br>Ejemplo:<br><hr><br>
+                            <code
+                                class="txt__Neg">&ltimg src="Ruta imagen" alt="imagen" class="img-responsive"&gt</code><br><br><hr>
+                        </p>
+                        <p class="txt__Normal ">Si quieres establecer un tamaño para la imagen responsiva se le debe
+                            agregar la clase
+                            img-width-x donde
+                            la x es un valor del 1 al 100.
+                            <br>Ejemplo:<br><hr><br>
+                            <code
+                                class="txt__Neg">&ltimg src="Ruta imagen" alt="imagen" class="img-responsive img-width-50"&gt</code><br><br><hr>
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="txt__Neg size_2 under" id="Enlaces">Enlaces</div>
+                <div class="two__cols">
+
+                    <div class="card enlaces bcSec">
+
+                        <p class="txt__Title size_3">Enlace marcado</p>
+
+                        <div class="link size_3">
+
+                            <p class="txt__Normal"><a class="mark__green" href="#">enlace marcado</a><a
+                                    class="mark__purple" href="#">enlace
+                                    marcado</a></p>
+                            <p class="txt__Normal"><a class="mark__orange" href="#">enlace marcado</a><a
+                                    class="mark__blue" href="#">enlace
+                                    marcado</a></p>
+                            <p class="txt__Normal"><a class="mark__yellow" href="#">enlace marcado</a><a
+                                    class="mark__pink" href="#">enlace marcado</a>
+                            </p>
+                        </div>
+
+                        <p class="txt__Title size_3 ">Enlace boton.</p>
+                        <div class="link txt__Normal">
+                            <p><a class="link__button__green" href="#">enlace boton</a><a class="link__button__orange"
+                                    href="#">enlace boton</a><a class="link__button__blue" href="#">enlace boton</a></p>
+                            <p><a class="link__button__pink" href="#">enlace boton</a><a class="link__button__violet"
+                                    href="#">enlace boton</a><a class="link__button__yellow" href="#">enlace boton</a>
+                            </p>
                         </div>
 
 
-                        <div class="card size">
-                            <p class="txt__Ita">Agregar imagen.</p>
-                            <h2 class="txt__Neg">Imagen responsiva</h2>
-                            <p class="txt__Normal">Para que una imagen sea responsiva se le debe asignar la clase
-                                “img-responsive”, con esta
-                                clase la imagen
-                                se adaptara según la resolución actual.
-                                <br>Ejemplo:<br>
-                                <code
-                                    class="txt__Neg">&ltimg src="Ruta imagen" alt="imagen" class="img-responsive"&gt</code>
-                            </p>
-                            <p class="txt__Normal">Si quieres establecer un tamaño para la imagen responsiva se le debe
-                                agregar la clase
-                                img-width-x donde
-                                la x es un valor del 1 al 100.
-                                <br>Ejemplo:<br>
-                                <code
-                                    class="txt__Neg">&ltimg src="Ruta imagen" alt="imagen" class="img-responsive img-width-50"&gt</code>
-                            </p>
-                        </div>
+                        <p class="txt__Title size_3">Enlace imagen</p>
+                        <a href="https://www.google.com/?hl=es">
+                            <img src="assets/images/IMG_ajedrez.jpg" alt="Descripción de la imagen"
+                                class="image__link img-responsive img-width-60">
+                        </a>
 
                     </div>
-                </div>
-                <div class="card">
-                    <div class="txt__Neg" id="Enlaces">Enlaces</div>
-                    <div class="two__cols">
+                    <div class="card size_3 bcPrim">
+                        <p class="txt__Ita">Agregar enlace.</p>
+                        <h2 class=" txt__Title">Enlace marcado</h2>
+                        <p class="txt__Normal">Para agregar un enlace con estilo marcado, se necesita utilizar la
+                            clase mark__green en
+                            una etiqueta &lta&gt.
+                            <br class="txt__Normal">Ejemplo:<br><hr><br>
 
-                        <div class="card enlaces">
-
-                            <p class="txt__Title size">Enlace marcado</p>
-
-                            <div class="link">
-
-                                <p class="txt__Normal"><a class="mark__green" href="#">enlace marcado</a><a
-                                        class="mark__purple" href="#">enlace
-                                        marcado</a></p>
-                                <p class="txt__Normal"><a class="mark__orange" href="#">enlace marcado</a><a
-                                        class="mark__blue" href="#">enlace
-                                        marcado</a></p>
-                                <p class="txt__Normal"><a class="mark__yellow" href="#">enlace marcado</a><a
-                                        class="mark__pink" href="#">enlace marcado</a>
-                                </p>
-                            </div>
-
-                            <p class="txt__Title size">Enlace boton.</p>
-                            <div class="link txt__Normal">
-                                <p><a class="link__button__green" href="#">enlace boton</a><a
-                                        class="link__button__orange" href="#">enlace boton</a><a
-                                        class="link__button__blue" href="#">enlace boton</a></p>
-                                <p><a class="link__button__pink" href="#">enlace boton</a><a
-                                        class="link__button__violet" href="#">enlace boton</a><a
-                                        class="link__button__yellow" href="#">enlace boton</a></p>
-                            </div>
-
-
-                            <p class="txt__Title size">Enlace imagen</p>
-                            <a href="https://www.google.com/?hl=es">
-                                <img src="assets/images/IMG_ajedrez.jpg" alt="Descripción de la imagen"
-                                    class="image__link img-responsive img-width-60">
-                            </a>
-
-                        </div>
-                        <div class="card size">
-                            <p class="txt__Ita">Agregar enlace.</p>
-                            <h2 class=" txt__Title">Enlace marcado</h2>
-                            <p class="txt__Normal">Para agregar un enlace con estilo marcado, se necesita utilizar la
-                                clase mark__green en
-                                una etiqueta &lta&gt.
-                                <br class="txt__Normal">Ejemplo:<br>
-
-                                <code
-                                    class="txt__Neg">&ltp>&lta class="mark__green" href="#"&gttexto </a>&lt/p&gt</code><br>
-                                Las clases disponibles son: <br>
-                                mark__green, mark__orange, mark__blue, mark__pink,
-                                mark__purple, mark__yellow, mark__red y mark__gray,
-                                cada una con un color específico.
-                            </p>
-                            <h2 class="txt__Title">Enlace boton</h2>
-                            <p class="txt__Normal">Para agregar un enlace con estilo de botón, se necesita utilizar la
-                                clase
-                                link__button__green en una etiqueta &lta&gt.
-                                <br class="txt__Normal">Ejemplo:<br>
-                                <code
-                                    class="txt__Neg">&ltp&lta class="link__button__green" href="#">texto &lt/a&gt&lt/p&gt</code><br>
-                                Las clases disponibles son: <br>
-                                link__button__green, link__button__orange, link__button__blue, link__button__pink,
-                                link__button__violet, link__button__yellow, link__button__red y link__button__gray,
-                                cada uno con un color específico.
-                            </p>
-                            <h2 class="txt__Title">Enlace imagen</h2>
-                            <p class="txt__Normal">Para agregar un enlace en una imagen, se necesita utilizar la clase
-                                image__link en una
-                                etiqueta &ltimg&gt que esta adentro de una etiqueta &lta&gt.
-                                <br class="txt__Normal">Ejemplo:<br>
-                                <code class="txt__Neg"> &lta href="#"&gt
+                            <code
+                                class="txt__Neg">&ltp>&lta class="mark__green" href="#"&gttexto </a>&lt/p&gt</code><br> <br> <hr>
+                            Las clases disponibles son: <br>
+                            mark__green, mark__orange, mark__blue, mark__pink,
+                            mark__purple, mark__yellow, mark__red y mark__gray,
+                            cada una con un color específico.
+                        </p>
+                        <h2 class="txt__Title">Enlace boton</h2>
+                        <p class="txt__Normal">Para agregar un enlace con estilo de botón, se necesita utilizar la
+                            clase
+                            link__button__green en una etiqueta &lta&gt.
+                            <br class="txt__Normal">Ejemplo:<br><hr><br>
+                            <code
+                                class="txt__Neg">&ltp&lta class="link__button__green" href="#">texto &lt/a&gt&lt/p&gt</code><br><br>
+                                <hr><br>
+                            Las clases disponibles son: <br>
+                            link__button__green, link__button__orange, link__button__blue, link__button__pink,
+                            link__button__violet, link__button__yellow, link__button__red y link__button__gray,
+                            cada uno con un color específico.
+                        </p>
+                        <h2 class="txt__Title">Enlace imagen</h2>
+                        <p class="txt__Normal">Para agregar un enlace en una imagen, se necesita utilizar la clase
+                            image__link en una
+                            etiqueta &ltimg&gt que esta adentro de una etiqueta &lta&gt.
+                            <br class="txt__Normal">Ejemplo:<br> <hr><br>
+                            <code class="txt__Neg"> &lta href="#"&gt
                                     &ltimg src = "ruta imagen" alt = "descripción de la imagen" class = "image__link" &gt &lt/a&gt
-                            </code>
-                            </p>
-                        </div>
+                            </code><br><br>
+                            <hr><br>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container"><!--Párrafos, listas y alertas-->
             <div class="card">
-                <div class="card">
-                    <div class="txt__Neg" id="Parrafos">Párrafos</div>
-                    <div class="two__Cols">
-                        <p class="pr pr-cont size txt__Ita">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <br> Nesciunt fugit ex aperiam, distinctio iusto quis. Distinctio architecto nam eligendi
-                            incidunt,
-                            <br> quod ea! Necessitatibus libero, minus facilis aperiam adipisci unde et?
-                        </p>
+                <div class="txt__Neg size_2" id="Parrafos">Párrafos</div>
+                <div class="container">
+                    <div class="two__cols">
+                        <div class="card bcSec">
+                            <p class="pr pr_cont_Sh txt_ind_1 txt__Normal">
+                                Es curioso como el como las personas han buscado plasmar la magia y los sentimeintos del
+                                alma en cosas, lugares, momentos y experiencias que pudieran observarse. Por ejemplo la
+                                luna, ese rincon en el cielo que se encuentra solo por la noches e irradia luz ante el
+                                vacío existente del espacio.
+                                El mirarla te pone a pensar que en los momentos más tristes ella será tu mayor compañera
+                                haciendote ver que nunca bailarás solo en la oscuridad
+                            </p>
+                            <p class="pr pr_cont_Med txt_ind_2 txt__Ita">
+                                Es curioso como el como las personas han buscado plasmar la magia y los sentimeintos del
+                                alma en cosas, lugares, momentos y experiencias que pudieran observarse. Por ejemplo la
+                                luna, ese rincon en el cielo que se encuentra solo por la noches e irradia luz ante el
+                                vacío
+                                existente del espacio.
+                                El mirarla te pone a pensar que en los momentos más tristes ella será tu mayor compañera
+                                haciendote ver que nunca bailarás solo en la oscuridad
+                            </p>
+                            <p class="pr pr_cont_Lg txt_ind_3 txt__Neg">
+                                Es curioso como el como las personas han buscado plasmar la magia y los sentimeintos del
+                                alma en cosas, lugares, momentos y experiencias que pudieran observarse. Por ejemplo la
+                                luna, ese rincon en el cielo que se encuentra solo por la noches e irradia luz ante el
+                                vacío
+                                existente del espacio.
+                                El mirarla te pone a pensar que en los momentos más tristes ella será tu mayor compañera
+                                haciendote ver que nunca bailarás solo en la oscuridad
+                            </p>
+                        </div>
+
+                        <div class="card bcPrim">
+                            <h2 class="txt__Title size_2">Parrafos y texto en general</h2>
+                            <p class="txt__Normal size_3">Cualquier tipo de de texto espeficado como <code
+                                    class="txt__Neg">&lt p &gt &lt h2 ... h6 &gt</code> puede personalizarse con los
+                                estilos <span class="txt__Neg">txt_ind_x, txt__x y size_x</span> y puede realizarse de
+                                la siguiente manera
+                            </p><br>
+                            <div class="txt__Normal size_3">
+                                <code class="txt__Neg"> &lta href="#"&gt
+                                    &ltp class = "pr pr_cont_Sh txt_ind_1 txt__Normal" &gt &lt/p&gt
+                                </code><br><br>
+                                <hr><br>
+                                <code class="txt__Neg"> &lta href="#"&gt
+                                    &ltp class = "pr pr_cont_Med txt_ind_2 txt__Ita" &gt &lt/p&gt
+                                </code> <br><br>
+                                <hr><br>
+                                <code class="txt__Neg"> &lta href="#"&gt
+                                    &ltp class = "pr pr_cont_Lg txt_ind_3 txt__Neg" &gt &lt/p&gt
+                                </code>
+                            </div>
+
+                        </div>
                     </div>
+
                 </div>
-                <div class="card">
-                    <div class="txt__Neg" id="Listas">Listas</div>
-                    <div class="card">
-                        <ul class="list">
-                            <li class="list_Item">Primero</li>
-                            <li class="list_Item">Segundo</li>
-                            <li class="list_Item">Tercero</li>
-                            <li class="list_Item">Cuarto</li>
-                            <li class="list_Item">Quinto</li>
-                        </ul>
+                <div class="txt__Neg size_2" id="Listas">Listas</div>
+                <div class="container">
+                    <div class="two__cols">
+                        <div class="card">
+                            <ul class="list">
+                                <li class="list_Item">Primero</li>
+                                <li class="list_Item">Segundo</li>
+                                <li class="list_Item">Tercero</li>
+                                <li class="list_Item">Cuarto</li>
+                                <li class="list_Item">Quinto</li>
+                            </ul>
 
-                        <br>
-                        <hr><br>
+                            <br>
+                            <hr><br>
 
-                        <ol class="lista2">
-                            <li class="list_Item">Primero</li>
-                            <li class="list_Item">Segundo</li>
-                            <li class="list_Item">Tercero</li>
-                            <li class="list_Item">Cuarto</li>
-                            <li class="list_Item">Quinto</li>
-                        </ol>
+                            <ol class="list2">
+                                <li class="list_Item">Primero</li>
+                                <li class="list_Item">Segundo</li>
+                                <li class="list_Item">Tercero</li>
+                                <li class="list_Item">Cuarto</li>
+                                <li class="list_Item">Quinto</li>
+                            </ol>
 
-                        <br>
-                        <hr><br>
+                            <br>
+                            <hr><br>
 
-                        <ol class="lista3">
-                            <li class="list_Item">Primero</li>
-                            <li class="list_Item">Segundo</li>
-                            <li class="list_Item">Tercero</li>
-                            <li class="list_Item">Cuarto</li>
-                            <li class="list_Item">Quinto</li>
-                        </ol>
+                            <ol class="list3">
+                                <li class="list_Item">Primero</li>
+                                <li class="list_Item">Segundo</li>
+                                <li class="list_Item">Tercero</li>
+                                <li class="list_Item">Cuarto</li>
+                                <li class="list_Item">Quinto</li>
+                            </ol>
 
-                        <br>
-                        <hr><br>
+                            <br>
+                            <hr><br>
 
-                        <ol class="lista4">
-                            <li class="list_Item">Primero</li>
-                            <li class="list_Item">Segundo</li>
-                            <li class="list_Item">Tercero</li>
-                            <li class="list_Item">Cuarto</li>
-                            <li class="list_Item">Quinto</li>
-                        </ol>
+                            <ol class="list4 txt__Normal">
+                                <li class="list_Item">Primero</li>
+                                <li class="list_Item">Segundo</li>
+                                <li class="list_Item">Tercero</li>
+                                <li class="list_Item">Cuarto</li>
+                                <li class="list_Item">Quinto</li>
+                            </ol>
+                        </div>
+                        <div class="card bcPrim">
+                            <h1 class="txt__Title">El llamado a las siguientes listas es la siguiente:</h1><br><br>
+                            <div class="size_3">
+                                <code class="txt__Neg">
+                                    &ltol class = "list" &gt<br>
+                                    &ltli class = "list_Item" &gt Ejemplo lista &lt/li&gt <br> 
+                                    &lt/ol&gt
+                                </code> <br><br>
+                                <hr><br>
+                                <code class="txt__Neg">
+                                    &ltol class = "list2" &gt<br>
+                                    &ltli class = "list_Item" &gt Ejemplo lista &lt/li&gt <br> 
+                                    &lt/ol&gt
+                                </code> <br><br>
+                                <hr><br>
+                                <code class="txt__Neg">
+                                    &ltol class = "list3" &gt<br>
+                                    &ltli class = "list_Item" &gt Ejemplo lista &lt/li&gt <br> 
+                                    &lt/ol&gt
+                                </code> <br><br>
+                                <hr><br>
+                                <code class="txt__Neg">
+                                    &ltol class = "list4" &gt<br>
+                                    &ltli class = "list_Item" &gt Ejemplo lista &lt/li&gt <br> 
+                                    &lt/ol&gt
+                                </code> <br><br>
+                                <hr><br>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
                 <div class="card">
@@ -345,24 +435,33 @@
             </div>
         </div>
 
-        <div class="container size"><!-- Barras de navegación -->
-            <div class="txt__Neg" id="Barras">
+        <div class="container size_3"><!-- Barras de navegación -->
+            <div class="txt__Neg size_2" id="Barras">
                 Barras de navegación
-                <h2 class="txt__Ita">El Llamado a los diferentes navs en orden es el siguiente</h2>
-                <code class="txt__Normal">&ltnav class="nv__an"&gt&lth1&gt</code><br>
-                <code class="txt__Normal">&ltnav class="menuX"&gt&lth1&gt</code><br>
-                <code class="txt__Normal">&ltnav class="menuH"&gt&lth1&gt</code><br>
-                <code class="txt__Normal">&ltnav class="menuY"&gt&lth1&gt</code>
             </div>
-            <div>
-                <nav id="nv__an">
-                    <a href="">Home</a>
-                    <a href="">About</a>
-                    <a href="">Blog</a>
-                    <a href="">Herramientas</a>
-                    <a href="">Contacto</a>
-                    <div class="animation start-home"></div>
-                </nav>
+            <div class="container">
+                <div class="two__cols">
+                    <div class="card bcSec dspl">
+                        <nav id="nv__an">
+                            <a href="">Home</a>
+                            <a href="">About</a>
+                            <a href="">Blog</a>
+                            <a href="">Herramientas</a>
+                            <a href="">Contacto</a>
+                            <div class="animation start-home"></div>
+                        </nav>
+                    </div>
+                    <div class="card bcPrim">
+                        <h2 class="txt__Title">El Llamado a los diferentes navs en orden es el siguiente</h2>
+                        <code class="txt__Neg">&ltnav class="nv__an"&gt&lth1&gt</code><br><br>
+                        <hr><br>
+                        <code class="txt__Neg">&ltnav class="menuX"&gt&lth1&gt</code><br><br>
+                        <hr><br>
+                        <code class="txt__Neg">&ltnav class="menuH"&gt&lth1&gt</code><br><br>
+                        <hr><br>
+                        <code class="txt__Neg">&ltnav class="menuY"&gt&lth1&gt</code>
+                    </div>
+                </div>
             </div>
 
             <br>
@@ -426,7 +525,7 @@
                 </div>
             </div>
         </div>
-        <div class="container two__cols"><!--Carrusel de imágenes y labels-->
+        <div class="container two__cols "><!--Carrusel de imágenes y labels-->
             <div class="carrusel" id="Carrusel">
 
 
@@ -450,9 +549,9 @@
                 <button class="btn__carrusel btn__siguienteimg"><span
                         class="material-symbols-outlined">chevron_right</span></button>
             </div>
-            <div class="size">
-                <h2 class="txt__Ita">Para realizar el llamado al carrusel lo haces de la siguiente manera</h2><br>
-                <code class="txt__Normal">&ltdiv class="carrusel" id="Carrusel"&gt&ltdiv&gt</code>
+            <div class="card bcSec">
+                <h2 class="txt__Title">Para realizar el llamado al carrusel lo haces de la siguiente manera</h2><br>
+                <code class="txt__Neg size_3">&ltdiv class="carrusel" id="Carrusel"&gt&ltdiv&gt</code>
             </div>
         </div>
         <div class="container"> <!--Contenedores principales-->

@@ -172,7 +172,7 @@ nav.menuP>ul>li>ul>li a:hover {
 	width: 100%;
 }
 
-nav#nv__an{
+nav#nv__an {
 	position: relative;
 	margin: 270px auto 0;
 	width: 590px;
@@ -183,7 +183,7 @@ nav#nv__an{
 	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
 }
 
-nav#nv__an a{
+nav#nv__an a {
 	font-size: 15px;
 	text-transform: uppercase;
 	color: white;
@@ -195,7 +195,7 @@ nav#nv__an a{
 	text-align: center;
 }
 
-nav#nv__an .animation{
+nav#nv__an .animation {
 	position: absolute;
 	height: 100%;
 	top: 0;
@@ -205,47 +205,51 @@ nav#nv__an .animation{
 	transition: all .5s ease 0s;
 }
 
-nav#nv__an a:nth-child(1){
+nav#nv__an a:nth-child(1) {
 	width: 100px;
 }
 
-nav#nv__an a:nth-child(1):hover~.animation{
+nav#nv__an a:nth-child(1):hover~.animation {
 	width: 100px;
 	left: 0;
 }
 
-nav#nv__an a:nth-child(2){
+nav#nv__an a:nth-child(2) {
 	width: 110px;
 }
 
-nav#nv__an a:nth-child(2):hover~.animation{
+nav#nv__an a:nth-child(2):hover~.animation {
 	width: 110px;
 	left: 100px;
 }
 
-nav#nv__an a:nth-child(3){
+nav#nv__an a:nth-child(3) {
 	width: 100px;
 }
 
-nav#nv__an a:nth-child(3):hover~.animation{
+nav#nv__an a:nth-child(3):hover~.animation {
 	width: 110px;
 	left: 210px;
 }
 
-nav#nv__an a:nth-child(4){
+nav#nv__an a:nth-child(4) {
 	width: 160px;
 }
 
-nav#nv__an a:nth-child(4):hover~.animation{
+nav#nv__an a:nth-child(4):hover~.animation {
 	width: 160px;
 	left: 310px;
 }
 
-nav#nv__an a:nth-child(5){
+nav#nv__an a:nth-child(5) {
 	width: 120px;
 }
 
-nav#nv__an a:nth-child(5):hover~.animation{
+nav#nv__an a:nth-child(5):hover~.animation {
 	width: 120px;
 	left: 470px;
+}
+
+.dspl nav {
+	bottom: 130px;
 }
