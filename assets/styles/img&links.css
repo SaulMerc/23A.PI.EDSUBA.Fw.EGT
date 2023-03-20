@@ -6,13 +6,6 @@
     margin-bottom: 3rem;
   }
   
-  @media (min-width: 768px) {
-    .dos-columnas {
-      display: grid;
-      grid-template-columns: 60% 35%;
-      column-gap: 2rem;
-    }
-  }
   
   /* enlaces */
   

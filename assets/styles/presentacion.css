@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+h2{
+    margin: 20px;
+    color: #fff;
+    text-align: center;
+}
+h1, h3, p {
+    text-align: center;
+    color: #fff;
+    margin: 0;
+}
+footer {
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+}
+#element1{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+}
+#element2{
+    color: #fff;
+}
+
+
+.anim {
+    animation: fadeIn 1s ease-in-out;
+}
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.txt__Normal {
+    animation: slideInLeft 1s ease-in-out;
+}
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.scrolled {
+    animation: slideInUp 1s ease-in-out;
+}
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

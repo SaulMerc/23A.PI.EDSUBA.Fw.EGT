@@ -29,19 +29,18 @@
                 <li><a href="#"><span class="material-symbols-outlined">home</span></a></li>
                 <li><a href="#"><span class="material-symbols-outlined">construction</span></a>
                     <ul>
-                        <li><a href="#">Tarjetas</a></li>
-                        <li><a href="#">Títulos</a></li>
-                        <li><a href="#">Imágenes</a></li>
-                        <li><a href="#">Enlaces</a></li>
-                        <li><a href="#">Párrafos</a></li>
-                        <li><a href="#">Listas</a></li>
-                        <li><a href="#">Alertas</a></li>
-                        <li><a href="#">Barras nav</a></li>
-                        <li><a href="#">Botones</a></li>
-                        <li><a href="#">Switches</a></li>
-                        <li><a href="#">Alertas</a></li>
-                        <li><a href="#">Carrusel</a></li>
-                        <li><a href="#">Formularios</a></li>
+                        <li><a href="#Tarjetas">Tarjetas</a></li>
+                        <li><a href="#Titulos">Títulos</a></li>
+                        <li><a href="#Imagenes">Imágenes</a></li>
+                        <li><a href="#Enlaces">Enlaces</a></li>
+                        <li><a href="#Parrafos">Párrafos</a></li>
+                        <li><a href="#Listas">Listas</a></li>
+                        <li><a href="#Alertas">Alertas</a></li>
+                        <li><a href="#Barras">Barras nav</a></li>
+                        <li><a href="#Botones">Botones</a></li>
+                        <li><a href="#Switches">Switches</a></li>
+                        <li><a href="#Carrusel">Carrusel</a></li>
+                        <li><a href="#Formularios">Formularios</a></li>
                     </ul>
                 </li>
                 <li><a href="#"><span class="material-symbols-outlined">contacts</span></a>
@@ -60,8 +59,8 @@
     <main class="container">
         <div class="container"><!--Contenedores principales-->
             <!--Contenedores y títulos-->
-            <h2 class="txt__Neg">Tarjetas</h2>
-            <p class="txt__Ita">Presentamos varias opciones para poder tener contenedores </p>
+            <h2 class="txt__Title" id="Tarjetas">Tarjetas</h2>
+            <p class="txt__Ita">Presentamos varias opciones para poder tener tarjetas </p>
             <div class="displ__flx">
                 <div class="card__Large grid__shop bcExt cSec">
                     <img class="grid__image img__card" src="https://picsum.photos/370/325" alt="" />
@@ -106,11 +105,19 @@
                     <p class="txt__Normal">Esta última tarjeta sirve para insertar notas o datos cortos</p>
                 </div>
             </div>
+            <div class="card size">
+                <h1 class="txt__Title">Código de las cards</h1>
+                <p class="txt__Normal">El llamado a estas cards es el siguiente</p>
+                <code class="txt__Normal">&ltdiv class="card__Large"&gtEjemplo de titulo normal&lth1&gt</code><br>
+                <code class="txt__Normal">&ltdiv class="card__Med"&gtEjemplo de titulo negritas&lth1&gt</code><br>
+                <code class="txt__Normal">&ltdiv class="card__Small"&gtEjemplo de titulo italic&lth1&gt</code><br>
+                <code class="txt__Normal">&ltdiv class="card__Tiny"&gtEjemplo de titulo italic&lth1&gt</code>
+            </div>
             <div class="card">
-                <h2 class="txt__Neg">Títulos</h2>
-                <p class="txt__Normal">Los títulos puedes manejarlos diferentes tamaños y variantes en el estilo de la
+                <h2 class="txt__Neg" id="Titulos">Títulos</h2>
+                <p class="txt__Normal">Los títulos puedes manejarlos diferentes tamaños y variantes con nuestro estilo
+                    estilo de
                     letra</p>
-
                 <div class="card">
                     <h1 class="txt__Normal">Ejemplo titulo con h1</h1>
                     <h2 class="txt__Normal">Ejemplo titulo con h2</h2>
@@ -120,10 +127,21 @@
                     <h6 class="txt__Normal">Ejemplo titulo con h6</h6>
                 </div>
                 <p class="txt__Normal">Además, puedes agregarles estilos</p>
-                <div class="card">
-                    <h1 class="txt__Normal">Ejemplo titulo normal</h1>
-                    <h1 class="txt__Neg">Ejemplo titulo negritas</h1>
-                    <h1 class="txt__Ita">Ejemplo titulo italic</h1>
+                <div class="card two__cols">
+                    <div>
+                        <h1 class="txt__Normal h">Ejemplo titulo normal</h1>
+                        <h1 class="txt__Neg">Ejemplo titulo negritas</h1>
+                        <h1 class="txt__Ita">Ejemplo titulo italic</h1>
+                        <h1 class="txt__Title">Ejemplo titulo italic</h1>
+                    </div>
+                    <div class="size">
+                        <h2 class="txt__Title">Para realizar el llamado a estos cuatro estilos es:</h2>
+                        <code
+                            class="txt__Normal">&lth1 class="txt__Normal h"&gtEjemplo de titulo normal&lth1&gt</code><br>
+                        <code class="txt__Normal">&lth1 class="txt__Neg"&gtEjemplo de titulo negritas&lth1&gt</code><br>
+                        <code class="txt__Normal">&lth1 class="txt__Ita"&gtEjemplo de titulo italic&lth1&gt</code><br>
+                        <code class="txt__Normal">&lth1 class="txt__Title"&gtEjemplo de titulo italic&lth1&gt</code>
+                    </div>
                 </div>
             </div>
 
@@ -131,8 +149,8 @@
         <div class="container"><!--Imágenes y enlaces-->
             <div class="card">
                 <div class="card">
-                    <div class="txt__Neg">Imágenes</div>
-                    <div class="dos-columnas">
+                    <div class="txt__Neg" id="Imagenes">Imágenes</div>
+                    <div class="two__cols">
 
                         <div class="card">
                             <p class="txt__Title">Imagen responsiva</p>
@@ -143,55 +161,51 @@
                         </div>
 
 
-                        <div class="card">
-                            <p class="txt__Title">Agregar imagen.</p>
+                        <div class="card size">
+                            <p class="txt__Ita">Agregar imagen.</p>
                             <h2 class="txt__Neg">Imagen responsiva</h2>
                             <p class="txt__Normal">Para que una imagen sea responsiva se le debe asignar la clase
                                 “img-responsive”, con esta
                                 clase la imagen
                                 se adaptara según la resolución actual.
                                 <br>Ejemplo:<br>
-
                                 <code
-                                    class="txt__Normal">&ltimg src="Ruta imagen" alt="imagen" class="img-responsive"&gt</code>
-
-
+                                    class="txt__Neg">&ltimg src="Ruta imagen" alt="imagen" class="img-responsive"&gt</code>
                             </p>
-
                             <p class="txt__Normal">Si quieres establecer un tamaño para la imagen responsiva se le debe
                                 agregar la clase
                                 img-width-x donde
                                 la x es un valor del 1 al 100.
                                 <br>Ejemplo:<br>
                                 <code
-                                    class="txt__Normal">&ltimg src="Ruta imagen" alt="imagen" class="img-responsive img-width-50"&gt</code>
+                                    class="txt__Neg">&ltimg src="Ruta imagen" alt="imagen" class="img-responsive img-width-50"&gt</code>
                             </p>
                         </div>
 
                     </div>
                 </div>
                 <div class="card">
-                    <div class="txt__Neg">Enlaces</div>
-                    <div class="dos-columnas">
+                    <div class="txt__Neg" id="Enlaces">Enlaces</div>
+                    <div class="two__cols">
 
                         <div class="card enlaces">
 
-                            <p class="txt__Title">Enlace marcado</p>
+                            <p class="txt__Title size">Enlace marcado</p>
 
                             <div class="link">
 
-                                <p><a class="mark__green" href="#">enlace marcado</a><a class="mark__purple"
-                                        href="#">enlace
+                                <p class="txt__Normal"><a class="mark__green" href="#">enlace marcado</a><a
+                                        class="mark__purple" href="#">enlace
                                         marcado</a></p>
-                                <p><a class="mark__orange" href="#">enlace marcado</a><a class="mark__blue"
-                                        href="#">enlace
+                                <p class="txt__Normal"><a class="mark__orange" href="#">enlace marcado</a><a
+                                        class="mark__blue" href="#">enlace
                                         marcado</a></p>
-                                <p><a class="mark__yellow" href="#">enlace marcado</a><a class="mark__pink"
-                                        href="#">enlace marcado</a>
+                                <p class="txt__Normal"><a class="mark__yellow" href="#">enlace marcado</a><a
+                                        class="mark__pink" href="#">enlace marcado</a>
                                 </p>
                             </div>
 
-                            <p class="txt__Title">Enlace boton.</p>
+                            <p class="txt__Title size">Enlace boton.</p>
                             <div class="link txt__Normal">
                                 <p><a class="link__button__green" href="#">enlace boton</a><a
                                         class="link__button__orange" href="#">enlace boton</a><a
@@ -202,23 +216,24 @@
                             </div>
 
 
-                            <p class="">Enlace imagen</p>
+                            <p class="txt__Title size">Enlace imagen</p>
                             <a href="https://www.google.com/?hl=es">
                                 <img src="assets/images/IMG_ajedrez.jpg" alt="Descripción de la imagen"
                                     class="image__link img-responsive img-width-60">
                             </a>
 
                         </div>
-                        <div class="card">
-                            <p class="txt__Title">Agregar enlace.</p>
-                            <h2 class="txt__Title">Enlace marcado</h2>
+                        <div class="card size">
+                            <p class="txt__Ita">Agregar enlace.</p>
+                            <h2 class=" txt__Title">Enlace marcado</h2>
                             <p class="txt__Normal">Para agregar un enlace con estilo marcado, se necesita utilizar la
                                 clase mark__green en
                                 una etiqueta &lta&gt.
-                                <br>Ejemplo:<br>
+                                <br class="txt__Normal">Ejemplo:<br>
 
-                                <code>&ltp>&lta class="mark__green" href="#"&gttexto </a>&lt/p&gt</code><br>
-                                Las clases disponibles son:
+                                <code
+                                    class="txt__Neg">&ltp>&lta class="mark__green" href="#"&gttexto </a>&lt/p&gt</code><br>
+                                Las clases disponibles son: <br>
                                 mark__green, mark__orange, mark__blue, mark__pink,
                                 mark__purple, mark__yellow, mark__red y mark__gray,
                                 cada una con un color específico.
@@ -227,9 +242,10 @@
                             <p class="txt__Normal">Para agregar un enlace con estilo de botón, se necesita utilizar la
                                 clase
                                 link__button__green en una etiqueta &lta&gt.
-                                <br>Ejemplo:<br>
-                                <code>&ltp&lta class="link__button__green" href="#">texto &lt/a&gt&lt/p&gt</code><br>
-                                Las clases disponibles son:
+                                <br class="txt__Normal">Ejemplo:<br>
+                                <code
+                                    class="txt__Neg">&ltp&lta class="link__button__green" href="#">texto &lt/a&gt&lt/p&gt</code><br>
+                                Las clases disponibles son: <br>
                                 link__button__green, link__button__orange, link__button__blue, link__button__pink,
                                 link__button__violet, link__button__yellow, link__button__red y link__button__gray,
                                 cada uno con un color específico.
@@ -238,8 +254,8 @@
                             <p class="txt__Normal">Para agregar un enlace en una imagen, se necesita utilizar la clase
                                 image__link en una
                                 etiqueta &ltimg&gt que esta adentro de una etiqueta &lta&gt.
-                                <br>Ejemplo:<br>
-                                <code> &lta href="#"&gt
+                                <br class="txt__Normal">Ejemplo:<br>
+                                <code class="txt__Neg"> &lta href="#"&gt
                                     &ltimg src = "ruta imagen" alt = "descripción de la imagen" class = "image__link" &gt &lt/a&gt
                             </code>
                             </p>
@@ -251,9 +267,9 @@
         <div class="container"><!--Párrafos, listas y alertas-->
             <div class="card">
                 <div class="card">
-                    <div class="txt__Neg">Párrafos</div>
-                    <div class="card paragraph_Container">
-                        <p class="paragraph">
+                    <div class="txt__Neg" id="Parrafos">Párrafos</div>
+                    <div class="two__Cols">
+                        <p class="pr pr-cont size txt__Ita">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             <br> Nesciunt fugit ex aperiam, distinctio iusto quis. Distinctio architecto nam eligendi
                             incidunt,
@@ -262,7 +278,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="txt__Neg">Listas</div>
+                    <div class="txt__Neg" id="Listas">Listas</div>
                     <div class="card">
                         <ul class="list">
                             <li class="list_Item">Primero</li>
@@ -308,7 +324,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="txt__Neg">Alertas</div>
+                    <div class="txt__Neg" id="Alertas">Alertas</div>
                     <div class="card">
                         <button id="modalBtn">Warning Btn</button>
                     </div>
@@ -329,21 +345,27 @@
             </div>
         </div>
 
-        <div class="container"><!-- Barras de navegación -->
-            <div class="txt__Neg">Barras de navegación</div>
-            <p>Ejemplos de barras de navegación con animación y ocultables</p>
-                <div>
-                    <nav id="custom">
-                        <a href="">Home</a>
-                        <a href="">About</a>
-                        <a href="">Blog</a>
-                        <a href="">Herramientas</a>
-                        <a href="">Contacto</a>
-                        <div class="animation start-home"></div>
-                    </nav>
-                </div>
+        <div class="container size"><!-- Barras de navegación -->
+            <div class="txt__Neg" id="Barras">
+                Barras de navegación
+                <h2 class="txt__Ita">El Llamado a los diferentes navs en orden es el siguiente</h2>
+                <code class="txt__Normal">&ltnav class="nv__an"&gt&lth1&gt</code><br>
+                <code class="txt__Normal">&ltnav class="menuX"&gt&lth1&gt</code><br>
+                <code class="txt__Normal">&ltnav class="menuH"&gt&lth1&gt</code><br>
+                <code class="txt__Normal">&ltnav class="menuY"&gt&lth1&gt</code>
+            </div>
+            <div>
+                <nav id="nv__an">
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Blog</a>
+                    <a href="">Herramientas</a>
+                    <a href="">Contacto</a>
+                    <div class="animation start-home"></div>
+                </nav>
+            </div>
 
-                <br>
+            <br>
             <hr><br>
 
             <div>
@@ -397,18 +419,15 @@
         <div class="container"><!--Botones, switches y subida al cielo-->
             <div class="card">
                 <div class="card">
-                    <div class="txt__Neg">Botones</div>
+                    <div class="txt__Neg" id="Botones">Botones</div>
                 </div>
                 <div class="card">
-                    <div class="txt__Neg">Switches</div>
-                </div>
-                <div class="card">
-                    <div class="txt__Neg">Alertas</div>
+                    <div class="txt__Neg" id="Switches">Switches</div>
                 </div>
             </div>
         </div>
-        <div class="container"><!--Carrusel de imágenes y labels-->
-            <div class="carrusel">
+        <div class="container two__cols"><!--Carrusel de imágenes y labels-->
+            <div class="carrusel" id="Carrusel">
 
 
                 <div class="container__elementocarrusel">
@@ -431,10 +450,14 @@
                 <button class="btn__carrusel btn__siguienteimg"><span
                         class="material-symbols-outlined">chevron_right</span></button>
             </div>
+            <div class="size">
+                <h2 class="txt__Ita">Para realizar el llamado al carrusel lo haces de la siguiente manera</h2><br>
+                <code class="txt__Normal">&ltdiv class="carrusel" id="Carrusel"&gt&ltdiv&gt</code>
+            </div>
         </div>
         <div class="container"> <!--Contenedores principales-->
             <div class="card" id="forms"><!-- Elementos de formularios-->
-                <h2 class="txt__Normal">Elementos de un formulario</h2>
+                <h2 class="txt__Normal" id="Formularios">Elementos de un formulario</h2>
                 <!--Estilo para los formularios realizado por los Saul y Ulises-->
                 <div class="card">
                     <label for="" class="label__normal">Ejemplo de texto</label><br>
@@ -448,40 +471,6 @@
                     <input type="number" class="input__number" required><br>
                     <label for="" class="label__normal">Ejemplo de date</label><br>
                     <input type="date" class="input__date txt__Normal" required><br>
-                </div>
-
-                <div class="card">
-                    <form class="form">
-                        <div class="checkout-method">
-                            <button type="button" class="btnForm">
-                                <i><span class="material-symbols-outlined">credit_card</span></i>
-                            </button>                            
-                            <button type="button" class="btnForm btn-inactive">
-                                <i><span class="material-symbols-outlined">payments</span></i>
-                            </button>
-                        </div>
-                    <div class="checkout-information">
-                        <div class="input-group">
-                            <label for="name">Nombre en tarjeta</label>
-                            <input type="text" id="name" placeholder="Ingresa el nombre" />
-                        </div>
-                        <div class="input-group">
-                            <label for="number">Número de tarjeta</label>
-                            <input type="text" id="number" placeholder="..." />
-                        </div>
-                        <div class="horizontal-grid">
-                            <div class="input-group">
-                                <label for="date">Fecha de expiración</label>
-                                <input type="text" id="date" placeholder="3/23" />
-                            </div>
-                            <div class="input-group">
-                                <label for="cvv">CVV</label>
-                                <input type="number" id="cvv" placeholder="CVV" />
-                            </div>
-                        </div>
-                    </div>
-                    <button class="btnForm btn-checkout">Checkout</button>
-                    </form>
                 </div>
 
                 <div class="card">
@@ -551,6 +540,39 @@
                     <label for="" class="label__normal">Fecha de Nacimiento</label><br>
                     <input type="date" class="txt__Normal"><br>
                     <button type="submit" class="button__Cla txt__Neg">Enviar</button><br>
+                </form>
+            </div>
+            <div class="card">
+                <form class="form">
+                    <div class="checkout-method">
+                        <button type="button" class="btnForm">
+                            <i><span class="material-symbols-outlined">credit_card</span></i>
+                        </button>
+                        <button type="button" class="btnForm btn-inactive">
+                            <i><span class="material-symbols-outlined">payments</span></i>
+                        </button>
+                    </div>
+                    <div class="checkout-information">
+                        <div class="input-group">
+                            <label for="name">Nombre en tarjeta</label>
+                            <input type="text" id="name" placeholder="Ingresa el nombre" />
+                        </div>
+                        <div class="input-group">
+                            <label for="number">Número de tarjeta</label>
+                            <input type="text" id="number" placeholder="..." />
+                        </div>
+                        <div class="horizontal-grid">
+                            <div class="input-group">
+                                <label for="date">Fecha de expiración</label>
+                                <input type="text" id="date" placeholder="3/23" />
+                            </div>
+                            <div class="input-group">
+                                <label for="cvv">CVV</label>
+                                <input type="number" id="cvv" placeholder="CVV" />
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btnForm btn-checkout">Checkout</button>
                 </form>
             </div>
         </div>

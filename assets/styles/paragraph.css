@@ -1,10 +1,22 @@
-.paragraph_Container{
+.pr-cont{
     max-width: 60vw;  
     width: 100%;  
     padding: 40px 20px;  
     margin: 0 auto; 
     color: var(--); 
 }  
-.paragraph{     
+.pr{     
     font-size: var(--fsTxt);
 }
+
+.h::after{
+    content: "";
+    width: 0px;
+    transition: 0.4s;
+    display: block;
+  }
+
+.h:hover::after{
+    width: 100%;
+    border: solid 0.5px;
+  }

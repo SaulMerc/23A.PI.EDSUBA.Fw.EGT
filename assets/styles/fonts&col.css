@@ -2,39 +2,54 @@
     font-family: title;
     src: url(../fonts/OfficinaSansMediumITC-Regular.ttf);
 }
+
 @font-face {
     font-family: ita;
     src: url(../fonts/OfficinaSansBookITC-Italic.ttf);
 }
+
 @font-face {
     font-family: bol;
     src: url(../fonts/OfficinaSansBookITC-Regular.ttf);
 }
+
 @font-face {
     font-family: txt;
     src: url(../fonts/Louis\ George\ Cafe.ttf);
 }
-:root{
+
+@media (min-width: 768px) {
+    .two__cols {
+        display: grid;
+        grid-template-columns: 60% 35%;
+        column-gap: 2rem;
+    }
+}
+
+:root {
     --primary: #93bfb7;
     --secundary: #e4f2e7;
     --complement: #387373;
     --base: #2d3e40;
     --extra: #97a6a0;
-    --labelsOscuro:#161d1e;
+    --labelsOscuro: #161d1e;
     --black: #000;
     --white: #fff;
-    
+
     --fsTitles: 16pt;
     --fsSt: 14pt;
     --fsTxt: 12pt;
 }
-
+.size{
+    font-size: 20px;
+}
 /* Textos genéricos */
 /* Texto titulos */
-.txt__Title{
+.txt__Title {
     font-family: title;
     margin-bottom: 5px;
 }
+
 /* Texto normal */
 .txt__Normal {
     font-family: txt;
@@ -54,6 +69,7 @@
     font-family: ita;
     margin-bottom: 5px;
 }
+
 /* Colores y fondos */
 /*color Primario */
 .cPrim {
@@ -69,39 +85,48 @@
 .cBase {
     color: var(--base);
 }
+
 /* color complementario */
 .cComp {
     color: var(--complement);
 }
+
 /* color extra */
 .cExt {
     color: var(--extra);
 }
+
 /* Color negro */
 .cBlack {
     color: var(--black);
 }
+
 /* Color blanco */
 .cWhite {
     color: var(--white);
 }
+
 /* Color rojo */
 .cRed {
     color: red;
 }
+
 /* Fondo color primario */
-.bcPrim{
+.bcPrim {
     background: var(--primary);
 }
+
 /* Fondo color secundario */
-.bcSec{
+.bcSec {
     background: var(--secundary);
 }
+
 /* Fondo color complementario */
-.bcCom{
+.bcCom {
     background: var(--complement);
 }
+
 /* Fondo color extra */
-.bcExt{
+.bcExt {
     background: var(--extra);
 }

@@ -77,9 +77,9 @@ input#cust{
     border-radius: 50%;
     width: 2.5vw;
     height: 2.5vw;
-    box-shadow: 0px 0px 5px #AAC5C6;
-    border: 0.2vw solid rgba(2, 228, 231, 0.8);
-    background-color: #344056;
+    box-shadow: 0px 0px 5px var(--secundary);
+    border: 0.2vw solid var(--secundary);
+    background-color: var(--base);
     transition: 0.2s all linear;
     margin-right: 10px;
     position: relative;
@@ -89,8 +89,8 @@ input#cust{
 }
 
 input#cust:checked{
-    border: 0.7vw solid #344056;
-    background-color: rgba(2, 228, 231, 0.8);
+    border: 0.7vw solid var(--base);
+    background-color: var(--primary);
 }
 
 /* textareas */

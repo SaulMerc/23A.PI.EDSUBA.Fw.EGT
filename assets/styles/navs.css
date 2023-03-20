@@ -162,7 +162,7 @@ nav.menuP>ul li a {
 }
 
 nav.menuP>ul>li>ul>li a:hover {
-	background: #5da5a2;
+	background: var(--primary);
 }
 
 .menufixed {
@@ -172,18 +172,18 @@ nav.menuP>ul>li>ul>li a:hover {
 	width: 100%;
 }
 
-nav#custom{
+nav#nv__an{
 	position: relative;
 	margin: 270px auto 0;
 	width: 590px;
 	height: 50px;
-	background: #34495e;
+	background: var(--complement);
 	border-radius: 8px;
 	font-size: 0;
 	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
 }
 
-nav#custom a{
+nav#nv__an a{
 	font-size: 15px;
 	text-transform: uppercase;
 	color: white;
@@ -195,57 +195,57 @@ nav#custom a{
 	text-align: center;
 }
 
-nav#custom .animation{
+nav#nv__an .animation{
 	position: absolute;
 	height: 100%;
 	top: 0;
 	z-index: 0;
-	background: #1abc9c;
+	background: var(--base);
 	border-radius: 8px;
 	transition: all .5s ease 0s;
 }
 
-nav#custom a:nth-child(1){
+nav#nv__an a:nth-child(1){
 	width: 100px;
 }
 
-nav#custom a:nth-child(1):hover~.animation{
+nav#nv__an a:nth-child(1):hover~.animation{
 	width: 100px;
 	left: 0;
 }
 
-nav#custom a:nth-child(2){
+nav#nv__an a:nth-child(2){
 	width: 110px;
 }
 
-nav#custom a:nth-child(2):hover~.animation{
+nav#nv__an a:nth-child(2):hover~.animation{
 	width: 110px;
 	left: 100px;
 }
 
-nav#custom a:nth-child(3){
+nav#nv__an a:nth-child(3){
 	width: 100px;
 }
 
-nav#custom a:nth-child(3):hover~.animation{
+nav#nv__an a:nth-child(3):hover~.animation{
 	width: 110px;
 	left: 210px;
 }
 
-nav#custom a:nth-child(4){
+nav#nv__an a:nth-child(4){
 	width: 160px;
 }
 
-nav#custom a:nth-child(4):hover~.animation{
+nav#nv__an a:nth-child(4):hover~.animation{
 	width: 160px;
 	left: 310px;
 }
 
-nav#custom a:nth-child(5){
+nav#nv__an a:nth-child(5){
 	width: 120px;
 }
 
-nav#custom a:nth-child(5):hover~.animation{
+nav#nv__an a:nth-child(5):hover~.animation{
 	width: 120px;
 	left: 470px;
 }

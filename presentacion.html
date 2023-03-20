@@ -6,37 +6,162 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/presentacion.css">
     <title>Presentacion EGT</title>
 </head>
 
-<body class="grid__bodyB4">
-    <header class="grid__BodyH4 displ__flx fade__in">
-        <img src="assets/images/egtb.png" alt="" srcset="">
-    </header>
-    <div class="grid__BodyTxt slide__right">
-        <h1 class="txt__Normal">EDSUBA Graphic Tool</h1>
-        <h3 class="txt__Normal">EL framework que necesitas</h3>
+<body class="container" >
+    <div class="containerimages">
+        <img src="./assets/images/menorque.png" class="image">
+        <img src="./assets/images/diagonal.png" class="image">
+        <img src="./assets/images/mayorque.png" class="image">
+        <img src="./assets/images/e.png" class="image">
+        <img src="./assets/images/g.png" class="image">
+        <img src="./assets/images/lat.png" class="image">
+      </div>
+    <div class="size">
+        <span id="element1" class="txt__Neg"></span>
+    </div>
+    <div class="scrolled fade-in txt__Ita size">
+        
+        <span id="element2"></span>
     </div>
 
-    <main class="grid__BodyM4 card">
+    <main>
         <section id="Introducción">
-            <p>Objetivos y descripción del equipo</p>
+            <h2>Objetivos y descripción del equipo:</h2>
+            <p>Nuestro equipo de desarrollo se encuentra enfocado en el aprendizaje y realización de proyectos de desarrollo web. <br>
+                Como equipo, nos dedicamos a crear soluciones inovadoras y atractivas para nuestros clientes, nos enorgullecemos de nuestro trabajo. <br>
+                Cada miembro de nuestro equipo aporta habilidades y perspectivas únicas a nuestro trabajo, trabajamos juntos para crear
+                de software personalizadas para nuestros clientes.
+            </p>
         </section>
-
         <section id="Equipo">
-            <p>Lista de equipo</p>
-            <p>Habilidades del equipo</p>
+            <h2>Equipo de desarrollo</h2>
+            <p>Isaac Ulises Ascencio Padilla</p>
+            <p>Saul Mercado Pedroza</p>
+            <p>Waldo Gomez Plascencia</p>
+            <p>Diego Hernandez Cardenas</p>
+            <p>Alfonso Vidrio Lizaola</p>
+            <p>Seryev Oyser Castañeda Martinez</p>
+            <p>Samuel Irvine Valenzuela Renteria</p>
         </section>
-        
         <section id="Contacto">
             <p>Información del equipo de desarrollo - correo - redes</p>
         </section>
-
     </main>
-    <footer class="grid__BodyF4">
-        <p>Copyright y enlaces</p>
+    <footer>
+        <p>Copyrigt</p>
     </footer>
+
+
+    <script src="assets/scripts/animations.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+        var typed = new Typed('#element1', {
+          strings: ['EDSUBA GRAFIC TOOL'],
+          typeSpeed: 50,
+          startDelay:2000,
+        });
+      </script>
+      <script>
+        var typed = new Typed('#element2', {
+          strings: ['La herramienta que necesitas'],
+          typeSpeed: 50,
+          startDelay:3500,
+        });
+      </script>
+      <script>
+       // Seleccionar las imágenes que se van a animar
+const images = document.querySelectorAll('.image');
+
+// Crear una línea de tiempo
+const timeline = anime.timeline({
+    loop:true,
+    delay:500,
+});
+
+// Añadir las animaciones a la línea de tiempo
+timeline
+  .add({
+    targets: images[0],
+    keyframes: [
+    {translateX: -40},
+    {translateY: 250},
+    {translateX: 40},
+    {translateY: 0},
+    {translateX: 0}
+  ],
+    opacity: 1,
+    duration: 1000
+  })
+  .add({
+    targets: images[1],
+    keyframes: [
+    {translateX: -40},
+    {translateY: 250},
+    {translateX: 40},
+    {translateY: 0},
+    {translateX: 0}
+  ],
+    opacity: 1,
+    duration: 1000
+  }, '-=800')
+  .add({
+    targets: images[2],
+    keyframes: [
+    {translateX: -40},
+    {translateY: 250},
+    {translateX: 40},
+    {translateY: 0},
+    {translateX: 0}
+  ],
+    opacity: 1,
+    duration: 1000
+  }, '-=800')
+  .add({
+    targets: images[3],
+    keyframes: [
+    {translateY: -40},
+    {translateX: 250},
+    {translateY: 40},
+    {translateX: 0},
+    {translateY: 0}
+  ],
+    opacity: 1,
+    duration: 1000
+  })
+  .add({
+    targets: images[4],
+    keyframes: [
+    {translateY: -40},
+    {translateX: 250},
+    {translateY: 40},
+    {translateX: 0},
+    {translateY: 0}
+  ],
+    opacity: 1,
+    duration: 1000
+  }, '-=800')
+  .add({
+    targets: images[5],
+    keyframes: [
+    {translateY: -40},
+    {translateX: 250},
+    {translateY: 40},
+    {translateX: 0},
+    {translateY: 0}
+  ],
+    opacity: 1,
+    duration: 1000,
+    
+  }, '-=800')
+  ;
+
+      </script>
 </body>
 
 </html>
