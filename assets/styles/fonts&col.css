@@ -40,9 +40,7 @@
     --fsSt: 14pt;
     --fsTxt: 12pt;
 }
-.size{
-    font-size: 20px;
-}
+
 /* Textos genéricos */
 /* Texto titulos */
 .txt__Title {
@@ -129,6 +127,10 @@
 /* Fondo color extra */
 .bcExt {
     background: var(--extra);
+}
+/* Fondo color base*/
+.bcBas {
+    background: var(--base);
 }
 h1, h2, h3, h4, h5, h6{
     font-family: title;

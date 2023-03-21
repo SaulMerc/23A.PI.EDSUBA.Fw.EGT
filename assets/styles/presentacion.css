@@ -5,6 +5,12 @@
      
 }
 
+#html{
+    display: grid;
+    place-content: center;
+    font-size: 150px;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: black;
@@ -35,6 +41,11 @@ footer {
     text-align: center;
     color: #fff;
 }
+#Contacto{
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+}
 #element1{
     color: #fff;
     font-size: 20px;
@@ -57,7 +68,7 @@ footer {
      right:  90px;
   }
 
-  #botonRedireccion: hover{
+  #botonRedireccion:hover{
     
   }
 

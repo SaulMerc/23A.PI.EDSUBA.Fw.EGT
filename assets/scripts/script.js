@@ -194,7 +194,7 @@ function setResponsiveImages() {
 // Ejecuta la función al cargar la página
 setResponsiveImages();
 
-//
+//Desplazamiento smooth
 $(document).ready(function(){
 
   $("a").on('click', function(event) {

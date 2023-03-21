@@ -71,6 +71,8 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    background-color: var(--extra);
+    color: var(--white);
     margin: 2px 2px;
     cursor: pointer;
     border-radius: 3px;
@@ -86,6 +88,8 @@
 
 .button__CardsOsc{
     border: none;
+    background-color: var(--complement);
+    color: var(--white);
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -106,6 +110,8 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    background-color: var(--primary);
+    color: var(--white);
     margin: 2px 2px;
     cursor: pointer;
     border-radius: 3px;

@@ -29,7 +29,12 @@ width: 100%;
 .txt__Center {
 text-align: center;
 }
-
+.c{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
 .txt__Right {
 text-align: right;
 }

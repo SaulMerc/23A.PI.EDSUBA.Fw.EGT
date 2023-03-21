@@ -194,21 +194,21 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, auto);
-    grid-template-areas: "head head head head"
-                        "aside main main main"
-                        "footer footer footer footer";
+    grid-template-areas: "h h h h"
+                        "a m m m"
+                        "f f f f";
 }
 .grid__BodyH{
-    grid-area: head;
+    grid-area: h;
 }
 .grid__BodyM{
-    grid-area: main;
+    grid-area: m;
 }
 .grid__BodyA{
-    grid-area: aside;
+    grid-area: a;
 }
 .grid__BodyF{
-    grid-area: footer;
+    grid-area: f;
     text-align: center;
 }
 /* Estilo grido con sidebars  y asides*/
@@ -216,23 +216,23 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, auto);
-    grid-template-areas: "head head head head head"
-                        "main main main aside aside"
-                        "main main main aside aside"
-                        "sideb1 sideb2 sideb2 aside aside"
-                        "footer footer footer footer footer";
+    grid-template-areas: "hea hea hea hea"
+                        "mai mai mai asid"
+                        "mai mai mai asid"
+                        "sideb1 sideb2 sideb2 asid"
+                        "foot foot foot foot";
 }
 .grid__bodyH2{
-    grid-area: head;
+    grid-area: hea;
 }
 .grid__BodyM2{
-    grid-area: main;
+    grid-area: mai;
 }
 .grid__BodyA2{
-    grid-area: aside;
+    grid-area: asid;
 }
 .grid__BodyF2{
-    grid-area: footer;
+    grid-area: foot;
     text-align: center;
 }
 .grid__BodyS1{
@@ -247,44 +247,18 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
-    grid-template-areas: "head head head"
-                        "main main main"
-                        "main main main"
-                        "footer footer footer";
+    grid-template-areas: "he he he"
+                        "ma ma ma"
+                        "ma ma ma"
+                        "foo foo foo";
 }
 .grid__BodyH3{
-    grid-area: head;
+    grid-area: he;
 }
 .grid__BodyM3{
-    grid-area: main;
+    grid-area: ma;
 }
 .grid__BodyF3{
-    grid-area: footer;
-    text-align: center;
-}
-/* Extra */
-.grid__bodyB4{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas: "head txt txt"
-                        "main main main"
-                        "main main main"
-                        "footer footer footer";
-}
-.grid__BodyH4{
-    grid-area: head;
-    align-content: center;
-    text-align: center;
-}
-.grid__BodyTxt{
-    grid-area: txt;
-    text-align: left;
-}
-.grid__BodyM4{
-    grid-area: main;
-}
-.grid__BodyF4{
-    grid-area: footer;
+    grid-area: foo;
     text-align: center;
 }
