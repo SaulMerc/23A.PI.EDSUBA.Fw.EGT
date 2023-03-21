@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     
+}
+
+#html{
+    display: grid;
+    place-content: center;
+    font-size: 150px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+h2{
+    margin: 20px;
+    color: #fff;
+    text-align: center;
+}
+h1, h3, p {
+    text-align: center;
+    color: #fff;
+    margin: 0;
+}
+footer {
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+}
+#Contacto{
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+}
+#element1{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+}
+#element2{
+    color: #fff;
+}
+#botonRedireccion {
+    position: absolute;
+     top: 20px;
+     right:  320px;
+     height: 80px;
+     cursor: pointer;
+  }
+  #botonRedireccionLabel{
+    color:white;
+    position: absolute;
+     top: 100px;
+     right:  90px;
+  }
+
+  #botonRedireccion:hover{
+    
+  }
+
+
+.anim {
+    animation: fadeIn 1s ease-in-out;
+}
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.txt__Normal {
+    animation: slideInLeft 1s ease-in-out;
+}
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.scrolled {
+    animation: slideInUp 1s ease-in-out;
+}
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .containerimages {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .image {
+      width: 8%;
+      height: auto;
+    }
+
+    #botonRedireccion{
+        position: absolute;
+        top: 40%;
+        right: 550px;
+        
+    }
+    #botonRedireccionLabel{
+        position: absolute;
+        top: 50%;
+        right: 275px;
+        margin: 10px;
+    }
+    
+    
+    #Introducción {
+      padding: 50px;
+    }
+    
+    #Equipo {
+      padding: 50px;
+      margin: 30px;
+    }
+    
+    #Contacto {
+      padding: 50px;
+    }
+  }

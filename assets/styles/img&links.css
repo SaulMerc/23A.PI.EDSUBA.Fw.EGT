@@ -1,0 +1,244 @@
+  code {
+    font-weight: bold;
+  }
+  
+  .img-responsive {
+    margin-bottom: 3rem;
+  }
+  a{
+    cursor: pointer;
+  }
+  
+  /* enlaces */
+  
+  .enlaces {
+    text-align: center;
+  }
+  
+  .mark__green {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+  }
+  
+  .mark__green:focus {
+    border-bottom: 1px solid;
+    background: #bae498;
+  }
+  
+  .mark__green:hover {
+    border-bottom: 1px solid;
+    background: #cdfeaa;
+  }
+  
+  .mark__orange {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+  }
+  
+  .mark__orange:focus {
+    border-bottom: 1px solid;
+    background: #ffa07a;
+  }
+  
+  .mark__orange:hover {
+    border-bottom: 1px solid;
+    background: #ffe5b4;
+  }
+  
+  .mark__blue {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+  }
+  
+  .mark__blue:focus {
+    border-bottom: 1px solid;
+    background: #1e90ff;
+  }
+  
+  .mark__blue:hover {
+    border-bottom: 1px solid;
+    background: #87cefa;
+  }
+  
+  .mark__pink {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+  }
+  
+  .mark__pink:focus {
+    border-bottom: 1px solid;
+    background: #ff69b4;
+  }
+  
+  .mark__pink:hover {
+    border-bottom: 1px solid;
+    background: #ffb6c1;
+  }
+  
+  .mark__purple {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+  }
+  
+  .mark__purple:focus {
+    border-bottom: 1px solid;
+    background: #9370db;
+  }
+  
+  .mark__purple:hover {
+    border-bottom: 1px solid;
+    background: #d8bfd8;
+  }
+  
+  .mark__yellow {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+  }
+  
+  .mark__yellow:focus {
+    border-bottom: 1px solid;
+    background: #ffff00;
+  }
+  
+  .mark__yellow:hover {
+    border-bottom: 1px solid;
+    background: #ffff99;
+  }
+  
+  .mark__red {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+  }
+  
+  .mark__red:focus {
+    border-bottom: 1px solid;
+    background: #ff0000;
+  }
+  
+  .mark__red:hover {
+    border-bottom: 1px solid;
+    background: #ff9999;
+  }
+  
+  .mark__gray {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+  }
+  
+  .mark__gray:focus {
+    border-bottom: 1px solid;
+    background: #808080;
+  }
+  
+  .mark__gray:hover {
+    border-bottom: 1px solid;
+    background: #d9d9d9;
+  }
+  
+  .link a{
+    outline: none;
+    text-decoration: none;
+  
+    /* width: 19.5%; */
+    margin: 2rem;
+    padding: 1rem;
+    text-align: center;
+    line-height: 3;
+    color: black;
+  }
+  
+  .link__button__green:link {
+    background-color: #bae498;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    display: inline-block;
+  }
+  
+  .link__button__green:hover {
+    background-color: #cdfeaa;
+  }
+  
+  .link__button__orange:link {
+    background-color: #ffa07a;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    display: inline-block;
+  }
+  
+  .link__button__orange:hover {
+    background-color: #ffe5b4;
+  }
+  .link__button__blue:link {
+    background-color: #1e90ff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    display: inline-block;
+  }
+  
+  .link__button__blue:hover {
+    background-color: #87cefa;
+  }
+  .link__button__pink:link {
+    background-color: #ff69b4;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    display: inline-block;
+  }
+  
+  .link__button__pink:hover {
+    background-color: #ffb6c1;
+  }
+  .link__button__violet:link {
+    background-color: #9370db;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    display: inline-block;
+  }
+  
+  .link__button__violet:hover {
+    background-color: #d8bfd8;
+  }
+  .link__button__yellow:link {
+    background-color: #ffff00;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    display: inline-block;
+  }
+  
+  .link__button__yellow:hover {
+    background-color: #ffff99;
+  }
+  .link__button__red:link {
+    background-color: #ff0000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    display: inline-block;
+  }
+  
+  .link__button__red:hover {
+    background-color: #ff9999;
+  }
+  .link__button__gray:link {
+    background-color: #808080;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    display: inline-block;
+  }
+  
+  .link__button__gray:hover {
+    background-color: #d9d9d9;
+  }
+  
+  .image__link:hover {
+    box-shadow: 0px 0px 20px black;
+  }
+  
+ 

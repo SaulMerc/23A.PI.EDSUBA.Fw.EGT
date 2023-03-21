@@ -1,0 +1,77 @@
+.pr_cont_Sh{
+  max-width: 20vw;  
+  width: 100%;  
+}
+.pr_cont_Med{
+max-width: 40vw;  
+width: 100%;  
+}
+.pr_cont_Lg{
+max-width: 65vw;  
+width: 100%;  
+}  
+.pr{     
+  font-size: var(--fsTxt);
+}
+/*Animacion de linea baja en texto*/
+.under::after{
+  content: "";
+  width: 0px;
+  transition: 0.4s;
+  display: block;
+}
+
+.under:hover::after{
+  width: 100%;
+  border: solid 0.5px;
+}
+/*Alinacion de texto e indentacion*/
+.txt__Center {
+text-align: center;
+}
+.c{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.txt__Right {
+text-align: right;
+}
+
+.txt__Left {
+text-align: left;
+}
+.txt__Justify {
+text-align: justify;
+}
+.txt_ind_1{
+line-height: 20px;
+}
+.txt_ind_2{
+line-height: 25px;
+}
+.txt_ind_3{
+line-height: 30px;
+}
+/*Tamaños de letra*/
+
+.size_1 {
+font-size: 40px;
+}
+
+.size_2 {
+font-size: 30px;
+}
+
+.size_3 {
+font-size: 20px;
+}
+
+.size_4 {
+font-size: 15px;
+}
+
+.size_5 {
+font-size: 10px;
+}

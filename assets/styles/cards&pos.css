@@ -1,0 +1,264 @@
+@import url(fonts&col.css);
+
+.pos{
+    text-align: center;
+}
+.pos_un{
+    text-align: center;
+    text-decoration:underline;
+}
+.container {
+    max-width: 120rem;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+    height: 100%;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 10px;
+    transition: 0.3s ease all;
+}
+
+.card__Large {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 40%;
+    min-width: 680px;
+    max-width: 700px;
+    height: 50%;
+    min-height: 47vh;
+    font-size: 95%;
+    word-break: break-all;
+}
+
+.card__Med {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 30%;
+    min-width: 520px;
+    max-width: 600px;
+    height: 45%;
+    min-height: 42vh;
+    font-size: 80%;
+    word-break: break-all;
+}
+
+.card__Small {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 20%;
+    min-width: 360px;
+    max-width: 400px;
+    height: 30%;
+    min-height: 30vh;
+    font-size: 60%;
+    word-break: break-all;
+}
+
+.card__Tiny {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 15%;
+    min-width: 200px;
+    max-width: 250px;
+    height: 20%;
+    min-height: 20vh;
+    max-height: 30vh;
+    word-break: break-all;
+}
+
+.img__card {
+    display: flex;
+    border: solid 4px white;
+    border-radius: 4px;
+}
+
+.img__card:hover{
+    cursor: pointer;
+    transition: 0.3s ease all;
+    box-shadow: 5px 5px 5px rgba(136, 135, 135, 0.603);
+}
+
+/*Carrusel*/
+.carrusel {
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+
+}
+
+.container__elementocarrusel {
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.container__elementocarrusel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Display y Grids */
+.displ__flx {
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+}
+.displ__flxmod{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+}
+/* Grid para tajetas */
+.grid__shop {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "image image image head head"
+        "image image image autor autor"
+        "desc desc desc desc desc"
+        "price price price sale cart";
+    margin: 5px;
+}
+
+.grid__desc {
+    grid-area: desc;
+    text-align: left;
+    display: flex;
+    align-items: start;
+}
+
+.grid__title {
+    grid-area: head;
+    text-align: left;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.grid__image {
+    grid-area: image;
+}
+
+.grid__author {
+    grid-area: autor;
+    text-align: left;
+    display: flex;
+    align-items: start;
+}
+
+.grid__price {
+    grid-area: price;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.grid__sale {
+    grid-area: sale;
+    display: flexbox;
+    text-align: center;
+    align-items: center;
+}
+
+.grid__cart {
+    grid-area: cart;
+    display: flexbox;
+    text-align: center;
+    align-items: center;
+}
+/* Grids paara contenido de páginas */
+/*Estilo grid con aside */
+.grid__bodyB{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "h h h h"
+                        "a m m m"
+                        "f f f f";
+}
+.grid__BodyH{
+    grid-area: h;
+}
+.grid__BodyM{
+    grid-area: m;
+}
+.grid__BodyA{
+    grid-area: a;
+}
+.grid__BodyF{
+    grid-area: f;
+    text-align: center;
+}
+/* Estilo grido con sidebars  y asides*/
+.grid__bodyB2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "hea hea hea hea"
+                        "mai mai mai asid"
+                        "mai mai mai asid"
+                        "sideb1 sideb2 sideb2 asid"
+                        "foot foot foot foot";
+}
+.grid__bodyH2{
+    grid-area: hea;
+}
+.grid__BodyM2{
+    grid-area: mai;
+}
+.grid__BodyA2{
+    grid-area: asid;
+}
+.grid__BodyF2{
+    grid-area: foot;
+    text-align: center;
+}
+.grid__BodyS1{
+    grid-area: sideb1;
+}
+.grid__BodyS2{
+    grid-area: sideb2;
+}
+
+/* Estilo grid simple son asides */
+.grid__bodyB3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "he he he"
+                        "ma ma ma"
+                        "ma ma ma"
+                        "foo foo foo";
+}
+.grid__BodyH3{
+    grid-area: he;
+}
+.grid__BodyM3{
+    grid-area: ma;
+}
+.grid__BodyF3{
+    grid-area: foo;
+    text-align: center;
+}

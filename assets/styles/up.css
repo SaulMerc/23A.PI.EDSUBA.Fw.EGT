@@ -1,0 +1,18 @@
+#ir_Arriba {
+	display:none;
+	padding:25px;
+	border-radius: 10%;
+	background: #2D3E40;
+	font-size:20px;
+	color: white;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right: 20px;
+}
+
+#ir_Arriba:hover {
+    background: #387373;
+	color: white;
+	font-size:25px;
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/presentacion.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>EDSUBA EGT</title>
+</head>
+
+<body class="container" >
+    <header class=" displ__flx anim">
+      <img src="./assets/images/flecha_2.png" alt="" id="botonRedireccion" onclick="window.location.href='./index.html'">
+      <label id="botonRedireccionLabel" for="">Pagina principal</label>
+    </header>
+    <div class="containerimages">
+        <img src="./assets/images/menorque.png" class="image">
+        <img src="./assets/images/diagonal.png" class="image">
+        <img src="./assets/images/mayorque.png" class="image">
+        <img src="./assets/images/e.png" class="image">
+        <img src="./assets/images/g.png" class="image">
+        <img src="./assets/images/lat.png" class="image">
+      </div>
+    <div >
+        <span id="element1"></span>
+
+    </div>
+    <div class="scrolled fade-in">
+        
+        <span id="element2"></span>
+    </div>
+
+    <main>
+        <section id="Introducción">
+            <h2>Objetivos y descripción del equipo:</h2>
+            <p>Nuestro equipo de desarrollo se encuentra enfocado en el aprendizaje y realización de proyectos de desarrollo web. <br>
+              Como equipo, nos dedicamos a crear soluciones inovadoras y atractivas para nuestros clientes, nos enorgullecemos de nuestro trabajo. <br>
+              Cada miembro de nuestro equipo aporta habilidades y perspectivas únicas a nuestro trabajo, trabajamos juntos para crear
+              software personalizado para nuestros clientes.
+          </p>
+        </section>
+        <section id="Equipo">
+            <h2>Equipo de desarrollo: EDSUBA</h2>
+            <h3>"Equipo de desarrollo sin un buen acrónimo"</h3>
+            <p>Isaac Ulises Ascencio Padilla</p>
+            <p>Saul Mercado Pedroza</p>
+            <p>Waldo Gomez Plascencia</p>
+            <p>Diego Hernandez Cardenas</p>
+            <p>Alfonso Manuel Vidrio Lizaola</p>
+            <p>Seryev Oyser Castañeda Martinez</p>
+            <p>Samuel Irvine Valenzuela Renteria</p>
+        </section>
+
+        <section id="tecnologias">
+          <h2>Tecnologías:</h2>
+          <span id="html" class="material-symbols-outlined cWhite">html</span>
+          <span id="html" class="material-symbols-outlined cWhite">javascript</span>
+          <span id="html" class="material-symbols-outlined cWhite">css</span>
+        </section>
+        
+        <section id="Contacto"> 
+          <h2>Contactanos</h2>
+          <p>edsubadevelopingmx@gmail.com</p>
+          <a href="https://www.facebook.com/profile.php?id=100089538728988&mibextid=ZbWKwL">Facebook - EBSUBA</a>
+        </section>
+    </main>
+    <footer>
+        <p>Copyriht by EDSUBA</p><img src="assets/images/logoEB1.png">
+    </footer>
+
+
+    <script src="assets/scripts/animations.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+        var typed = new Typed('#element1', {
+          strings: ['EDSUBA GRAFIC TOOL'],
+          typeSpeed: 50,
+          startDelay:2000,
+        });
+      </script>
+      <script>
+        var typed = new Typed('#element2', {
+          strings: ['La herramienta que necesitas'],
+          typeSpeed: 50,
+          startDelay:3500,
+        });
+      </script>
+      <script>
+       // Seleccionar las imágenes que se van a animar
+const images = document.querySelectorAll('.image');
+
+// Crear una línea de tiempo
+const timeline = anime.timeline({
+    loop:true,
+    delay:500,
+});
+
+// Añadir las animaciones a la línea de tiempo
+timeline
+  .add({
+    targets: images[0],
+    keyframes: [
+    {translateX: -40},
+    {translateY: 250},
+    {translateX: 40},
+    {translateY: 0},
+    {translateX: 0}
+  ],
+    opacity: 1,
+    duration: 1000
+  })
+  .add({
+    targets: images[1],
+    keyframes: [
+    {translateX: -40},
+    {translateY: 250},
+    {translateX: 40},
+    {translateY: 0},
+    {translateX: 0}
+  ],
+    opacity: 1,
+    duration: 1000
+  }, '-=800')
+  .add({
+    targets: images[2],
+    keyframes: [
+    {translateX: -40},
+    {translateY: 250},
+    {translateX: 40},
+    {translateY: 0},
+    {translateX: 0}
+  ],
+    opacity: 1,
+    duration: 1000
+  }, '-=800')
+  .add({
+    targets: images[3],
+    keyframes: [
+    {translateY: -40},
+    {translateX: 250},
+    {translateY: 40},
+    {translateX: 0},
+    {translateY: 0}
+  ],
+    opacity: 1,
+    duration: 1000
+  })
+  .add({
+    targets: images[4],
+    keyframes: [
+    {translateY: -40},
+    {translateX: 250},
+    {translateY: 40},
+    {translateX: 0},
+    {translateY: 0}
+  ],
+    opacity: 1,
+    duration: 1000
+  }, '-=800')
+  .add({
+    targets: images[5],
+    keyframes: [
+    {translateY: -40},
+    {translateX: 180},
+    {translateY: 40},
+    {translateX: 0},
+    {translateY: 0}
+  ],
+    opacity: 1,
+    duration: 1000,
+    
+  }, '-=800')
+  ;
+
+      </script>
+ <script>
+  const redirectButton = document.getElementById('botonRedireccion');
+  const timeline2=anime.timeline();
+
+    anime({
+      targets: '#botonRedireccion',
+      translateX: 250,
+      duration: 3000
+    });
+    anime({
+      targets: '#botonRedireccion',
+      width: '11%', // -> from '28px' to '100%',
+    easing: 'easeInOutQuad',
+    direction: 'alternate',
+    loop: true
+    })
+ 
+</script>
+
+ 
+
+</body>
+
+</html>

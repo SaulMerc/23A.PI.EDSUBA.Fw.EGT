@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="assets/scripts/jquery-3.6.4.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <title>Framework EGT</title>
+</head>
+
+<!-- Iconos -->
+<!-- <span class="material-symbols-outlined">nombreIcono</span> -->
+
+<body>
+
+    <span id="ir_Arriba" class="material-symbols-outlined">
+        arrow_upward
+    </span>
+
+    <!-- Elementos del encabezado-->
+    <header class="container txt__Normal">
+        <div class="container pos">
+            <h1 class="txt__Neg"><i class="txt_typed"></i></h1>
+            <h2 class="txt__Ita pos_un">El framework que necesitas
+            </h2>
+        </div>
+        <nav class="menuP fade__in" id="menufix">
+            <ul>
+                <li><a href="presentacion.html"><span class="material-symbols-outlined">home</span></a></li>
+                <li><a href="#"><span class="material-symbols-outlined">construction</span></a>
+                    <ul>
+                        <li><a href="#Tarjetas">Tarjetas</a></li>
+                        <li><a href="#Titulos">Títulos</a></li>
+                        <li><a href="#Imagenes">Imágenes</a></li>
+                        <li><a href="#Enlaces">Enlaces</a></li>
+                        <li><a href="#Parrafos">Párrafos</a></li>
+                        <li><a href="#Listas">Listas</a></li>
+                        <li><a href="#Alertas">Alertas</a></li>
+                        <li><a href="#Barras">Barras_nav</a></li>
+                        <li><a href="#Botones">Botones</a></li>
+                        <li><a href="#Switches">Switches</a></li>
+                        <li><a href="#Carrusel">Carrusel</a></li>
+                        <li><a href="#Formularios">Formularios</a></li>
+                        <li><a href="#Animaciones">Animaciones</a></li>
+                        <li><a href="#Grid">Grids</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://www.facebook.com/profile.php?id=100089538728988&mibextid=ZbWKwL"><span
+                            class="material-symbols-outlined">contacts</span></a>
+                </li>
+                <li><a onclick="window.location.href = 'EGT.zip'"><span
+                            class="material-symbols-outlined">download</span></a></li>
+                <li><a>Modo Oscuro<label class="switch">
+                            <input type="checkbox" id="dark__ModeToggle">
+                            <span class="slider round"></span>
+                        </label></span></a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main class="container">
+        <div class="container"><!--Contenedores principales-->
+            <!--Contenedores y títulos-->
+
+            <h2 class="txt__Title under size_2" id="Tarjetas">Tarjetas</h2>
+            <p class="txt__Ita">Presentamos varias opciones para poder tener tarjetas </p>
+            <div class="displ__flx">
+                <div class="card__Large grid__shop bcExt cSec">
+                    <img class="grid__image img__card" src="https://picsum.photos/370/325" alt="" />
+                    <h1 class="txt__Title grid__title">Venta de Producto ###</h1>
+                    <h3 class="txt__Ita grid__author">Autor: Cervantes </h3>
+                    <h4 class="txt__Normal grid__desc">Descripción genérica</h4>
+                    <p class="txt__Normal grid__price">Precio: $$ </p>
+                    <button type="button" class="icon__none grid__sale button__CardsCla"><span
+                            class="material-symbols-outlined">
+                            payments
+                        </span></button>
+                    <button type="button" class="grid__cart icon__none button__CardsCla"><span
+                            class="material-symbols-outlined">shopping_cart</span></button>
+                </div>
+                <div class="card__Med grid__shop bcCom cPrim">
+                    <img class="grid__image img__card" src="https://picsum.photos/270/275" alt="" />
+                    <h1 class="txt__Neg grid__title">Venta de Producto ###</h1>
+                    <h3 class="txt__Ita grid__author">Autor: Cervantes </h3>
+                    <p class="txt__Normal grid__price">Precio: $$ </p>
+                    <h4 class="txt__Normal grid__desc">Descripción genérica</h4>
+                    <button type="button" class="icon__none grid__sale button__CardsSec"><span
+                            class="material-symbols-outlined">
+                            payments
+                        </span></button>
+                    <button type="button" class="grid__cart icon__none button__CardsSec"><span
+                            class="material-symbols-outlined">shopping_cart</span></button>
+                </div>
+                <div class="card__Small grid__shop bcSec cBase">
+                    <img class="grid__image img__card" src="https://picsum.photos/170/175" alt="" />
+                    <h1 class="txt__Neg grid__title">Venta de Producto ###</h1>
+                    <h3 class="txt__Ita grid__author">Autor: Cervantes </h3>
+                    <p class="txt__Normal grid__price">Precio: $$ </p>
+                    <h4 class="txt__Normal grid__desc">Descripción genérica</h4>
+                    <button type="button" class="icon__none grid__sale button__CardsOsc"><span
+                            class="material-symbols-outlined">
+                            payments
+                        </span></button>
+                    <button type="button" class="grid__cart icon__none button__CardsOsc"><span
+                            class="material-symbols-outlined">shopping_cart</span></button>
+                </div>
+                <div class="card__Tiny bcPrim cWhite">
+                    <p class="txt__Normal">Esta última tarjeta sirve para insertar notas o datos cortos</p>
+                </div>
+            </div>
+            <div class="card size_3 bcPrim txt__Center">
+                <h1 class="txt__Title">LLamado de las cards</h1>
+                <p class="txt__Normal">El llamado a estas cards es el siguiente</p>
+                <code class="txt__Normal">&ltdiv class="card__Large"&gtEjemplo de titulo normal&lth1&gt</code><br>
+                <code class="txt__Normal">&ltdiv class="card__Med"&gtEjemplo de titulo negritas&lth1&gt</code><br>
+                <code class="txt__Normal">&ltdiv class="card__Small"&gtEjemplo de titulo italic&lth1&gt</code><br>
+                <code class="txt__Normal">&ltdiv class="card__Tiny"&gtEjemplo de titulo italic&lth1&gt</code>
+            </div>
+            <div class="card ">
+                <h2 class="txt__Neg size_2 under" id="Titulos">Títulos</h2>
+                <p class="txt__Normal">Los títulos puedes manejarlos diferentes tamaños y variantes con nuestro estilo
+                    estilo de
+                    letra</p>
+                <div class="container two__cols">
+                    <div class="card bcSec">
+                        <h1 class="txt__Normal">Ejemplo titulo con h1</h1>
+                        <h2 class="txt__Normal">Ejemplo titulo con h2</h2>
+                        <h3 class="txt__Normal">Ejemplo titulo con h3</h3>
+                        <h4 class="txt__Normal">Ejemplo titulo con h4</h4>
+                        <h5 class="txt__Normal">Ejemplo titulo con h5</h5>
+                        <h6 class="txt__Normal">Ejemplo titulo con h6</h6>
+                    </div>
+                    <div class="size_3 card bcPrim">
+                        <h2 class="txt__Title">Para realizar el llamado a estos es:</h2>
+                        <code class="txt__Normal">&lth1 class="txt__Normal"&gtEjemplo&lth1&gt</code><br>
+                        <code class="txt__Normal">&lth2 class="txt__Normal"&gtEjemplo&lth2&gt</code><br>
+                        <code class="txt__Normal">&lth3 class="txt__Normal"&gtEjemplo&lth3&gt</code><br>
+                        <code class="txt__Normal">&lth4 class="txt__Normal"&gtEjemplo&lth4&gt</code><br>
+                        <code class="txt__Normal">&lth5 class="txt__Normal"&gtEjemplo&lth5&gt</code><br>
+                        <code class="txt__Normal">&lth6 class="txt__Normal"&gtEjemplo&lth6&gt</code>
+                    </div>
+                </div>
+                <p class="txt__Normal">Además, puedes agregarles estilos</p>
+                <div class="container two__cols ">
+                    <div class="card bcSec">
+                        <h1 class="txt__Normal under">Ejemplo titulo normal</h1>
+                        <h1 class="txt__Neg">Ejemplo titulo negritas</h1>
+                        <h1 class="txt__Ita">Ejemplo titulo italic</h1>
+                        <h1 class="txt__Title">Ejemplo titulo</h1>
+                    </div>
+                    <div class="size_3 card bcPrim">
+                        <h2 class="txt__Title">Para realizar el llamado a estos cuatro estilos es:</h2>
+                        <code
+                            class="txt__Normal">&lth1 class="txt__Normal under"&gtEjemplo de titulo normal&lth1&gt</code><br>
+                        <code class="txt__Normal">&lth1 class="txt__Neg"&gtEjemplo de titulo negritas&lth1&gt</code><br>
+                        <code class="txt__Normal">&lth1 class="txt__Ita"&gtEjemplo de titulo italic&lth1&gt</code><br>
+                        <code class="txt__Normal">&lth1 class="txt__Title"&gtEjemplo de titulo italic&lth1&gt</code>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container"><!--Imágenes y enlaces-->
+            <div class="card">
+
+                <div class="txt__Neg size_2 under" id="Imagenes">Imágenes</div>
+                <div class="two__cols">
+
+                    <div class="card bcSec">
+                        <p class="txt__Title">Imagen responsiva</p>
+                        <p class="txt__Neg">width 50%</p>
+                        <img src="assets/images/egtb.png" alt="imagen" class="img-responsive img-width-50">
+                        <p class="txt__Neg">width 75%</p>
+                        <img src="assets/images/egtb.png" alt="imagen" class="img-responsive img-width-75">
+                    </div>
+
+
+                    <div class="card size_3 bcPrim">
+                        <p class="txt__Ita">Agregar imagen.</p>
+                        <h2 class="txt__Neg">Imagen responsiva</h2>
+                        <p class="txt__Normal">Para que una imagen sea responsiva se le debe asignar la clase
+                            “img-responsive”, con esta
+                            clase la imagen
+                            se adaptara según la resolución actual.
+                            <br>Ejemplo:<br>
+                            <hr><br>
+                            <code
+                                class="txt__Neg">&ltimg src="Ruta imagen" alt="imagen" class="img-responsive"&gt</code><br><br>
+                            <hr>
+                        </p>
+                        <p class="txt__Normal ">Si quieres establecer un tamaño para la imagen responsiva se le debe
+                            agregar la clase
+                            img-width-x donde
+                            la x es un valor del 1 al 100.
+                            <br>Ejemplo:<br>
+                            <hr><br>
+                            <code
+                                class="txt__Neg">&ltimg src="Ruta imagen" alt="imagen" class="img-responsive img-width-50"&gt</code><br><br>
+                            <hr>
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="txt__Neg size_2 under" id="Enlaces">Enlaces</div>
+                <div class="two__cols">
+
+                    <div class="card enlaces bcSec">
+
+                        <p class="txt__Title size_3">Enlace marcado</p>
+
+                        <div class="link size_3">
+
+                            <p class="txt__Normal"><a class="mark__green" href="#">enlace marcado</a><a
+                                    class="mark__purple" href="#">enlace
+                                    marcado</a></p>
+                            <p class="txt__Normal"><a class="mark__orange" href="#">enlace marcado</a><a
+                                    class="mark__blue" href="#">enlace
+                                    marcado</a></p>
+                            <p class="txt__Normal"><a class="mark__yellow" href="#">enlace marcado</a><a
+                                    class="mark__pink" href="#">enlace marcado</a>
+                            </p>
+                        </div>
+
+                        <p class="txt__Title size_3 ">Enlace boton.</p>
+                        <div class="link txt__Normal">
+                            <p><a class="link__button__green" href="#">enlace boton</a><a class="link__button__orange"
+                                    href="#">enlace boton</a><a class="link__button__blue" href="#">enlace boton</a></p>
+                            <p><a class="link__button__pink" href="#">enlace boton</a><a class="link__button__violet"
+                                    href="#">enlace boton</a><a class="link__button__yellow" href="#">enlace boton</a>
+                            </p>
+                        </div>
+
+
+                        <p class="txt__Title size_3">Enlace imagen</p>
+                        <a href="https://www.google.com/?hl=es">
+                            <img src="assets/images/IMG_ajedrez.jpg" alt="Descripción de la imagen"
+                                class="image__link img-responsive img-width-60">
+                        </a>
+
+                    </div>
+                    <div class="card size_3 bcPrim">
+                        <p class="txt__Ita">Agregar enlace.</p>
+                        <h2 class=" txt__Title">Enlace marcado</h2>
+                        <p class="txt__Normal">Para agregar un enlace con estilo marcado, se necesita utilizar la
+                            clase mark__green en
+                            una etiqueta &lta&gt.
+                            <br class="txt__Normal">Ejemplo:<br>
+                            <hr><br>
+
+                            <code
+                                class="txt__Neg">&ltp>&lta class="mark__green" href="#"&gttexto </a>&lt/p&gt</code><br>
+                            <br>
+                            <hr>
+                            Las clases disponibles son: <br>
+                            mark__green, mark__orange, mark__blue, mark__pink,
+                            mark__purple, mark__yellow, mark__red y mark__gray,
+                            cada una con un color específico.
+                        </p>
+                        <h2 class="txt__Title">Enlace boton</h2>
+                        <p class="txt__Normal">Para agregar un enlace con estilo de botón, se necesita utilizar la
+                            clase
+                            link__button__green en una etiqueta &lta&gt.
+                            <br class="txt__Normal">Ejemplo:<br>
+                            <hr><br>
+                            <code
+                                class="txt__Neg">&ltp&lta class="link__button__green" href="#">texto &lt/a&gt&lt/p&gt</code><br><br>
+                            <hr><br>
+                            Las clases disponibles son: <br>
+                            link__button__green, link__button__orange, link__button__blue, link__button__pink,
+                            link__button__violet, link__button__yellow, link__button__red y link__button__gray,
+                            cada uno con un color específico.
+                        </p>
+                        <h2 class="txt__Title">Enlace imagen</h2>
+                        <p class="txt__Normal">Para agregar un enlace en una imagen, se necesita utilizar la clase
+                            image__link en una
+                            etiqueta &ltimg&gt que esta adentro de una etiqueta &lta&gt.
+                            <br class="txt__Normal">Ejemplo:<br>
+                            <hr><br>
+                            <code class="txt__Neg"> &lta href="#"&gt
+                                    &ltimg src = "ruta imagen" alt = "descripción de la imagen" class = "image__link" &gt &lt/a&gt
+                            </code><br><br>
+                            <hr><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container"><!--Párrafos, listas y alertas-->
+            <div class="card">
+                <div class="txt__Neg size_2" id="Parrafos">Párrafos</div>
+                <div class="container">
+                    <div class="two__cols">
+                        <div class="card bcSec">
+                            <p class="pr pr_cont_Sh txt_ind_1 txt__Normal">
+                                Es curioso como el como las personas han buscado plasmar la magia y los sentimeintos del
+                                alma en cosas, lugares, momentos y experiencias que pudieran observarse. Por ejemplo la
+                                luna, ese rincon en el cielo que se encuentra solo por la noches e irradia luz ante el
+                                vacío existente del espacio.
+                                El mirarla te pone a pensar que en los momentos más tristes ella será tu mayor compañera
+                                haciendote ver que nunca bailarás solo en la oscuridad
+                            </p>
+                            <p class="pr pr_cont_Med txt_ind_2 txt__Ita">
+                                Es curioso como el como las personas han buscado plasmar la magia y los sentimeintos del
+                                alma en cosas, lugares, momentos y experiencias que pudieran observarse. Por ejemplo la
+                                luna, ese rincon en el cielo que se encuentra solo por la noches e irradia luz ante el
+                                vacío
+                                existente del espacio.
+                                El mirarla te pone a pensar que en los momentos más tristes ella será tu mayor compañera
+                                haciendote ver que nunca bailarás solo en la oscuridad
+                            </p>
+                            <p class="pr pr_cont_Lg txt_ind_3 txt__Neg">
+                                Es curioso como el como las personas han buscado plasmar la magia y los sentimeintos del
+                                alma en cosas, lugares, momentos y experiencias que pudieran observarse. Por ejemplo la
+                                luna, ese rincon en el cielo que se encuentra solo por la noches e irradia luz ante el
+                                vacío
+                                existente del espacio.
+                                El mirarla te pone a pensar que en los momentos más tristes ella será tu mayor compañera
+                                haciendote ver que nunca bailarás solo en la oscuridad
+                            </p>
+                        </div>
+
+                        <div class="card bcPrim">
+                            <h2 class="txt__Title size_2">Parrafos y texto en general</h2>
+                            <p class="txt__Normal size_3">Cualquier tipo de de texto espeficado como <code
+                                    class="txt__Neg">&lt p &gt &lt h2 ... h6 &gt</code> puede personalizarse con los
+                                estilos <span class="txt__Neg">txt_ind_x, txt__x y size_x</span> y puede realizarse de
+                                la siguiente manera
+                            </p><br>
+                            <div class="txt__Normal size_3">
+                                <code class="txt__Neg"> &lta href="#"&gt
+                                    &ltp class = "pr pr_cont_Sh txt_ind_1 txt__Normal" &gt &lt/p&gt
+                                </code><br><br>
+                                <hr><br>
+                                <code class="txt__Neg"> &lta href="#"&gt
+                                    &ltp class = "pr pr_cont_Med txt_ind_2 txt__Ita" &gt &lt/p&gt
+                                </code> <br><br>
+                                <hr><br>
+                                <code class="txt__Neg"> &lta href="#"&gt
+                                    &ltp class = "pr pr_cont_Lg txt_ind_3 txt__Neg" &gt &lt/p&gt
+                                </code>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="txt__Neg size_2" id="Listas">Listas</div>
+                <div class="container">
+                    <div class="two__cols">
+                        <div class="card">
+                            <ul class="list">
+                                <li class="list_Item">Primero</li>
+                                <li class="list_Item">Segundo</li>
+                                <li class="list_Item">Tercero</li>
+                                <li class="list_Item">Cuarto</li>
+                                <li class="list_Item">Quinto</li>
+                            </ul>
+
+                            <br>
+                            <hr><br>
+
+                            <ol class="list2">
+                                <li class="list_Item">Primero</li>
+                                <li class="list_Item">Segundo</li>
+                                <li class="list_Item">Tercero</li>
+                                <li class="list_Item">Cuarto</li>
+                                <li class="list_Item">Quinto</li>
+                            </ol>
+
+                            <br>
+                            <hr><br>
+
+                            <ol class="list3">
+                                <li class="list_Item">Primero</li>
+                                <li class="list_Item">Segundo</li>
+                                <li class="list_Item">Tercero</li>
+                                <li class="list_Item">Cuarto</li>
+                                <li class="list_Item">Quinto</li>
+                            </ol>
+
+                            <br>
+                            <hr><br>
+
+                            <ol class="list4 txt__Normal">
+                                <li class="list_Item">Primero</li>
+                                <li class="list_Item">Segundo</li>
+                                <li class="list_Item">Tercero</li>
+                                <li class="list_Item">Cuarto</li>
+                                <li class="list_Item">Quinto</li>
+                            </ol>
+                        </div>
+                        <div class="card bcPrim">
+                            <h1 class="txt__Title">El llamado a las siguientes listas es la siguiente:</h1><br><br>
+                            <div class="size_3">
+                                <code class="txt__Neg">
+                                    &ltol class = "list" &gt<br>
+                                    &ltli class = "list_Item" &gt Ejemplo lista &lt/li&gt <br> 
+                                    &lt/ol&gt
+                                </code> <br><br>
+                                <hr><br>
+                                <code class="txt__Neg">
+                                    &ltol class = "list2" &gt<br>
+                                    &ltli class = "list_Item" &gt Ejemplo lista &lt/li&gt <br> 
+                                    &lt/ol&gt
+                                </code> <br><br>
+                                <hr><br>
+                                <code class="txt__Neg">
+                                    &ltol class = "list3" &gt<br>
+                                    &ltli class = "list_Item" &gt Ejemplo lista &lt/li&gt <br> 
+                                    &lt/ol&gt
+                                </code> <br><br>
+                                <hr><br>
+                                <code class="txt__Neg">
+                                    &ltol class = "list4" &gt<br>
+                                    &ltli class = "list_Item" &gt Ejemplo lista &lt/li&gt <br> 
+                                    &lt/ol&gt
+                                </code> <br><br>
+                                <hr><br>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="txt__Neg" id="Alertas">Alertas</div>
+                    <div class="card">
+                        <button id="modalBtn">Warning Btn</button>
+                    </div>
+                    <div class="modal">
+                        <div class="modal_Content">
+                            <span class="material-symbols-outlined i icon_Close">close</span>
+                            <div class="modal_Body">
+                                <span class="material-symbols-outlined icon_Warning">warning</span>
+                                <div clas="right_Elements">
+                                    <h1>Cuidado!!!</h1>
+                                    <p>Inserte advertencia aqui.</p>
+                                    <button id="modal_okBtn">Entendido</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container size_3"><!-- Barras de navegación -->
+            <div class="txt__Neg size_2" id="Barras">
+                Barras de navegación
+            </div>
+            <div class="container">
+                <div class="two__cols">
+                    <div class="card bcSec dspl">
+                        <nav id="nv__an">
+                            <a href="">Home</a>
+                            <a href="">About</a>
+                            <a href="">Blog</a>
+                            <a href="">Herramientas</a>
+                            <a href="">Contacto</a>
+                            <div class="animation start-home"></div>
+                        </nav>
+                    </div>
+                    <div class="card bcPrim">
+                        <h2 class="txt__Title">El Llamado a los diferentes navs en orden es el siguiente</h2>
+                        <code class="txt__Neg">&ltnav class="nv__an"&gt&lth1&gt</code><br><br>
+                        <hr><br>
+                        <code class="txt__Neg">&ltnav class="menuX"&gt&lth1&gt</code><br><br>
+                        <hr><br>
+                        <code class="txt__Neg">&ltnav class="menuH"&gt&lth1&gt</code><br><br>
+                        <hr><br>
+                        <code class="txt__Neg">&ltnav class="menuY"&gt&lth1&gt</code>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <hr><br>
+
+            <div>
+                <nav id="menuX">
+                    <ul>
+                        <li><a><span id="menuX-button" class="material-symbols-outlined button">menu</span></a></li>
+                        <li><a><span class="material-symbols-outlined button">home</span></a> </li>
+                        <li><a><span class="material-symbols-outlined button">apps</span></a></li>
+                        <li><a><span class="material-symbols-outlined button">login</span></a></li>
+                        <li><a><span class="material-symbols-outlined button">logout</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <br>
+            <hr><br>
+
+            <div>
+                <h2>Ejemplo de texto para ocultar con la barra de navegación</h2>
+                <nav id="menuH">
+                    <ul>
+                        <li><a><span id="menuH-button" class="material-symbols-outlined button">menu</span></a></li>
+                        <li><a><span class="material-symbols-outlined button">home</span></a></li>
+                        <li><a><span class="material-symbols-outlined button">apps</span></a></li>
+                        <li><a><span class="material-symbols-outlined button">login</span></a></li>
+                        <li><a><span class="material-symbols-outlined button">logout</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <br>
+            <hr><br>
+
+            <div>
+                <nav id="menuY">
+                    <ul>
+                        <li><a>Texto de preuba<span id="menuY-button"
+                                    class="material-symbols-outlined button">menu</span></a></li>
+                        <li><a>Texto de preuba<span class="material-symbols-outlined button">home</span></a></li>
+                        <li><a>Texto de preuba<span class="material-symbols-outlined button">apps</span></a></li>
+                        <li><a>Texto de preuba<span class="material-symbols-outlined button">login</span></a></li>
+                        <li><a>Texto de preuba<span class="material-symbols-outlined button">logout</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <br>
+            <hr><br>
+
+        </div>
+
+        <div class="container"><!--Botones, switches y subida al cielo-->
+            <div class="card">
+                <div class="card">
+                    <div class="txt__Neg" id="Botones">Botones</div>
+                    <button type="button" class="button__Osc">Boton normal</button><br>
+                    <button type="button" class="button__Cla">Boton claro</button><br>
+                    <button type="button" class="button__Opc">Boton opcional</button><br>
+                    <button type="button" class="button__CardsCla size_4">Boton opcional</button><br>
+                    <button type="button" class="button__CardsOsc size_4">Boton opcional</button><br>
+                    <button type="button" class="button__CardsSec size_4">Boton opcional</button>
+                </div>
+                <div class="card">
+                    <div class="txt__Neg" id="Switches">Switches</div>
+                    <!-- Rounded switch  -->
+                    <div class="card">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+
+                    <div class="card">
+                        <label class="switch1">
+                            <input type="checkbox" id="darkModeToggle">
+                            <span class="slider1 round"></span>
+                        </label>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="container two__cols "><!--Carrusel de imágenes y labels-->
+            <div class="carrusel" id="Carrusel">
+
+
+                <div class="container__elementocarrusel">
+                    <img src="assets/images/IMG_ajedrez.jpg" alt="" />
+                </div>
+
+
+                <div class="container__elementocarrusel">
+                    <img src="assets/images/IMG_flor.jpg" alt="" />
+                </div>
+
+
+                <div class="container__elementocarrusel">
+                    <img src="assets/images/IMG_fp.jpg" alt="" />
+                </div>
+
+
+                <button class="btn__carrusel btn__anteriorimg"><span
+                        class="material-symbols-outlined">chevron_left</span></button>
+                <button class="btn__carrusel btn__siguienteimg"><span
+                        class="material-symbols-outlined">chevron_right</span></button>
+            </div>
+            <div class="card bcSec">
+                <h1>Carrusel</h1>
+                <h2 class="txt__Title">Para realizar el llamado al carrusel lo haces de la siguiente manera</h2><br>
+                <code class="txt__Neg size_3">&ltdiv class="carrusel" id="Carrusel"&gt&lt/div&gt</code><br>
+                <code class="txt__Neg size_3">&ltbutton class="btn__carrusel btn__anteriorimg"&gt&lt/div&gt</code><br>
+                <code class="txt__Neg size_3">&ltbutton class="btn__carrusel btn__siguienteimg"&gt&lt/div&gt</code>
+            </div>
+        </div>
+        <div class="container"> <!--Contenedores principales-->
+            <div class="card" id="forms"><!-- Elementos de formularios-->
+                <h2 class="txt__Normal" id="Formularios">Elementos de un formulario</h2>
+                <!--Estilo para los formularios realizado por los Saul y Ulises-->
+                <div class="container two__cols">
+
+                    <div class="card">
+                        <label for="" class="label__normal">Ejemplo de texto</label><br>
+                        <input type="text" class="input__text" required><br>
+                        <label for="" class="label__normal ">Ejemplo de un campo obligatorio<span
+                                class="obl cRed">*</span></label><br>
+                        <input type="text" class="input__text" required><br>
+                        <label for="" class="label__normal">Ejemplo de correo</label><br>
+                        <input type="email" class="input__email" required><br>
+                        <label for="" class="label__normal">Ejemplo de número</label><br>
+                        <input type="number" class="input__number" required><br>
+                        <label for="" class="label__normal">Ejemplo de date</label><br>
+                        <input type="date" class="input__date txt__Normal" required><br>
+                    </div>
+                    <div class="card bcSec">
+                        <h2 class="txt__Title">Para realizar el llamado al formulario se realiza de la siguiente manera
+                        </h2><br>
+                        <code class="txt__Neg size_3">&ltdiv class="card"&gt&lt/div&gt</code><br>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <label for="">Ejemplo de textarea</label><br>
+                    <textarea></textarea>
+                </div>
+                <div class="card">
+                    <label for="" class="cBase txt__Neg">Ejemplo de combox</label>
+                    <select id="" class="combox__op">
+                        <option value="" class="combox__empty">Elige una opcion</option>
+                        <optgroup class="combox__group" label="Muscle cars">
+                            <option value="mu" class="combox__option">Mustang</option>
+                            <option value="hell" class="combox__option">Hellcat</option>
+                            <option value="chall" class="combox__option">Challenger</option>
+                        </optgroup>
+                        <optgroup class="combox__group" label="Drift">
+                            <option value="g" class="combox__option">GTR</option>
+                            <option value="s" class="combox__option">Supra</option>
+                            <option value="wr" class="combox__option">WRX</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="card txt__Normal">
+                    <label for="" class="label__normal">Ejemplo de checkbox multiselección</label><br>
+                    <input type="checkbox" class="checkbx__prim">Seguido</input>
+                    <input type="checkbox" class="checkbx__second">Puede ser</input>
+                    <input type="checkbox" class="checkbx__comp">Mañana</input>
+                    <input type="checkbox" class="checkbx__ex">O no..</input>
+                </div>
+
+                <div class="card txt__Normal">
+                    <br>
+                    <label for="">Ejemplo de radio</label><br>
+                    <input type="radio" name="option" onclick="checkOnlyOne(this)" class="checkbx__prim">Seguido</input>
+                    <input type="radio" name="option" onclick="checkOnlyOne(this)" class="checkbx__second">Puede
+                    ser</input>
+                    <input type="radio" name="option" onclick="checkOnlyOne(this)" class="checkbx__comp">Mañana</input>
+                    <input type="radio" name="option" onclick="checkOnlyOne(this)" class="checkbx__ex">O no..</input>
+                </div>
+
+                <div class="card txt__Normal">
+                    <br>
+                    <label for="">Ejemplo de radio customizado</label><br>
+                    <input id="cust" type="radio" name="contact" value="radio1" checked>
+                    <input id="cust" type="radio" name="contact" value="radio2">
+                    <input id="cust" type="radio" name="contact" value="radio3">
+                </div>
+
+            </div>
+            <div class="card">
+                <form action="" id="form" class="card__form">
+                    <h1 class="txt__Title">Ejemplo de formulario</h1>
+                    <label for="" class="label__normal">Nombre completo</label><br>
+                    <input type="text" id="nombre" name="nombre" class="txt__Normal"><br>
+                    <label for="" class="label__normal">Domicilio<span class="obl cRed">*</span></label><br>
+                    <input type="text" id="Domicilio" name="Domicilio" class="txt__Normal"><br>
+                    <label for="" class="label__normal">Ingrese su correo electrónico</label><br>
+                    <input type="email" id="email" name="email" class="txt__Ita"><br>
+                    <label for="" class="label__normal">Número telefónico</label><br>
+                    <input type="number" id="telefono" name="telefono" class=" txt__Normal"><br>
+                    <label for="" class="label__normal">Fecha de Nacimiento</label><br>
+                    <input type="date" class="txt__Normal"><br>
+                    <button type="submit" class="button__Cla txt__Neg">Enviar</button><br>
+                </form>
+            </div>
+            <div class="card two__cols">
+                <div class="card">
+                    <form class="form">
+                        <div class="checkout-method">
+                            <button type="button" class="btnForm">
+                                <i><span class="material-symbols-outlined">credit_card</span></i>
+                            </button>
+                            <button type="button" class="btnForm btn-inactive">
+                                <i><span class="material-symbols-outlined">payments</span></i>
+                            </button>
+                        </div>
+                        <div class="checkout-information">
+                            <div class="input-group">
+                                <label for="name">Nombre en tarjeta</label>
+                                <input type="text" id="name" placeholder="Ingresa el nombre" />
+                            </div>
+                            <div class="input-group">
+                                <label for="number">Número de tarjeta</label>
+                                <input type="text" id="number" placeholder="..." />
+                            </div>
+                            <div class="horizontal-grid">
+                                <div class="input-group">
+                                    <label for="date">Fecha de expiración</label>
+                                    <input type="text" id="date" placeholder="3/23" />
+                                </div>
+                                <div class="input-group">
+                                    <label for="cvv">CVV</label>
+                                    <input type="number" id="cvv" placeholder="CVV" />
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btnForm btn-checkout">Checkout</button>
+                    </form>
+                </div>
+
+                <div class="card bcSec">
+                    <h2 class="txt__Title">Para llamar este estilo de formulario se inserta lo siguiente</h2>
+                    <code class="txt__Neg size_3">&ltform class="form"&gt&ltform&gt</code><br>
+                    <code class="txt__Neg size_3"> &ltdiv class="checkout-method"><br>
+                        &ltbutton type="button" class="btnForm"><br>
+                        &lti>&ltspan class="material-symbols-outlined">credit_card&lt/span></i><br>
+                        &lt/button><br>
+                        &ltbutton type="button" class="btnForm btn-inactive"><br>
+                        &lti>&ltspan class="material-symbols-outlined">payments&lt/span></i><br>
+                        &lt/button><br>
+                        &lt/div><br>
+                        &ltiv class="checkout-information"><br>
+                        &ltdiv class="input-group"><br>
+                        &ltlabel for="name">Nombre en tarjeta&lt/label><br>
+                        &ltinput type="text" id="name" placeholder="Ingresa el nombre" /><br>
+                        &lt/div><br>
+                        &ltdiv class="input-group"><br>
+                        &ltlabel for="number">Número de tarjeta&lt/label><br>
+                        &ltinput type="text" id="number" placeholder="..." /><br>
+                        &lt/div><br>
+                        &ltdiv class="horizontal-grid"><br>
+                        &ltdiv class="input-group"><br>
+                        &ltlabel for="date">Fecha de expiración&lt/label><br>
+                        &ltinput type="text" id="date" placeholder="3/23" /><br>
+                        &lt/div><br>
+                        &ltdiv class="input-group"><br>
+                        &ltlabel for="cvv">CVV&lt/label><br>
+                        &ltinput type="number" id="cvv" placeholder="CVV" /><br>
+                        &lt/div>&lt/div> &lt/div><br>
+                    <&ltbutton class="btnForm btn-checkout">Checkout&lt/button><br>
+                </code>
+
+                    <code class="txt__Neg size_3">&lt/form&gt</code><br>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="size_2" id="Animaciones">
+                    <h2>Animaciones</h2>
+                </div>
+                <div class="card displ__flx">
+                    <div class="card__Tiny fade__in bcSec">
+                        <h2>Animacion Fade in</h2>
+                    </div>
+                    <div class="card__Tiny fade_in_bottom bcSec">
+                        <h2>Animacion Fade in bottom</h2>
+                    </div>
+                    <div class="card__Tiny slide__left bcSec">
+                        <h2>Animacion slide left</h2>
+                    </div>
+                    <div class="card__Tiny slide__right bcSec">
+                        <h2>Animacion slide right</h2>
+                    </div>
+                </div>
+                <div class="card bcSec">
+                    <h2>Te presentamos 4 animaciones diferentes para presentar tus componentes</h2>
+                    <code class="txt__Neg size_3">&ltdiv class="card__Small fade__in" "&gt&lt/div&gt</code><br><br>
+                    <code class="txt__Neg size_3">&ltbutton class="card__Small fade_in_bottom "&gt&lt/div&gt</code><br>
+                    <br>
+                    <code class="txt__Neg size_3">&ltbutton class="card__Small slide__left "&gt&lt/div&gt</code><br><br>
+                    <code class="txt__Neg size_3">&ltbutton class="card__Small slide__right "&gt&lt/div&gt</code>
+                </div>
+                <div>
+                    <h2 class="size_2" id="Grid">Grids</h2>
+                </div>
+                <div class="card displ__flx">
+                    <div class="card__Tiny grid__shop">
+                        <div class="grid__desc bcExt"></div>
+                        <div class="grid__title bcPrim"></div>
+                        <div class="grid__image bcSec"></div>
+                        <div class="grid__author bcBas"></div>
+                        <div class="grid__price bcPrim"></div>
+                        <div class="grid__sale bcCom"></div>
+                        <div class="grid__cart bcBas"></div>
+                    </div>
+                    <div class="card__Tiny grid__bodyB">
+                        <div class="grid__BodyH bcCom"></div>
+                        <div class="grid__BodyM bcExt"></div>
+                        <div class="grid__BodyA bcSec"></div>
+                        <div class="grid__BodyF bcPrim"></div>
+                    </div>
+                    <div class="card__Tiny grid__bodyB3">
+                        <div class="grid__BodyH3 bcPrim"></div>
+                        <div class="grid__BodyM3 bcExt"></div>
+                        <div class="grid__BodyF3 bcCom"></div>
+                    </div>
+                </div>
+                <div class="card bcSec">
+
+                    <code class="txt__Neg size_3">&ltdiv class="grid__shop"&gt"</code><br>
+                    <code class="txt__Neg size_3">&ltdiv class="grid__desc bcExt"&gt&ltdiv&gt</code><br>
+                    <code class="txt__Neg size_3">&ltdiv class="grid__title bcPrim"&gt&ltdiv&gt</code><br>
+                    <code class="txt__Neg size_3">&ltdiv class="grid__image bcSec"&gt&ltdiv&gt</code><br>
+                    <code class="txt__Neg size_3">&ltdiv class="grid__author bcBas"&gt&ltdiv&gt</code><br>
+                    <code class="txt__Neg size_3">&ltdiv class="grid__price bcPrim"&gt&ltdiv&gt</code><br>
+                    <code class="txt__Neg size_3">&ltdiv class="grid__sale bcCom"&gt&ltdiv&gt</code><br>
+                    <code class="txt__Neg size_3">&ltdiv class="grid__cart bcBas"&gt&ltdiv&gt</code><br>
+                    <code>&ltdiv&gt</code><br><br>
+                    <hr>
+                    <code class="txt__Neg size_3">&ltdiv class="grid__bodyB"&gt"</code><br>
+                    <code class="txt__Neg size_3">&ltdiv class="grid__BodyH bcExt"&gt&ltdiv&gt</code><br>
+                    <code class="txt__Neg size_3">&ltdiv class="grid__BodyM bcPrim"&gt&ltdiv&gt</code><br>
+                    <code class="txt__Neg size_3">&ltdiv class="grid__BodyA bcSec"&gt&ltdiv&gt</code><br>
+                    <code class="txt__Neg size_3">&ltdiv class="grid__BodyF bcSec"&gt&ltdiv&gt</code><br>
+                    <code>&ltdiv&gt</code><br><br>
+                    <hr>
+                    <code class="txt__Neg size_3">&ltdiv class="grid__bodyB3"&gt"</code><br>
+                    <code class="txt__Neg size_3">&ltdiv class="grid__BodyH3 bcExt"&gt&ltdiv&gt</code><br>
+                    <code class="txt__Neg size_3">&ltdiv class="grid__BodyM3 bcPrim"&gt&ltdiv&gt</code><br>
+                    <code class="txt__Neg size_3">&ltdiv class="grid__BodyF3 bcSec"&gt&ltdiv&gt</code><br>
+                    <code>&ltdiv&gt</code><br><br>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--Elementos del fin de la página-->
+    <footer class="container bcSec">
+        <p class="txt__Center">Copyriht by EDSUBA</p>
+    </footer>
+
+    <script src="assets/scripts/script.js"></script>
+    <script src="assets/scripts/animations.js"></script>
+</body>
+
+</html>

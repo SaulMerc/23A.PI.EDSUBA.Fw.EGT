@@ -1,0 +1,255 @@
+nav>ul {
+	width: 100%;
+	background: #222;
+	position: relative;
+}
+
+nav {
+	position: sticky;
+}
+
+nav#menuX>ul li {
+	display: table-cell;
+}
+
+nav#menuH>ul li {
+	display: table-cell;
+}
+
+nav#menuY>ul li {
+	justify-items: right;
+	justify-content: end;
+}
+
+nav>ul li a {
+	color: #fff;
+	display: block;
+	line-height: 20px;
+	padding: 20px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+nav#menuY>ul li a {
+	color: #fff;
+	display: block;
+	line-height: 20px;
+	padding: 20px;
+	position: relative;
+	text-align: right;
+	text-decoration: none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.button {
+	background-color: gray;
+	border: none;
+	color: #174459;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: var(--fsTxt);
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 5px;
+	box-shadow: 0px 3px 0px black;
+}
+
+.button:active {
+	background-color: var(--complement);
+	box-shadow: 0px 2px 0px var(--complement);
+	position: relative;
+	top: 1px;
+}
+
+#menuX {
+	transform: translateX(55%);
+	transition: transform .5s ease-out;
+}
+
+#menuX.show {
+	display: block;
+	transform: translateX(95%);
+}
+
+#menuY {
+	transform: translateX(-97%);
+	transition: transform .5s ease-out;
+}
+
+#menuY.show {
+	display: block;
+	transform: translateX(-85%);
+}
+
+#menuH {
+	transform: translateY(-40%);
+	transition: transform .5s ease-out;
+}
+
+#menuH.show {
+	display: block;
+	transform: translateY(10%);
+}
+
+
+/* nav submenus */
+nav.menuP>ul {
+	display: table;
+	width: 100%;
+	background: #222;
+	position: relative;
+}
+
+nav.menuP {
+	top: -20px;
+	left: 0;
+	right: 0;
+	margin: 20px auto;
+	/* max-width: 1000px; */
+	width: 100%;
+	transition: 0.3s ease all;
+}
+
+nav.menuP>ul li {
+	display: table-cell;
+}
+
+nav.menuP>ul>li:hover>ul {
+	display: block;
+	height: 100%;
+}
+
+nav.menuP>ul>li>ul {
+	display: block;
+	position: absolute;
+	background: #000;
+	left: 0;
+	right: 0;
+	overflow: auto;
+	height: 0%;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+nav.menuP>ul li a {
+	color: #fff;
+	display: block;
+	line-height: 20px;
+	padding: 20px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+nav.menuP>ul>li>ul>li a:hover {
+	background: var(--primary);
+}
+
+.menufixed {
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	width: 100%;
+}
+
+nav#nv__an {
+	position: relative;
+	margin: 270px auto 0;
+	width: 590px;
+	height: 50px;
+	background: var(--complement);
+	border-radius: 8px;
+	font-size: 0;
+	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
+}
+
+nav#nv__an a {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+	line-height: 50px;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	text-align: center;
+}
+
+nav#nv__an .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	background: var(--base);
+	border-radius: 8px;
+	transition: all .5s ease 0s;
+}
+
+nav#nv__an a:nth-child(1) {
+	width: 100px;
+}
+
+nav#nv__an a:nth-child(1):hover~.animation {
+	width: 100px;
+	left: 0;
+}
+
+nav#nv__an a:nth-child(2) {
+	width: 110px;
+}
+
+nav#nv__an a:nth-child(2):hover~.animation {
+	width: 110px;
+	left: 100px;
+}
+
+nav#nv__an a:nth-child(3) {
+	width: 100px;
+}
+
+nav#nv__an a:nth-child(3):hover~.animation {
+	width: 110px;
+	left: 210px;
+}
+
+nav#nv__an a:nth-child(4) {
+	width: 160px;
+}
+
+nav#nv__an a:nth-child(4):hover~.animation {
+	width: 160px;
+	left: 310px;
+}
+
+nav#nv__an a:nth-child(5) {
+	width: 120px;
+}
+
+nav#nv__an a:nth-child(5):hover~.animation {
+	width: 120px;
+	left: 470px;
+}
+
+.dspl nav {
+	bottom: 130px;
+}
