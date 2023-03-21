@@ -5,7 +5,9 @@
   .img-responsive {
     margin-bottom: 3rem;
   }
-  
+  a{
+    cursor: pointer;
+  }
   
   /* enlaces */
   
