@@ -598,7 +598,7 @@
                             </label>
 
                         </div>
-                        <div class="card">
+                        <div class="card bcSec">
                             <h2>El llamado a los siguientes switches es el siguiente</h2>
                             <h3>Switch de arriba</h3>
                             <code class="txt__Normal size_3">
@@ -657,6 +657,7 @@
         <div class="container"> <!--Contenedores principales-->
             <div class="card" id="forms"><!-- Elementos de formularios-->
                 <h2 class="txt__Normal" id="Formularios">Elementos de un formulario</h2>
+                <p>Estos estilos son predeterminados - no hace falta una clase o id</p>
                 <!--Estilo para los formularios realizado por los Saul y Ulises-->
                 <div class="container">
 
@@ -715,12 +716,19 @@
                     <input type="radio" name="option" onclick="checkOnlyOne(this)" class="checkbx__ex">O no..</input>
                 </div>
 
-                <div class="card txt__Normal">
-                    <br>
-                    <label for="">Ejemplo de radio customizado</label><br>
-                    <input id="cust" type="radio" name="contact" value="radio1" checked>
-                    <input id="cust" type="radio" name="contact" value="radio2">
-                    <input id="cust" type="radio" name="contact" value="radio3">
+                <div class="card two__cols txt__Normal">
+
+                    <div class="card">
+                        <label for="">Ejemplo de radio customizado</label><br>
+                        <input id="cust" type="radio" name="contact" value="radio1" checked>
+                        <input id="cust" type="radio" name="contact" value="radio2">
+                        <input id="cust" type="radio" name="contact" value="radio3">
+                    </div>
+                    <div class="card bcSec">
+                        <h2>Para utilizar este estilo se utiliza:</h2>
+                        <code
+                            class="txt__Neg size_3">&ltinput id="cust" type="radio" name="contact" value="radio1"&gt</code>
+                    </div>
                 </div>
 
 
