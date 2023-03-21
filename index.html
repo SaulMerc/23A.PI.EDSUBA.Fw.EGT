@@ -195,7 +195,7 @@
                             <br>Ejemplo:<br>
                             <hr><br>
                             <code
-                                class="txt__Neg">&ltimg src="Ruta imagen" alt="imagen" class="img-responsive"&gt</code><br><br>
+                                class="txt__Normal">&ltimg src="Ruta imagen" alt="imagen" class="img-responsive"&gt</code><br><br>
                             <hr>
                         </p>
                         <p class="txt__Normal ">Si quieres establecer un tamaño para la imagen responsiva se le debe
@@ -205,7 +205,7 @@
                             <br>Ejemplo:<br>
                             <hr><br>
                             <code
-                                class="txt__Neg">&ltimg src="Ruta imagen" alt="imagen" class="img-responsive img-width-50"&gt</code><br><br>
+                                class="txt__Normal">&ltimg src="Ruta imagen" alt="imagen" class="img-responsive img-width-50"&gt</code><br><br>
                             <hr>
                         </p>
                     </div>
@@ -260,7 +260,7 @@
                             <hr><br>
 
                             <code
-                                class="txt__Neg">&ltp>&lta class="mark__green" href="#"&gttexto </a>&lt/p&gt</code><br>
+                                class="txt__Normal">&ltp>&lta class="mark__green" href="#"&gttexto </a>&lt/p&gt</code><br>
                             <br>
                             <hr>
                             Las clases disponibles son: <br>
@@ -275,7 +275,7 @@
                             <br class="txt__Normal">Ejemplo:<br>
                             <hr><br>
                             <code
-                                class="txt__Neg">&ltp&lta class="link__button__green" href="#">texto &lt/a&gt&lt/p&gt</code><br><br>
+                                class="txt__Normal">&ltp&lta class="link__button__green" href="#">texto &lt/a&gt&lt/p&gt</code><br><br>
                             <hr><br>
                             Las clases disponibles son: <br>
                             link__button__green, link__button__orange, link__button__blue, link__button__pink,
@@ -288,7 +288,7 @@
                             etiqueta &ltimg&gt que esta adentro de una etiqueta &lta&gt.
                             <br class="txt__Normal">Ejemplo:<br>
                             <hr><br>
-                            <code class="txt__Neg"> &lta href="#"&gt
+                            <code class="txt__Normal"> &lta href="#"&gt
                                     &ltimg src = "ruta imagen" alt = "descripción de la imagen" class = "image__link" &gt &lt/a&gt
                             </code><br><br>
                             <hr><br>
@@ -339,15 +339,15 @@
                                 la siguiente manera
                             </p><br>
                             <div class="txt__Normal size_3">
-                                <code class="txt__Neg"> &lta href="#"&gt
+                                <code class="txt__Normal"> &lta href="#"&gt
                                     &ltp class = "pr pr_cont_Sh txt_ind_1 txt__Normal" &gt &lt/p&gt
                                 </code><br><br>
                                 <hr><br>
-                                <code class="txt__Neg"> &lta href="#"&gt
+                                <code class="txt__Normal"> &lta href="#"&gt
                                     &ltp class = "pr pr_cont_Med txt_ind_2 txt__Ita" &gt &lt/p&gt
                                 </code> <br><br>
                                 <hr><br>
-                                <code class="txt__Neg"> &lta href="#"&gt
+                                <code class="txt__Normal"> &lta href="#"&gt
                                     &ltp class = "pr pr_cont_Lg txt_ind_3 txt__Neg" &gt &lt/p&gt
                                 </code>
                             </div>
@@ -404,25 +404,25 @@
                         <div class="card bcPrim">
                             <h1 class="txt__Title">El llamado a las siguientes listas es la siguiente:</h1><br><br>
                             <div class="size_3">
-                                <code class="txt__Neg">
+                                <code class="txt__Normal">
                                     &ltol class = "list" &gt<br>
                                     &ltli class = "list_Item" &gt Ejemplo lista &lt/li&gt <br> 
                                     &lt/ol&gt
                                 </code> <br><br>
                                 <hr><br>
-                                <code class="txt__Neg">
+                                <code class="txt__Normal">
                                     &ltol class = "list2" &gt<br>
                                     &ltli class = "list_Item" &gt Ejemplo lista &lt/li&gt <br> 
                                     &lt/ol&gt
                                 </code> <br><br>
                                 <hr><br>
-                                <code class="txt__Neg">
+                                <code class="txt__Normal">
                                     &ltol class = "list3" &gt<br>
                                     &ltli class = "list_Item" &gt Ejemplo lista &lt/li&gt <br> 
                                     &lt/ol&gt
                                 </code> <br><br>
                                 <hr><br>
-                                <code class="txt__Neg">
+                                <code class="txt__Normal">
                                     &ltol class = "list4" &gt<br>
                                     &ltli class = "list_Item" &gt Ejemplo lista &lt/li&gt <br> 
                                     &lt/ol&gt
@@ -433,9 +433,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="txt__Neg" id="Alertas">Alertas</div>
-                    <div class="card">
+
+                <div class="txt__Neg" id="Alertas">Alertas</div>
+                <div class="two__cols">
+                    <div class="card bcSec">
                         <button id="modalBtn">Warning Btn</button>
                     </div>
                     <div class="modal">
@@ -451,7 +452,26 @@
                             </div>
                         </div>
                     </div>
+                    <div class="card bcPrim">
+                        <h2>Para tener una alerta modal se inserta lo siguientes</h2><br>
+                        <code class="txt__Normal size_3">
+                            &ltbutton id="modalBtn">Warning Btn&lt/button>
+                        </code>
+                        <code class="txt__Normal size_3">
+                            &ltdiv class="modal"><br><br>
+                            &ltdiv class="modal_Content"><br><br>
+                            &ltspan class="material-symbols-outlined i icon_Close">close&lt/span><br>
+                            &ltdiv class="modal_Body"><br>
+                            &ltdiv clas="right_Elements"><br>
+                            &ltbutton id="modal_okBtn">&lt/button><br><br>
+                            &lt/div>
+                            &lt/div>
+                            &lt/div>
+                            &lt/div>
+                        </code>
+                    </div>
                 </div>
+
             </div>
         </div>
 
@@ -539,45 +559,63 @@
             <div class="card">
                 <div class="txt__Neg size_3" id="Botones">Botones</div>
                 <div class="container two__cols">
-                    <div class="card">
+                    <div class="card bcSec">
                         <button type="button" class="button__Osc">Boton normal</button><br>
                         <button type="button" class="button__Cla">Boton claro</button><br>
                         <button type="button" class="button__Opc">Boton opcional</button><br>
-                        <button type="button" class="button__CardsCla size_4">Boton opcional</button><br>
-                        <button type="button" class="button__CardsOsc size_4">Boton opcional</button><br>
-                        <button type="button" class="button__CardsSec size_4">Boton opcional</button>
+                        <button type="button" class="button__CardsCla"><span
+                                class="material-symbols-outlined">contacts</span></button><br>
+                        <button type="button" class="button__CardsOsc"><span
+                                class="material-symbols-outlined">contacts</span></button><br>
+                        <button type="button" class="button__CardsSec"><span
+                                class="material-symbols-outlined">contacts</span></button>
                     </div>
                     <div class="card bcPrim">
                         <h2>Para realizar el llamado a estos botones es de la siguiente manera</h2>
-                        <code class="txt__Neg size_3">
-                            &ltbutton type="button" class="button__Osc">Boton normal&lt/button><br>
-                            &ltbutton type="button" class="button__Cla">Boton claro&lt/button><br>
-                            &ltbutton type="button" class="button__Opc">Boton opcional&lt/button><br>
-                            &ltbutton type="button" class="button__CardsCla size_4">Boton opcional&lt/button><br>
-                            &ltbutton type="button" class="button__CardsOsc size_4">Boton opcional&lt/button><br>
-                            &ltbutton type="button" class="button__CardsSec size_4">Boton opcional&lt/button>
+                        <code class="txt__Normal size_3">
+                            &ltbutton type="button" class="button__Osc">Boton normal&lt/button><br><br>
+                            &ltbutton type="button" class="button__Cla">Boton claro&lt/button><br><br>
+                            &ltbutton type="button" class="button__Opc">Boton opcional&lt/button><br><br>
+                            &ltbutton type="button" class="button__CardsCla">Boton opcional&lt/button><br><br>
+                            &ltbutton type="button" class="button__CardsOsc">Boton opcional&lt/button><br><br>
+                            &ltbutton type="button" class="button__CardsSec">Boton opcional&lt/button>
                         </code>
                     </div>
                 </div>
                 <div class="card">
                     <div class="txt__Neg" id="Switches">Switches</div>
-                    <!-- Rounded switch  -->
-                    <div class="card">
-                        <label class="switch">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                        </label>
+                    <div class="two__cols">
+
+                        <!-- Rounded switch  -->
+                        <div class="card bcSec">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label><br><br>
+                            <label class="switch1">
+                                <input type="checkbox" id="darkModeToggle">
+                                <span class="slider1 round"></span>
+                            </label>
+
+                        </div>
+                        <div class="card">
+                            <h2>El llamado a los siguientes switches es el siguiente</h2>
+                            <h3>Switch de arriba</h3>
+                            <code class="txt__Normal size_3">
+                                &ltlabel class="switch">
+                                &ltinput type="checkbox">
+                                &ltspan class="slider round">&lt/span>
+                                &lt/label>
+                            </code>
+                            <h3>Switch de abajo</h3>
+                            <code class="txt__Normal size_3">
+                                &ltlabel class="switch1">
+                                &ltinput type="checkbox" id="darkModeToggle">
+                                &ltspan class="slider1 round">&lt/span>
+                                &lt/label>
+                            </code>
+                        </div>
                     </div>
-
-                    <div class="card">
-                        <label class="switch1">
-                            <input type="checkbox" id="darkModeToggle">
-                            <span class="slider1 round"></span>
-                        </label>
-                    </div>
-
-
-
                 </div>
             </div>
         </div>
@@ -608,9 +646,12 @@
             <div class="card bcSec">
                 <h1>Carrusel</h1>
                 <h2 class="txt__Title">Para realizar el llamado al carrusel lo haces de la siguiente manera</h2><br>
-                <code class="txt__Neg size_3">&ltdiv class="carrusel" id="Carrusel"&gt&lt/div&gt</code><br>
-                <code class="txt__Neg size_3">&ltbutton class="btn__carrusel btn__anteriorimg"&gt&lt/div&gt</code><br>
-                <code class="txt__Neg size_3">&ltbutton class="btn__carrusel btn__siguienteimg"&gt&lt/div&gt</code>
+                <code class="txt__Neg size_3">&ltdiv class="carrusel" id="Carrusel"&gt</code><br>
+                <code
+                    class="txt__Normal size_3">&ltbutton class="btn__carrusel btn__anteriorimg"&gt&lt/div&gt</code><br>
+                <code
+                    class="txt__Normal size_3">&ltbutton class="btn__carrusel btn__siguienteimg"&gt&lt/div&gt</code><br>
+                <code class="txt__Neg size_3">&lt/div&gt</code>
             </div>
         </div>
         <div class="container"> <!--Contenedores principales-->
@@ -682,8 +723,12 @@
                     <input id="cust" type="radio" name="contact" value="radio3">
                 </div>
 
+
+
             </div>
-            <div class="card">
+        </div>
+        <div class="card two__cols">
+            <div class="card bcSec">
                 <form action="" id="form" class="card__form">
                     <h1 class="txt__Title">Ejemplo de formulario</h1>
                     <label for="" class="label__normal">Nombre completo</label><br>
@@ -698,78 +743,83 @@
                     <input type="date" class="txt__Normal"><br>
                     <button type="submit" class="button__Cla txt__Neg">Enviar</button><br>
                 </form>
+                <form class="form">
+                    <div class="checkout-method">
+                        <button type="button" class="btnForm">
+                            <i><span class="material-symbols-outlined">credit_card</span></i>
+                        </button>
+                        <button type="button" class="btnForm btn-inactive">
+                            <i><span class="material-symbols-outlined">payments</span></i>
+                        </button>
+                    </div>
+                    <div class="checkout-information">
+                        <div class="input-group">
+                            <label for="name">Nombre en tarjeta</label>
+                            <input type="text" id="name" placeholder="Ingresa el nombre" />
+                        </div>
+                        <div class="input-group">
+                            <label for="number">Número de tarjeta</label>
+                            <input type="text" id="number" placeholder="..." />
+                        </div>
+                        <div class="horizontal-grid">
+                            <div class="input-group">
+                                <label for="date">Fecha de expiración</label>
+                                <input type="text" id="date" placeholder="3/23" />
+                            </div>
+                            <div class="input-group">
+                                <label for="cvv">CVV</label>
+                                <input type="number" id="cvv" placeholder="CVV" />
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btnForm btn-checkout">Checkout</button>
+                </form>
             </div>
-            <div class="card two__cols">
-                <div class="card">
-                    <form class="form">
-                        <div class="checkout-method">
-                            <button type="button" class="btnForm">
-                                <i><span class="material-symbols-outlined">credit_card</span></i>
-                            </button>
-                            <button type="button" class="btnForm btn-inactive">
-                                <i><span class="material-symbols-outlined">payments</span></i>
-                            </button>
-                        </div>
-                        <div class="checkout-information">
-                            <div class="input-group">
-                                <label for="name">Nombre en tarjeta</label>
-                                <input type="text" id="name" placeholder="Ingresa el nombre" />
-                            </div>
-                            <div class="input-group">
-                                <label for="number">Número de tarjeta</label>
-                                <input type="text" id="number" placeholder="..." />
-                            </div>
-                            <div class="horizontal-grid">
-                                <div class="input-group">
-                                    <label for="date">Fecha de expiración</label>
-                                    <input type="text" id="date" placeholder="3/23" />
-                                </div>
-                                <div class="input-group">
-                                    <label for="cvv">CVV</label>
-                                    <input type="number" id="cvv" placeholder="CVV" />
-                                </div>
-                            </div>
-                        </div>
-                        <button class="btnForm btn-checkout">Checkout</button>
-                    </form>
-                </div>
 
-                <div class="card bcPrim">
-                    <h2 class="txt__Title">Para llamar este estilo de formulario se inserta lo siguiente</h2>
-                    <code class="txt__Neg size_3">&ltform class="form"&gt&ltform&gt</code><br>
-                    <code class="txt__Neg size_3"> &ltdiv class="checkout-method"><br>
+            <div class="card bcPrim">
+                <h2 class="txt__Title">Para llamar este estilo de formulario se inserta lo siguiente</h2>
+                <h4>Formulario de arriba</h4>
+                <code class="txt__Neg size_3">&ltform action="" id="form" class="card__form"></code><br>
+                <code class="txt__Normal size_3">
+                    &lth1 class="txt__Title">&lt/h1>
+                    &ltlabel for="" class="label__normal">&lt/label><br>
+                    &ltinput type="text" id="nombre" name="nombre" class="txt__Normal"><br>
+                    &ltlabel for="" class="label__normal">&ltspan class="obl cRed">*&lt/span>&lt/label><br>
+                    &ltinput type="text" id="Domicilio" name="Domicilio" class="txt__Normal"><br>
+                    &ltlabel for="" class="label__normal">&lt/label><br>
+                    &ltinput type="email" id="email" name="email" class="txt__Ita"><br>
+                    &ltlabel for="" class="label__normal">&lt/label><br>
+                    &ltinput type="number" id="telefono" name="telefono" class=" txt__Normal"><br>
+                    &ltlabel for="" class="label__normal">&lt/label><br>
+                        &ltinput type="date" class="txt__Normal"><br>
+                        &ltbutton type="submit" class="button__Cla txt__Neg">&lt/button><br>
+                </code>
+                <code class="txt__Neg size_3">&lt/form></code><br>
+                <h4>Formulario de abajo</h4>
+                <code class="txt__Neg size_3">&ltform class="form"&gt</code><br>
+                <code class="txt__Normal size_3"> &ltdiv class="checkout-method"><br>
                         &ltbutton type="button" class="btnForm"><br>
-                        &lti>&ltspan class="material-symbols-outlined">credit_card&lt/span></i><br>
                         &lt/button><br>
                         &ltbutton type="button" class="btnForm btn-inactive"><br>
-                        &lti>&ltspan class="material-symbols-outlined">payments&lt/span></i><br>
                         &lt/button><br>
                         &lt/div><br>
                         &ltiv class="checkout-information"><br>
                         &ltdiv class="input-group"><br>
-                        &ltlabel for="name">Nombre en tarjeta&lt/label><br>
-                        &ltinput type="text" id="name" placeholder="Ingresa el nombre" /><br>
                         &lt/div><br>
                         &ltdiv class="input-group"><br>
-                        &ltlabel for="number">Número de tarjeta&lt/label><br>
-                        &ltinput type="text" id="number" placeholder="..." /><br>
                         &lt/div><br>
                         &ltdiv class="horizontal-grid"><br>
                         &ltdiv class="input-group"><br>
-                        &ltlabel for="date">Fecha de expiración&lt/label><br>
-                        &ltinput type="text" id="date" placeholder="3/23" /><br>
                         &lt/div><br>
                         &ltdiv class="input-group"><br>
-                        &ltlabel for="cvv">CVV&lt/label><br>
-                        &ltinput type="number" id="cvv" placeholder="CVV" /><br>
                         &lt/div>&lt/div> &lt/div><br>
                     <&ltbutton class="btnForm btn-checkout">Checkout&lt/button><br>
                 </code>
-
-                    <code class="txt__Neg size_3">&lt/form&gt</code><br>
-                </div>
-
+                <code></code>
+                <code class="txt__Neg size_3">&lt/form&gt</code><br>
             </div>
+
+        </div>
         </div>
         <div class="container">
             <div class="card">
@@ -792,11 +842,13 @@
                 </div>
                 <div class="card bcPrim">
                     <h2>Te presentamos 4 animaciones diferentes para presentar tus componentes</h2>
-                    <code class="txt__Neg size_3">&ltdiv class="card__Small fade__in" "&gt&lt/div&gt</code><br><br>
-                    <code class="txt__Neg size_3">&ltbutton class="card__Small fade_in_bottom "&gt&lt/div&gt</code><br>
+                    <code class="txt__Normal size_3">&ltdiv class="card__Small fade__in" "&gt&lt/div&gt</code><br><br>
+                    <code
+                        class="txt__Normal size_3">&ltbutton class="card__Small fade_in_bottom "&gt&lt/div&gt</code><br>
                     <br>
-                    <code class="txt__Neg size_3">&ltbutton class="card__Small slide__left "&gt&lt/div&gt</code><br><br>
-                    <code class="txt__Neg size_3">&ltbutton class="card__Small slide__right "&gt&lt/div&gt</code>
+                    <code
+                        class="txt__Normal size_3">&ltbutton class="card__Small slide__left "&gt&lt/div&gt</code><br><br>
+                    <code class="txt__Normal size_3">&ltbutton class="card__Small slide__right "&gt&lt/div&gt</code>
                 </div>
                 <div>
                     <h2 class="size_2" id="Grid">Grids</h2>
@@ -824,29 +876,29 @@
                     </div>
                 </div>
                 <div class="card bcPrim">
-
+                    <h2>El llamado a los diferentes grids son los siguientes</h2>
                     <code class="txt__Neg size_3">&ltdiv class="grid__shop"&gt"</code><br>
-                    <code class="txt__Neg size_3">&ltdiv class="grid__desc bcExt"&gt&ltdiv&gt</code><br>
-                    <code class="txt__Neg size_3">&ltdiv class="grid__title bcPrim"&gt&ltdiv&gt</code><br>
-                    <code class="txt__Neg size_3">&ltdiv class="grid__image bcSec"&gt&ltdiv&gt</code><br>
-                    <code class="txt__Neg size_3">&ltdiv class="grid__author bcBas"&gt&ltdiv&gt</code><br>
-                    <code class="txt__Neg size_3">&ltdiv class="grid__price bcPrim"&gt&ltdiv&gt</code><br>
-                    <code class="txt__Neg size_3">&ltdiv class="grid__sale bcCom"&gt&ltdiv&gt</code><br>
-                    <code class="txt__Neg size_3">&ltdiv class="grid__cart bcBas"&gt&ltdiv&gt</code><br>
-                    <code>&ltdiv&gt</code><br><br>
+                    <code class="txt__Normal size_3">&ltdiv class="grid__desc bcExt"&gt&ltdiv&gt</code><br>
+                    <code class="txt__Normal size_3">&ltdiv class="grid__title bcPrim"&gt&ltdiv&gt</code><br>
+                    <code class="txt__Normal size_3">&ltdiv class="grid__image bcSec"&gt&ltdiv&gt</code><br>
+                    <code class="txt__Normal size_3">&ltdiv class="grid__author bcBas"&gt&ltdiv&gt</code><br>
+                    <code class="txt__Normal size_3">&ltdiv class="grid__price bcPrim"&gt&ltdiv&gt</code><br>
+                    <code class="txt__Normal size_3">&ltdiv class="grid__sale bcCom"&gt&ltdiv&gt</code><br>
+                    <code class="txt__Normal size_3">&ltdiv class="grid__cart bcBas"&gt&ltdiv&gt</code><br>
+                    <code class="txt__Neg size_3">&ltdiv&gt</code><br><br>
                     <hr>
                     <code class="txt__Neg size_3">&ltdiv class="grid__bodyB"&gt"</code><br>
-                    <code class="txt__Neg size_3">&ltdiv class="grid__BodyH bcExt"&gt&ltdiv&gt</code><br>
-                    <code class="txt__Neg size_3">&ltdiv class="grid__BodyM bcPrim"&gt&ltdiv&gt</code><br>
-                    <code class="txt__Neg size_3">&ltdiv class="grid__BodyA bcSec"&gt&ltdiv&gt</code><br>
-                    <code class="txt__Neg size_3">&ltdiv class="grid__BodyF bcSec"&gt&ltdiv&gt</code><br>
-                    <code>&ltdiv&gt</code><br><br>
+                    <code class="txt__Normal size_3">&ltdiv class="grid__BodyH bcExt"&gt&ltdiv&gt</code><br>
+                    <code class="txt__Normal size_3">&ltdiv class="grid__BodyM bcPrim"&gt&ltdiv&gt</code><br>
+                    <code class="txt__Normal size_3">&ltdiv class="grid__BodyA bcSec"&gt&ltdiv&gt</code><br>
+                    <code class="txt__Normal size_3">&ltdiv class="grid__BodyF bcSec"&gt&ltdiv&gt</code><br>
+                    <code class="txt__Neg size_3">&ltdiv&gt</code><br><br>
                     <hr>
                     <code class="txt__Neg size_3">&ltdiv class="grid__bodyB3"&gt"</code><br>
-                    <code class="txt__Neg size_3">&ltdiv class="grid__BodyH3 bcExt"&gt&ltdiv&gt</code><br>
-                    <code class="txt__Neg size_3">&ltdiv class="grid__BodyM3 bcPrim"&gt&ltdiv&gt</code><br>
-                    <code class="txt__Neg size_3">&ltdiv class="grid__BodyF3 bcSec"&gt&ltdiv&gt</code><br>
-                    <code>&ltdiv&gt</code><br><br>
+                    <code class="txt__Normal size_3">&ltdiv class="grid__BodyH3 bcExt"&gt&ltdiv&gt</code><br>
+                    <code class="txt__Normal size_3">&ltdiv class="grid__BodyM3 bcPrim"&gt&ltdiv&gt</code><br>
+                    <code class="txt__Normal size_3">&ltdiv class="grid__BodyF3 bcSec"&gt&ltdiv&gt</code><br>
+                    <code class="txt__Neg size_3">&ltdiv&gt</code><br><br>
                     <hr>
                 </div>
             </div>
