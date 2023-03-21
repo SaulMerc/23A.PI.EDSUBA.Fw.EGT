@@ -137,7 +137,7 @@ nav.menuP>ul>li>ul {
 	background: #000;
 	left: 0;
 	right: 0;
-	overflow: hidden;
+	overflow: scroll;
 	height: 0%;
 	-webkit-transition: all .3s ease;
 	-moz-transition: all .3s ease;
