@@ -13,6 +13,10 @@
 </head>
 
 <body class="container" >
+    <header class=" displ__flx anim">
+      <img src="./assets/images/flecha_2.png" alt="" id="botonRedireccion" onclick="window.location.href='./index.html'">
+      <label id="botonRedireccionLabel" for="">Pagina principal</label>
+    </header>
     <div class="containerimages">
         <img src="./assets/images/menorque.png" class="image">
         <img src="./assets/images/diagonal.png" class="image">
@@ -21,10 +25,11 @@
         <img src="./assets/images/g.png" class="image">
         <img src="./assets/images/lat.png" class="image">
       </div>
-    <div class="size">
-        <span id="element1" class="txt__Neg"></span>
+    <div >
+        <span id="element1"></span>
+
     </div>
-    <div class="scrolled fade-in txt__Ita size">
+    <div class="scrolled fade-in">
         
         <span id="element2"></span>
     </div>
@@ -32,11 +37,7 @@
     <main>
         <section id="Introducción">
             <h2>Objetivos y descripción del equipo:</h2>
-            <p>Nuestro equipo de desarrollo se encuentra enfocado en el aprendizaje y realización de proyectos de desarrollo web. <br>
-                Como equipo, nos dedicamos a crear soluciones inovadoras y atractivas para nuestros clientes, nos enorgullecemos de nuestro trabajo. <br>
-                Cada miembro de nuestro equipo aporta habilidades y perspectivas únicas a nuestro trabajo, trabajamos juntos para crear
-                de software personalizadas para nuestros clientes.
-            </p>
+            <p>Nuestro equipo de desarrollo se encuentra enfocado en el aprendizaje y realización proyectos de desarrollo web</p>
         </section>
         <section id="Equipo">
             <h2>Equipo de desarrollo</h2>
@@ -53,7 +54,8 @@
         </section>
     </main>
     <footer>
-        <p>Copyrigt</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet fuga minus quaerat odit cum quam eum saepe
+            tempore? Non maxime commodi velit veritatis voluptas, ex libero fugiat. Deserunt, sapiente consequatur.</p>
     </footer>
 
 
@@ -150,7 +152,7 @@ timeline
     targets: images[5],
     keyframes: [
     {translateY: -40},
-    {translateX: 250},
+    {translateX: 180},
     {translateY: 40},
     {translateX: 0},
     {translateY: 0}
@@ -162,6 +164,27 @@ timeline
   ;
 
       </script>
+ <script>
+  const redirectButton = document.getElementById('botonRedireccion');
+  const timeline2=anime.timeline();
+
+    anime({
+      targets: '#botonRedireccion',
+      translateX: 250,
+      duration: 3000
+    });
+    anime({
+      targets: '#botonRedireccion',
+      width: '11%', // -> from '28px' to '100%',
+    easing: 'easeInOutQuad',
+    direction: 'alternate',
+    loop: true
+    })
+ 
+</script>
+
+ 
+
 </body>
 
 </html>
