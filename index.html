@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="assets/scripts/jquery-3.6.4.js"></script>
     <link rel="stylesheet" href="up.css">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
-    
+
     <title>Framework EGT</title>
 </head>
 
@@ -22,10 +23,10 @@
 <!-- <span class="material-symbols-outlined">nombreIcono</span> -->
 
 <body>
-    
+
     <span id="ir_Arriba" class="material-symbols-outlined">
         arrow_upward
-        </span>
+    </span>
 
     <!-- Elementos del encabezado-->
     <header class="container txt__Normal">
@@ -192,17 +193,21 @@
                             “img-responsive”, con esta
                             clase la imagen
                             se adaptara según la resolución actual.
-                            <br>Ejemplo:<br><hr><br>
+                            <br>Ejemplo:<br>
+                            <hr><br>
                             <code
-                                class="txt__Neg">&ltimg src="Ruta imagen" alt="imagen" class="img-responsive"&gt</code><br><br><hr>
+                                class="txt__Neg">&ltimg src="Ruta imagen" alt="imagen" class="img-responsive"&gt</code><br><br>
+                            <hr>
                         </p>
                         <p class="txt__Normal ">Si quieres establecer un tamaño para la imagen responsiva se le debe
                             agregar la clase
                             img-width-x donde
                             la x es un valor del 1 al 100.
-                            <br>Ejemplo:<br><hr><br>
+                            <br>Ejemplo:<br>
+                            <hr><br>
                             <code
-                                class="txt__Neg">&ltimg src="Ruta imagen" alt="imagen" class="img-responsive img-width-50"&gt</code><br><br><hr>
+                                class="txt__Neg">&ltimg src="Ruta imagen" alt="imagen" class="img-responsive img-width-50"&gt</code><br><br>
+                            <hr>
                         </p>
                     </div>
 
@@ -252,10 +257,13 @@
                         <p class="txt__Normal">Para agregar un enlace con estilo marcado, se necesita utilizar la
                             clase mark__green en
                             una etiqueta &lta&gt.
-                            <br class="txt__Normal">Ejemplo:<br><hr><br>
+                            <br class="txt__Normal">Ejemplo:<br>
+                            <hr><br>
 
                             <code
-                                class="txt__Neg">&ltp>&lta class="mark__green" href="#"&gttexto </a>&lt/p&gt</code><br> <br> <hr>
+                                class="txt__Neg">&ltp>&lta class="mark__green" href="#"&gttexto </a>&lt/p&gt</code><br>
+                            <br>
+                            <hr>
                             Las clases disponibles son: <br>
                             mark__green, mark__orange, mark__blue, mark__pink,
                             mark__purple, mark__yellow, mark__red y mark__gray,
@@ -265,10 +273,11 @@
                         <p class="txt__Normal">Para agregar un enlace con estilo de botón, se necesita utilizar la
                             clase
                             link__button__green en una etiqueta &lta&gt.
-                            <br class="txt__Normal">Ejemplo:<br><hr><br>
+                            <br class="txt__Normal">Ejemplo:<br>
+                            <hr><br>
                             <code
                                 class="txt__Neg">&ltp&lta class="link__button__green" href="#">texto &lt/a&gt&lt/p&gt</code><br><br>
-                                <hr><br>
+                            <hr><br>
                             Las clases disponibles son: <br>
                             link__button__green, link__button__orange, link__button__blue, link__button__pink,
                             link__button__violet, link__button__yellow, link__button__red y link__button__gray,
@@ -278,7 +287,8 @@
                         <p class="txt__Normal">Para agregar un enlace en una imagen, se necesita utilizar la clase
                             image__link en una
                             etiqueta &ltimg&gt que esta adentro de una etiqueta &lta&gt.
-                            <br class="txt__Normal">Ejemplo:<br> <hr><br>
+                            <br class="txt__Normal">Ejemplo:<br>
+                            <hr><br>
                             <code class="txt__Neg"> &lta href="#"&gt
                                     &ltimg src = "ruta imagen" alt = "descripción de la imagen" class = "image__link" &gt &lt/a&gt
                             </code><br><br>
@@ -563,27 +573,36 @@
             <div class="card bcSec">
                 <h1>Carrusel</h1>
                 <h2 class="txt__Title">Para realizar el llamado al carrusel lo haces de la siguiente manera</h2><br>
-                <code class="txt__Neg size_3">&ltdiv class="carrusel" id="Carrusel"&gt&ltdiv&gt</code><br>
-                <code class="txt__Neg size_3">&ltbutton class="btn__carrusel btn__anteriorimg"&gt&ltdiv&gt</code><br>
-                <code class="txt__Neg size_3">&ltbutton class="btn__carrusel btn__siguienteimg"&gt&ltdiv&gt</code>
+                <code class="txt__Neg size_3">&ltdiv class="carrusel" id="Carrusel"&gt&lt/div&gt</code><br>
+                <code class="txt__Neg size_3">&ltbutton class="btn__carrusel btn__anteriorimg"&gt&lt/div&gt</code><br>
+                <code class="txt__Neg size_3">&ltbutton class="btn__carrusel btn__siguienteimg"&gt&lt/div&gt</code>
             </div>
         </div>
         <div class="container"> <!--Contenedores principales-->
             <div class="card" id="forms"><!-- Elementos de formularios-->
                 <h2 class="txt__Normal" id="Formularios">Elementos de un formulario</h2>
                 <!--Estilo para los formularios realizado por los Saul y Ulises-->
-                <div class="card">
-                    <label for="" class="label__normal">Ejemplo de texto</label><br>
-                    <input type="text" class="input__text" required><br>
-                    <label for="" class="label__normal ">Ejemplo de un campo obligatorio<span
-                            class="obl cRed">*</span></label><br>
-                    <input type="text" class="input__text" required><br>
-                    <label for="" class="label__normal">Ejemplo de correo</label><br>
-                    <input type="email" class="input__email" required><br>
-                    <label for="" class="label__normal">Ejemplo de número</label><br>
-                    <input type="number" class="input__number" required><br>
-                    <label for="" class="label__normal">Ejemplo de date</label><br>
-                    <input type="date" class="input__date txt__Normal" required><br>
+
+                <div class="container two__cols">
+
+                    <div class="card">
+                        <label for="" class="label__normal">Ejemplo de texto</label><br>
+                        <input type="text" class="input__text" required><br>
+                        <label for="" class="label__normal ">Ejemplo de un campo obligatorio<span
+                                class="obl cRed">*</span></label><br>
+                        <input type="text" class="input__text" required><br>
+                        <label for="" class="label__normal">Ejemplo de correo</label><br>
+                        <input type="email" class="input__email" required><br>
+                        <label for="" class="label__normal">Ejemplo de número</label><br>
+                        <input type="number" class="input__number" required><br>
+                        <label for="" class="label__normal">Ejemplo de date</label><br>
+                        <input type="date" class="input__date txt__Normal" required><br>
+                    </div>
+                    <div class="card bcSec">
+                        <h2 class="txt__Title">Para realizar el llamado al formulario se realiza de la siguiente manera</h2><br>
+                        <code class="txt__Neg size_3">&ltdiv class="card"&gt&lt/div&gt</code><br>
+                    </div>
+
                 </div>
 
                 <div class="card">
@@ -655,47 +674,59 @@
                     <button type="submit" class="button__Cla txt__Neg">Enviar</button><br>
                 </form>
             </div>
-            <div class="card">
-                <form class="form">
-                    <div class="checkout-method">
-                        <button type="button" class="btnForm">
-                            <i><span class="material-symbols-outlined">credit_card</span></i>
-                        </button>
-                        <button type="button" class="btnForm btn-inactive">
-                            <i><span class="material-symbols-outlined">payments</span></i>
-                        </button>
-                    </div>
-                    <div class="checkout-information">
-                        <div class="input-group">
-                            <label for="name">Nombre en tarjeta</label>
-                            <input type="text" id="name" placeholder="Ingresa el nombre" />
+            <div class="card two__cols">
+                <div class="card">
+                    <form class="form">
+                        <div class="checkout-method">
+                            <button type="button" class="btnForm">
+                                <i><span class="material-symbols-outlined">credit_card</span></i>
+                            </button>
+                            <button type="button" class="btnForm btn-inactive">
+                                <i><span class="material-symbols-outlined">payments</span></i>
+                            </button>
                         </div>
-                        <div class="input-group">
-                            <label for="number">Número de tarjeta</label>
-                            <input type="text" id="number" placeholder="..." />
-                        </div>
-                        <div class="horizontal-grid">
+                        <div class="checkout-information">
                             <div class="input-group">
-                                <label for="date">Fecha de expiración</label>
-                                <input type="text" id="date" placeholder="3/23" />
+                                <label for="name">Nombre en tarjeta</label>
+                                <input type="text" id="name" placeholder="Ingresa el nombre" />
                             </div>
                             <div class="input-group">
-                                <label for="cvv">CVV</label>
-                                <input type="number" id="cvv" placeholder="CVV" />
+                                <label for="number">Número de tarjeta</label>
+                                <input type="text" id="number" placeholder="..." />
+                            </div>
+                            <div class="horizontal-grid">
+                                <div class="input-group">
+                                    <label for="date">Fecha de expiración</label>
+                                    <input type="text" id="date" placeholder="3/23" />
+                                </div>
+                                <div class="input-group">
+                                    <label for="cvv">CVV</label>
+                                    <input type="number" id="cvv" placeholder="CVV" />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <button class="btnForm btn-checkout">Checkout</button>
-                </form>
+                        <button class="btnForm btn-checkout">Checkout</button>
+                    </form>
+                </div>
+
+                <div class="card bcSec">
+                    <h2 class="txt__Title">Para llamar este estilo de formulario se inseta lo siguiente</h2>
+                    <code class="txt__Neg size_3">&ltdiv class="carrusel" id="Carrusel"&gt&ltdiv&gt</code><br>
+                </div>
+                
             </div>
         </div>
         <div class="container">
             <div class="card">
                 <div class="two__cols">
-                    <div><h2>Animaciones</h2></div>
+                    <div>
+                        <h2>Animaciones</h2>
+                    </div>
                     <div class="card"></div>
                     <div class="card"></div>
-                    <div><h2>Grids</h2></div>
+                    <div>
+                        <h2>Grids</h2>
+                    </div>
                     <div class="card"></div>
                     <div class="card"></div>
                 </div>
